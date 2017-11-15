@@ -1,0 +1,26 @@
+{
+  "name": "eslint-config-hackreactor",
+  "version": "1.0.0",
+  "description": "An ESLint configuration enforcing Hack Reactor's style guide",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hackreactor-labs/eslint-config-hackreactor.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "author": "Hack Reactor <curriculum.team@hackreactor.com> (http://hackreactor.com)",
+  "contributors": [
+    "Dan Thareja <danthareja>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hackreactor-labs/eslint-config-hackreactor/issues"
+  },
+  "homepage": "https://github.com/hackreactor-labs/eslint-config-hackreactor#readme"
+}
