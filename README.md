@@ -4,10 +4,10 @@
 
 ## Team
 
-  - teamMember
-  - teamMember
-  - teamMember
-  - teamMember
+  - David
+  - Aygerim
+  - Vu
+  - Ed
 
 ## Table of Contents
 
