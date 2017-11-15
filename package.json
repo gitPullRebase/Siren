@@ -1,6 +1,6 @@
 {
   "name": "Siren",
-  "version": "1.0",
+  "version": "1.0.0",
   "description": "Siren is DJ/Artist finder for users seeking musicians to play for them",
   "author": "Aygerim Sauletkhan, David Arellano, Edwin Chu, Vu Chau",
   "license": "MIT",
@@ -8,9 +8,9 @@
     "node": ">=6.4.0"
   },
   "scripts": {
-  "dev": "webpack -d --watch",
-  "build": "webpack -p",
-  "server": "nodemon server/server.js"
+    "dev": "webpack -d --watch",
+    "build": "webpack -p",
+    "server": "nodemon server/server.js"
   },
   "dependencies": {
     "axios": "^0.16.2",
