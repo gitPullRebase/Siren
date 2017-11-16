@@ -2,7 +2,9 @@ version: 2
 jobs:
    build:
      docker:
-       - image: circleci/node:6
+       - image: circleci/node:7
      steps:
        - checkout
+       - run: yarn install
+       - run: yarn test
        - run: echo "hello world"
