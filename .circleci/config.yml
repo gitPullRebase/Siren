@@ -5,6 +5,4 @@ jobs:
        - image: circleci/node:7
      steps:
        - checkout
-       - run: yarn install
-       - run: yarn test
        - run: echo "hello world"
