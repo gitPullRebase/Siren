@@ -2,10 +2,10 @@ import React from 'react';
 
 import Artist from './Artist.jsx';
 
-const ArtistList = () => (
+const ArtistList = (props) => (
   <div>
     <h1>Artist List Component</h1>
-    <Artist />
+    <Artist songs={}/>
   </div>
 )
 

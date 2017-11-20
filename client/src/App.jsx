@@ -8,11 +8,11 @@ import SongsList from "./Components/SongsList.jsx";
 class App extends React.Component {
   constructor() {
     super();
-    this.state = {};
+    this.state = {
+      artists: []
+    };
   }
-  componentDidMount() {
-    const abc = "hello";
-  }
+  componentDidMount() {}
 
   render() {
     return (
@@ -20,7 +20,7 @@ class App extends React.Component {
         <h1>Siren</h1>
         <Navbar />
         <Search />
-        <ArtistList />
+        <ArtistList artists={this.state.artists} />
         <SongsList />
       </div>
     );
