@@ -1,17 +1,17 @@
-import React from 'react';
+import React from "react";
 
-import Navbar from './Components/Navbar.jsx';
-import Search from './Components/Search.jsx';
-import ArtistList from './Components/ArtistList.jsx';
-import SongsList from './Components/SongsList.jsx';
+import Navbar from "./Components/Navbar.jsx";
+import Search from "./Components/Search.jsx";
+import ArtistList from "./Components/ArtistList.jsx";
+import SongsList from "./Components/SongsList.jsx";
 
 class App extends React.Component {
   constructor() {
-    super()
-    this.state = {}
+    super();
+    this.state = {};
   }
   componentDidMount() {
-
+    const abc = "hello";
   }
 
   render() {
@@ -23,7 +23,7 @@ class App extends React.Component {
         <ArtistList />
         <SongsList />
       </div>
-    )
+    );
   }
 }
 
