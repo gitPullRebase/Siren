@@ -1,18 +1,18 @@
-import React from 'react';
+import React from "react";
 
-import Navbar from './Components/Navbar.jsx';
-import Search from './Components/Search.jsx';
-import ArtistList from './Components/ArtistList.jsx';
-import SongsList from './Components/SongsList.jsx';
+import Navbar from "./Components/Navbar.jsx";
+import Search from "./Components/Search.jsx";
+import ArtistList from "./Components/ArtistList.jsx";
+import SongsList from "./Components/SongsList.jsx";
 
 class App extends React.Component {
   constructor() {
-    super()
-    this.state = {}
+    super();
+    this.state = {
+      artists: []
+    };
   }
-  componentDidMount() {
-
-  }
+  componentDidMount() {}
 
   render() {
     return (
@@ -20,10 +20,10 @@ class App extends React.Component {
         <h1>Siren</h1>
         <Navbar />
         <Search />
-        <ArtistList />
+        <ArtistList artists={this.state.artists} />
         <SongsList />
       </div>
-    )
+    );
   }
 }
 
