@@ -1,17 +1,19 @@
-const pg = require('pg');
+const pg = require("pg");
+const sampleArtistsSF = require("./SF_artist_data.js");
+const SFArtistTopTracks = require("./SF_artist_top_tracks.js")
 
-var connection = 'postgres://postgres:rebase@localhost:5432/artists';
+var connection =
+  `${process.env.DATABSE_URL}/artists` ||
+  "postgres://postgres:rebase@localhost:5432/artists";
 
 var client = new pg.Client(connection);
 
 client.connect();
 
-
-// Example query: 
+// Example query:
 // let query = client.query('INSERT into artist (number) VALUES (6)', function() {
 //     client.end();
 // });
-
 
 /*
 	TO CONNECT VIA TERMINAL (password might be different for each user)
