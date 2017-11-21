@@ -17,7 +17,6 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <h1>Siren</h1>
         <Navbar />
         <Search />
         <ArtistList artists={this.state.artists} />
