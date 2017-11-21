@@ -1,6 +1,10 @@
 import React from "react";
 import SF_artist_data from "../../Database/SF_artist_data.js";
-import ArtistTracks from '../../Database/SF_artist_top_tracks.json';
+import SF_ArtistTracks from '../../Database/SF_artist_top_tracks.json';
+import LA_artist_data from "../../Database/LA_artist_data.js"
+import LA_ArtistTracks from "../../Database/LA_artist_top_tracks.json"
+import NY_artist_data from "../../Database/NY_artist_data.js"
+import NY_ArtistTracks from "../../Database/NY_artist_top_tracks.json"
 
 import Navbar from "./Components/Navbar.jsx";
 import Search from "./Components/Search.jsx";
@@ -12,16 +16,43 @@ class App extends React.Component {
     super();
     this.state = {
       artists: SF_artist_data,
-      tracks: ArtistTracks
+      tracks: SF_ArtistTracks, 
+      search: ''
     };
   }
+ 
+  searchClickHandler(input) { 
+    if(input.toLowerCase() === 'san francisco'){ 
+      this.setState({ 
+        artists: SF_artist_data, 
+        tracks: SF_ArtistTracks
+      })
+    } else if(input.toLowerCase() === 'los angeles'){ 
+      this.setState({ 
+        artists: LA_artist_data, 
+        tracks: LA_ArtistTracks
+      })
+    } else { 
+      this.setState({ 
+        artists: NY_artist_data, 
+        tracks: NY_ArtistTracks
+      })
+    }
+  
+  }
+  onChange(input){ 
+    this.setState = { 
+      search: input.target.value.toLowerCase()
+    }
+  }
+
   componentDidMount() {}
 
   render() {
     return (
       <div className="container">
         <Navbar />
-        <Search />
+        <Search onClick = {this.searchClickHandler.bind(this)} onChange = {this.onChange.bind(this)}/>
         <div className="row">
           <ArtistList artists={this.state.artists} />
           <SongsList tracks={this.state.tracks} />
