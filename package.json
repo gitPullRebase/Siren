@@ -1,7 +1,8 @@
 {
   "name": "Siren",
   "version": "1.0.0",
-  "description": "Siren is a location-based DJ/Artist finder that lets users easily and quickly book gigs",
+  "description":
+    "Siren is a location-based DJ/Artist finder that lets users easily and quickly book gigs",
   "author": "Aygerim Sauletkhan, David Arellano, Edwin Chu, Vu Chau",
   "license": "MIT",
   "engines": {
@@ -10,7 +11,7 @@
   "scripts": {
     "dev": "webpack -d --watch",
     "build": "webpack -p",
-    "server": "nodemon Server/ServerIndex.js"
+    "server": "nodemon server/ServerIndex.js"
   },
   "dependencies": {
     "axios": "^0.16.2",

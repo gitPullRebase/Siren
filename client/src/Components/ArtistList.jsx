@@ -1,12 +1,19 @@
-import React from 'react';
+import React from "react";
 
-import Artist from './Artist.jsx';
+import Artist from "./Artist.jsx";
 
-const ArtistList = (props) => (
-  <div>
+const ArtistList = props => (
+  <div className="artistList">
     <h1>Artist List Component</h1>
-    <Artist />
+    {props.artists.map(artist => {
+      return (
+        <div>
+          <Artist artist={artist} />
+          <br />
+        </div>
+      );
+    })}
   </div>
-)
+);
 
 export default ArtistList;
