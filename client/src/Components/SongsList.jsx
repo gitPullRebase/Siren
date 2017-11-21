@@ -2,10 +2,12 @@ import React from 'react';
 
 import Song from './Song.jsx';
 
-const SongsList = () => (
-  <div>
+const SongsList = (props) => (
+  <div className="col">
     <h1>Songs List Component</h1>
-    <Song />
+    {/* {props.tracks.map( song => {
+      return <Song song={song} />
+    })} */}
   </div>
 )
 

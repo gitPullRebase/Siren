@@ -11,7 +11,7 @@
   "scripts": {
     "dev": "webpack -d --watch",
     "build": "webpack -p",
-    "server": "nodemon server/ServerIndex.js"
+    "server": "nodemon Server/ServerIndex.js"
   },
   "dependencies": {
     "axios": "^0.16.2",
