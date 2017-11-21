@@ -1,7 +1,8 @@
 {
   "name": "Siren",
   "version": "1.0.0",
-  "description": "Siren is DJ/Artist finder for users seeking musicians to play for them",
+  "description":
+    "Siren is a location-based DJ/Artist finder that lets users easily and quickly book gigs",
   "author": "Aygerim Sauletkhan, David Arellano, Edwin Chu, Vu Chau",
   "license": "MIT",
   "engines": {
