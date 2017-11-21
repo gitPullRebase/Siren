@@ -4,10 +4,13 @@ import Artist from "./Artist.jsx";
 
 const ArtistList = props => (
   <div className="col artistList">
-    <h1>Artist List Component</h1>
-    {props.artists.map(artist => {
+    <h3>Artists Available in SF</h3>
+    {props.artists.map((artist, index) => {
       return (
         <div>
+          <label>
+            <strong>{index + 1 + "."}</strong>
+          </label>
           <Artist artist={artist} />
           <br />
         </div>
