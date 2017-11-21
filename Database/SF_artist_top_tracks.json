@@ -6356,5 +6356,672 @@
     "type" : "track",
     "uri" : "spotify:track:3DVwbvcxbFkOvJCXRaR6O9"
   } ],
-  "Cherushii" :b2zji0CB2bd" }, href: "https://api.spotify.com/v1/artists/2apBpVDmdfVb2zji0CB2bd", id: "2apBpVDmdfVb2zji0CB2bd", name: "Cherushii", type: "artist", uri: "spotify:artist:2apBpVDmdfVb2zji0CB2bd" }], available_markets: ["AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN"], external_urls: { spotify: "https://open.spotify.com/album/7hVvnvA7Mg8c0YU5Zskvcq" }, href: "https://api.spotify.com/v1/albums/7hVvnvA7Mg8c0YU5Zskvcq", id: "7hVvnvA7Mg8c0YU5Zskvcq", images: [{ height: 640, url: "https://i.scdn.co/image/405764eb636307ee9f2a58fd27b8d7bece9865fc", width: 640 }, { height: 300, url: "https://i.scdn.co/image/075c245fd5eb9a86a7dd109bc8c9f61d7b4563ad", width: 300 }, { height: 64, url: "https://i.scdn.co/image/30e632fa19261ecfe055a393a317039410d919d9", width: 64 }], name: "Memory of Water", type: "album", uri: "spotify:album:7hVvnvA7Mg8c0YU5Zskvcq" }, artists: [{ external_urls: { spotify: "https://open.spotify.com/artist/2apBpVDmdfVb2zji0CB2bd" }, href: "https://api.spotify.com/v1/artists/2apBpVDmdfVb2zji0CB2bd", id: "2apBpVDmdfVb2zji0CB2bd", name: "Cherushii", type: "artist", uri: "spotify:artist:2apBpVDmdfVb2zji0CB2bd" }, { external_urls: { spotify: "https://open.spotify.com/artist/2B5soBYqne8coa7QYaiRSQ" }, href: "https://api.spotify.com/v1/artists/2B5soBYqne8coa7QYaiRSQ", id: "2B5soBYqne8coa7QYaiRSQ", name: "Maria Minerva", type: "artist", uri: "spotify:artist:2B5soBYqne8coa7QYaiRSQ" }], available_markets: ["AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN"], disc_number: 1, duration_ms: 292500, explicit: false, external_ids: { isrc: "USA2Z1510970" }, external_urls: { spotify: "https://open.spotify.com/track/51cvis39ONOS9ZmUbzqOqW" }, href: "https://api.spotify.com/v1/tracks/51cvis39ONOS9ZmUbzqOqW", id: "51cvis39ONOS9ZmUbzqOqW", name: "Thin Line (feat. Maria Minerva)", popularity: 24, preview_url: "https://p.scdn.co/mp3-preview/823bd4127ae7bc1c5bf47c4612ea410f8ec0d325?cid=8897482848704f2a8f8d7c79726a70d4", track_number: 4, type: "track", uri: "spotify:track:51cvis39ONOS9ZmUbzqOqW" }, { album: { album_type: "album", artists: [{ external_urls: { spotify: "https://open.spotify.com/artist/2apBpVDmdfVb2zji0CB2bd" }, href: "https://api.spotify.com/v1/artists/2apBpVDmdfVb2zji0CB2bd", id: "2apBpVDmdfVb2zji0CB2bd", name: "Cherushii", type: "artist", uri: "spotify:artist:2apBpVDmdfVb2zji0CB2bd" }], available_markets: ["AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN"], external_urls: { spotify: "https://open.spotify.com/album/7hVvnvA7Mg8c0YU5Zskvcq" }, href: "https://api.spotify.com/v1/albums/7hVvnvA7Mg8c0YU5Zskvcq", id: "7hVvnvA7Mg8c0YU5Zskvcq", images: [{ height: 640, url: "https://i.scdn.co/image/405764eb636307ee9f2a58fd27b8d7bece9865fc", width: 640 }, { height: 300, url: "https://i.scdn.co/image/075c245fd5eb9a86a7dd109bc8c9f61d7b4563ad", width: 300 }, { height: 64, url: "https://i.scdn.co/image/30e632fa19261ecfe055a393a317039410d919d9", width: 64 }], name: "Memory of Water", type: "album", uri: "spotify:album:7hVvnvA7Mg8c0YU5Zskvcq" }, artists: [{ external_urls: { spotify: "https://open.spotify.com/artist/2apBpVDmdfVb2zji0CB2bd" }, href: "https://api.spotify.com/v1/artists/2apBpVDmdfVb2zji0CB2bd", id: "2apBpVDmdfVb2zji0CB2bd", name: "Cherushii", type: "artist", uri: "spotify:artist:2apBpVDmdfVb2zji0CB2bd" }], available_markets: ["AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN"], disc_number: 1, duration_ms: 332458, explicit: false, external_ids: { isrc: "USA2Z1510968" }, external_urls: { spotify: "https://open.spotify.com/track/54DjjgS0AhiVHUnG1px9O0" }, href: "https://api.spotify.com/v1/tracks/54DjjgS0AhiVHUnG1px9O0", id: "54DjjgS0AhiVHUnG1px9O0", name: "Pillow Palace", popularity: 15, preview_url: "https://p.scdn.co/mp3-preview/18805e24bb26c0b1f76b1ecf95dd638b76d59723?cid=8897482848704f2a8f8d7c79726a70d4", track_number: 2, type: "track", uri: "spotify:track:54DjjgS0AhiVHUnG1px9O0" }, { album: { album_type: "compilation", artists: [{ external_urls: { spotify: "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of" }, href: "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of", id: "0LyfQWJT6nXafLPZqxe9Of", name: "Various Artists", type: "artist", uri: "spotify:artist:0LyfQWJT6nXafLPZqxe9Of" }], available_markets: ["AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN"], external_urls: { spotify: "https://open.spotify.com/album/4cvuKVXM36hKU2AIpXtk74" }, href: "https://api.spotify.com/v1/albums/4cvuKVXM36hKU2AIpXtk74", id: "4cvuKVXM36hKU2AIpXtk74", images: [{ height: 640, url: "https://i.scdn.co/image/664def08e7eb3b428f1562b763be0891370fd734", width: 640 }, { height: 300, url: "https://i.scdn.co/image/aa16bd88005c569e0773cd19fa28d6e39077bf50", width: 300 }, { height: 64, url: "https://i.scdn.co/image/3d703eda876fe7401d25b16d677cffe2b3bc8e25", width: 64 }], name: "Meow Wolf's Arcade Soundtracks: Wiggy's Plasma Plex", type: "album", uri: "spotify:album:4cvuKVXM36hKU2AIpXtk74" }, artists: [{ external_urls: { spotify: "https://open.spotify.com/artist/2apBpVDmdfVb2zji0CB2bd" }, href: "https://api.spotify.com/v1/artists/2apBpVDmdfVb2zji0CB2bd", id: "2apBpVDmdfVb2zji0CB2bd", name: "Cherushii", type: "artist", uri: "spotify:artist:2apBpVDmdfVb2zji0CB2bd" }, { external_urls: { spotify: "https://open.spotify.com/artist/2B5soBYqne8coa7QYaiRSQ" }, href: "https://api.spotify.com/v1/artists/2B5soBYqne8coa7QYaiRSQ", id: "2B5soBYqne8coa7QYaiRSQ", name: "Maria Minerva", type: "artist", uri: "spotify:artist:2B5soBYqne8coa7QYaiRSQ" }, { external_urls: { spotify: "https://open.spotify.com/artist/3OoopL4u6XqnI7ctVC1uWc" }, href: "https://api.spotify.com/v1/artists/3OoopL4u6XqnI7ctVC1uWc", id: "3OoopL4u6XqnI7ctVC1uWc", name: "David Last", type: "artist", uri: "spotify:artist:3OoopL4u6XqnI7ctVC1uWc" }], available_markets: ["AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN"], disc_number: 1, duration_ms: 438680, explicit: false, external_ids: { isrc: "QMKD21300190" }, external_urls: { spotify: "https://open.spotify.com/track/1rnHBvvGQKjYQXLJc0YU8n" }, href: "https://api.spotify.com/v1/tracks/1rnHBvvGQKjYQXLJc0YU8n", id: "1rnHBvvGQKjYQXLJc0YU8n", name: "Thin Line - David Last Remix", popularity: 15, preview_url: "https://p.scdn.co/mp3-preview/8eca90f89975be6367bdd19a45698621f71e51b9?cid=8897482848704f2a8f8d7c79726a70d4", track_number: 11, type: "track", uri: "spotify:track:1rnHBvvGQKjYQXLJc0YU8n" }, { album: { album_type: "album", artists: [{ external_urls: { spotify: "https://open.spotify.com/artist/2apBpVDmdfVb2zji0CB2bd" }, href: "https://api.spotify.com/v1/artists/2apBpVDmdfVb2zji0CB2bd", id: "2apBpVDmdfVb2zji0CB2bd", name: "Cherushii", type: "artist", uri: "spotify:artist:2apBpVDmdfVb2zji0CB2bd" }], available_markets: ["AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN"], external_urls: { spotify: "https://open.spotify.com/album/7hVvnvA7Mg8c0YU5Zskvcq" }, href: "https://api.spotify.com/v1/albums/7hVvnvA7Mg8c0YU5Zskvcq", id: "7hVvnvA7Mg8c0YU5Zskvcq", images: [{ height: 640, url: "https://i.scdn.co/image/405764eb636307ee9f2a58fd27b8d7bece9865fc", width: 640 }, { height: 300, url: "https://i.scdn.co/image/075c245fd5eb9a86a7dd109bc8c9f61d7b4563ad", width: 300 }, { height: 64, url: "https://i.scdn.co/image/30e632fa19261ecfe055a393a317039410d919d9", width: 64 }], name: "Memory of Water", type: "album", uri: "spotify:album:7hVvnvA7Mg8c0YU5Zskvcq" }, artists: [{ external_urls: { spotify: "https://open.spotify.com/artist/2apBpVDmdfVb2zji0CB2bd" }, href: "https://api.spotify.com/v1/artists/2apBpVDmdfVb2zji0CB2bd", id: "2apBpVDmdfVb2zji0CB2bd", name: "Cherushii", type: "artist", uri: "spotify:artist:2apBpVDmdfVb2zji0CB2bd" }], available_markets: ["AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN"], disc_number: 1, duration_ms: 437573, explicit: false, external_ids: { isrc: "USA2Z1510973" }, external_urls: { spotify: "https://open.spotify.com/track/3v9zS6Wh91An30RFqLOrss" }, href: "https://api.spotify.com/v1/tracks/3v9zS6Wh91An30RFqLOrss", id: "3v9zS6Wh91An30RFqLOrss", name: "Everything Is in Color", popularity: 12, preview_url: "https://p.scdn.co/mp3-preview/45ceda7ad9f88772ad58aafb4f3b648de4e57908?cid=8897482848704f2a8f8d7c79726a70d4", track_number: 7, type: "track", uri: "spotify:track:3v9zS6Wh91An30RFqLOrss" }, { album: { album_type: "album", artists: [{ external_urls: { spotify: "https://open.spotify.com/artist/2apBpVDmdfVb2zji0CB2bd" }, href: "https://api.spotify.com/v1/artists/2apBpVDmdfVb2zji0CB2bd", id: "2apBpVDmdfVb2zji0CB2bd", name: "Cherushii", type: "artist", uri: "spotify:artist:2apBpVDmdfVb2zji0CB2bd" }], available_markets: ["AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN"], external_urls: { spotify: "https://open.spotify.com/album/7hVvnvA7Mg8c0YU5Zskvcq" }, href: "https://api.spotify.com/v1/albums/7hVvnvA7Mg8c0YU5Zskvcq", id: "7hVvnvA7Mg8c0YU5Zskvcq", images: [{ height: 640, url: "https://i.scdn.co/image/405764eb636307ee9f2a58fd27b8d7bece9865fc", width: 640 }, { height: 300, url: "https://i.scdn.co/image/075c245fd5eb9a86a7dd109bc8c9f61d7b4563ad", width: 300 }, { height: 64, url: "https://i.scdn.co/image/30e632fa19261ecfe055a393a317039410d919d9", width: 64 }], name: "Memory of Water", type: "album", uri: "spotify:album:7hVvnvA7Mg8c0YU5Zskvcq" }, artists: [{ external_urls: { spotify: "https://open.spotify.com/artist/2apBpVDmdfVb2zji0CB2bd" }, href: "https://api.spotify.com/v1/artists/2apBpVDmdfVb2zji0CB2bd", id: "2apBpVDmdfVb2zji0CB2bd", name: "Cherushii", type: "artist", uri: "spotify:artist:2apBpVDmdfVb2zji0CB2bd" }], available_markets: ["AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN"], disc_number: 1, duration_ms: 405034, explicit: false, external_ids: { isrc: "USA2Z1510971" }, external_urls: { spotify: "https://open.spotify.com/track/4VMHEDBl3RjmDwkaw3Sl3j" }, href: "https://api.spotify.com/v1/tracks/4VMHEDBl3RjmDwkaw3Sl3j", id: "4VMHEDBl3RjmDwkaw3Sl3j", name: "Moonflower Galaxy", popularity: 12, preview_url: "https://p.scdn.co/mp3-preview/2543982c8762197b96cbae2ee69986328c95055a?cid=8897482848704f2a8f8d7c79726a70d4", track_number: 5, type: "track", uri: "spotify:track:4VMHEDBl3RjmDwkaw3Sl3j" }, { album: { album_type: "single", artists: [{ external_urls: { spotify: "https://open.spotify.com/artist/2apBpVDmdfVb2zji0CB2bd" }, href: "https://api.spotify.com/v1/artists/2apBpVDmdfVb2zji0CB2bd", id: "2apBpVDmdfVb2zji0CB2bd", name: "Cherushii", type: "artist", uri: "spotify:artist:2apBpVDmdfVb2zji0CB2bd" }], available_markets: ["AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN"], external_urls: { spotify: "https://open.spotify.com/album/5vo12Xq27ToWhkB8ttSGSm" }, href: "https://api.spotify.com/v1/albums/5vo12Xq27ToWhkB8ttSGSm", id: "5vo12Xq27ToWhkB8ttSGSm", images: [{ height: 640, url: "https://i.scdn.co/image/2e470318a97c7df820cd341d81bc063332092187", width: 640 }, { height: 300, url: "https://i.scdn.co/image/5cc471985f6218366ce3b9fada1b0f62556c5a19", width: 300 }, { height: 64, url: "https://i.scdn.co/image/87c2fae11a2b4404424076ae431c67ef68875eb0", width: 64 }], name: "Far Away so Close", type: "album", uri: "spotify:album:5vo12Xq27ToWhkB8ttSGSm" }, artists: [{ external_urls: { spotify: "https://open.spotify.com/artist/2apBpVDmdfVb2zji0CB2bd" }, href: "https://api.spotify.com/v1/artists/2apBpVDmdfVb2zji0CB2bd", id: "2apBpVDmdfVb2zji0CB2bd", name: "Cherushii", type: "artist", uri: "spotify:artist:2apBpVDmdfVb2zji0CB2bd" }], available_markets: ["AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN"], disc_number: 1, duration_ms: 488871, explicit: false, external_ids: { isrc: "USA2Z1511034" }, external_urls: { spotify: "https://open.spotify.com/track/0prOWIq2CUd7BaX0vRRvSW" }, href: "https://api.spotify.com/v1/tracks/0prOWIq2CUd7BaX0vRRvSW", id: "0prOWIq2CUd7BaX0vRRvSW", name: "Nightsteps", popularity: 11, preview_url: "https://p.scdn.co/mp3-preview/78e08f661975511e75cdcb59ab982e7146d76e63?cid=8897482848704f2a8f8d7c79726a70d4", track_number: 3, type: "track", uri: "spotify:track:0prOWIq2CUd7BaX0vRRvSW" }, { album: { album_type: "album", artists: [{ external_urls: { spotify: "https://open.spotify.com/artist/2apBpVDmdfVb2zji0CB2bd" }, href: "https://api.spotify.com/v1/artists/2apBpVDmdfVb2zji0CB2bd", id: "2apBpVDmdfVb2zji0CB2bd", name: "Cherushii", type: "artist", uri: "spotify:artist:2apBpVDmdfVb2zji0CB2bd" }], available_markets: ["AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN"], external_urls: { spotify: "https://open.spotify.com/album/7hVvnvA7Mg8c0YU5Zskvcq" }, href: "https://api.spotify.com/v1/albums/7hVvnvA7Mg8c0YU5Zskvcq", id: "7hVvnvA7Mg8c0YU5Zskvcq", images: [{ height: 640, url: "https://i.scdn.co/image/405764eb636307ee9f2a58fd27b8d7bece9865fc", width: 640 }, { height: 300, url: "https://i.scdn.co/image/075c245fd5eb9a86a7dd109bc8c9f61d7b4563ad", width: 300 }, { height: 64, url: "https://i.scdn.co/image/30e632fa19261ecfe055a393a317039410d919d9", width: 64 }], name: "Memory of Water", type: "album", uri: "spotify:album:7hVvnvA7Mg8c0YU5Zskvcq" }, artists: [{ external_urls: { spotify: "https://open.spotify.com/artist/2apBpVDmdfVb2zji0CB2bd" }, href: "https://api.spotify.com/v1/artists/2apBpVDmdfVb2zji0CB2bd", id: "2apBpVDmdfVb2zji0CB2bd", name: "Cherushii", type: "artist", uri: "spotify:artist:2apBpVDmdfVb2zji0CB2bd" }], available_markets: ["AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN"], disc_number: 1, duration_ms: 426268, explicit: false, external_ids: { isrc: "USA2Z1510969" }, external_urls: { spotify: "https://open.spotify.com/track/69wF1KAoO92pAnsET3MixB" }, href: "https://api.spotify.com/v1/tracks/69wF1KAoO92pAnsET3MixB", id: "69wF1KAoO92pAnsET3MixB", name: "Ultraviolet Nights", popularity: 10, preview_url: "https://p.scdn.co/mp3-preview/bc1b401e6ec28072abf5dc4a37d206fbf29c1e44?cid=8897482848704f2a8f8d7c79726a70d4", track_number: 3, type: "track", uri: "spotify:track:69wF1KAoO92pAnsET3MixB" }, { album: { album_type: "single", artists: [{ external_urls: { spotify: "https://open.spotify.com/artist/2apBpVDmdfVb2zji0CB2bd" }, href: "https://api.spotify.com/v1/artists/2apBpVDmdfVb2zji0CB2bd", id: "2apBpVDmdfVb2zji0CB2bd", name: "Cherushii", type: "artist", uri: "spotify:artist:2apBpVDmdfVb2zji0CB2bd" }], available_markets: ["AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN"], external_urls: { spotify: "https://open.spotify.com/album/78nTdvRL6IgwH6bad0lKzU" }, href: "https://api.spotify.com/v1/albums/78nTdvRL6IgwH6bad0lKzU", id: "78nTdvRL6IgwH6bad0lKzU", images: [{ height: 640, url: "https://i.scdn.co/image/847361506ef68bb1071075c4606b8669a80f26c8", width: 640 }, { height: 300, url: "https://i.scdn.co/image/18fe7032494800b23ea5eefa7fdcbbb209d89dd0", width: 300 }, { height: 64, url: "https://i.scdn.co/image/05eafc592dae721f66600b73399719f3e194f1fd", width: 64 }], name: "Queen of Cups", type: "album", uri: "spotify:album:78nTdvRL6IgwH6bad0lKzU" }, artists: [{ external_urls: { spotify: "https://open.spotify.com/artist/2apBpVDmdfVb2zji0CB2bd" }, href: "https://api.spotify.com/v1/artists/2apBpVDmdfVb2zji0CB2bd", id: "2apBpVDmdfVb2zji0CB2bd", name: "Cherushii", type: "artist", uri: "spotify:artist:2apBpVDmdfVb2zji0CB2bd" }], available_markets: ["AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN"], disc_number: 1, duration_ms: 401353, explicit: false, external_ids: { isrc: "USA2Z1311476" }, external_urls: { spotify: "https://open.spotify.com/track/2OYEnajBpiuP9uUIrJjnPS" }, href: "https://api.spotify.com/v1/tracks/2OYEnajBpiuP9uUIrJjnPS", id: "2OYEnajBpiuP9uUIrJjnPS", name: "Queen of Cups", popularity: 10, preview_url: "https://p.scdn.co/mp3-preview/55320545dd1fd837bfe1b84141c98d82f468fca9?cid=8897482848704f2a8f8d7c79726a70d4", track_number: 1, type: "track", uri: "spotify:track:2OYEnajBpiuP9uUIrJjnPS" }, { album: { album_type: "album", artists: [{ external_urls: { spotify: "https://open.spotify.com/artist/2apBpVDmdfVb2zji0CB2bd" }, href: "https://api.spotify.com/v1/artists/2apBpVDmdfVb2zji0CB2bd", id: "2apBpVDmdfVb2zji0CB2bd", name: "Cherushii", type: "artist", uri: "spotify:artist:2apBpVDmdfVb2zji0CB2bd" }], available_markets: ["AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN"], external_urls: { spotify: "https://open.spotify.com/album/7hVvnvA7Mg8c0YU5Zskvcq" }, href: "https://api.spotify.com/v1/albums/7hVvnvA7Mg8c0YU5Zskvcq", id: "7hVvnvA7Mg8c0YU5Zskvcq", images: [{ height: 640, url: "https://i.scdn.co/image/405764eb636307ee9f2a58fd27b8d7bece9865fc", width: 640 }, { height: 300, url: "https://i.scdn.co/image/075c245fd5eb9a86a7dd109bc8c9f61d7b4563ad", width: 300 }, { height: 64, url: "https://i.scdn.co/image/30e632fa19261ecfe055a393a317039410d919d9", width: 64 }], name: "Memory of Water", type: "album", uri: "spotify:album:7hVvnvA7Mg8c0YU5Zskvcq" }, artists: [{ external_urls: { spotify: "https://open.spotify.com/artist/2apBpVDmdfVb2zji0CB2bd" }, href: "https://api.spotify.com/v1/artists/2apBpVDmdfVb2zji0CB2bd", id: "2apBpVDmdfVb2zji0CB2bd", name: "Cherushii", type: "artist", uri: "spotify:artist:2apBpVDmdfVb2zji0CB2bd" }], available_markets: ["AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN"], disc_number: 1, duration_ms: 147633, explicit: false, external_ids: { isrc: "USA2Z1510967" }, external_urls: { spotify: "https://open.spotify.com/track/68LuTizsuLpqyEZf7rEtCz" }, href: "https://api.spotify.com/v1/tracks/68LuTizsuLpqyEZf7rEtCz", id: "68LuTizsuLpqyEZf7rEtCz", name: "I Dreamed I Saw You by the Lake", popularity: 9, preview_url: "https://p.scdn.co/mp3-preview/737633fb6cd03795b3abe32a09d46a3912cb5de9?cid=8897482848704f2a8f8d7c79726a70d4", track_number: 1, type: "track", uri: "spotify:track:68LuTizsuLpqyEZf7rEtCz" }, { album: { album_type: "single", artists: [{ external_urls: { spotify: "https://open.spotify.com/artist/2apBpVDmdfVb2zji0CB2bd" }, href: "https://api.spotify.com/v1/artists/2apBpVDmdfVb2zji0CB2bd", id: "2apBpVDmdfVb2zji0CB2bd", name: "Cherushii", type: "artist", uri: "spotify:artist:2apBpVDmdfVb2zji0CB2bd" }], available_markets: ["AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN"], external_urls: { spotify: "https://open.spotify.com/album/78nTdvRL6IgwH6bad0lKzU" }, href: "https://api.spotify.com/v1/albums/78nTdvRL6IgwH6bad0lKzU", id: "78nTdvRL6IgwH6bad0lKzU", images: [{ height: 640, url: "https://i.scdn.co/image/847361506ef68bb1071075c4606b8669a80f26c8", width: 640 }, { height: 300, url: "https://i.scdn.co/image/18fe7032494800b23ea5eefa7fdcbbb209d89dd0", width: 300 }, { height: 64, url: "https://i.scdn.co/image/05eafc592dae721f66600b73399719f3e194f1fd", width: 64 }], name: "Queen of Cups", type: "album", uri: "spotify:album:78nTdvRL6IgwH6bad0lKzU" }, artists: [{ external_urls: { spotify: "https://open.spotify.com/artist/2apBpVDmdfVb2zji0CB2bd" }, href: "https://api.spotify.com/v1/artists/2apBpVDmdfVb2zji0CB2bd", id: "2apBpVDmdfVb2zji0CB2bd", name: "Cherushii", type: "artist", uri: "spotify:artist:2apBpVDmdfVb2zji0CB2bd" }], available_markets: ["AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN"], disc_number: 1, duration_ms: 491988, explicit: false, external_ids: { isrc: "USA2Z1311478" }, external_urls: { spotify: "https://open.spotify.com/track/08VJkWy1LE17oCU8pVPhTm" }, href: "https://api.spotify.com/v1/tracks/08VJkWy1LE17oCU8pVPhTm", id: "08VJkWy1LE17oCU8pVPhTm", name: "Lake of the Sorrows", popularity: 8, preview_url: "https://p.scdn.co/mp3-preview/540d335bdb446a6f7a2c8e43c5c17e1a5cfcb62a?cid=8897482848704f2a8f8d7c79726a70d4", track_number: 3, type: "track", uri: "spotify:track:08VJkWy1LE17oCU8pVPhTm" }];
+  "Cherushii" : [ {
+    "album" : {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2apBpVDmdfVb2zji0CB2bd"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2apBpVDmdfVb2zji0CB2bd",
+        "id" : "2apBpVDmdfVb2zji0CB2bd",
+        "name" : "Cherushii",
+        "type" : "artist",
+        "uri" : "spotify:artist:2apBpVDmdfVb2zji0CB2bd"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/7hVvnvA7Mg8c0YU5Zskvcq"
+      },
+      "href" : "https://api.spotify.com/v1/albums/7hVvnvA7Mg8c0YU5Zskvcq",
+      "id" : "7hVvnvA7Mg8c0YU5Zskvcq",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/405764eb636307ee9f2a58fd27b8d7bece9865fc",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/075c245fd5eb9a86a7dd109bc8c9f61d7b4563ad",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/30e632fa19261ecfe055a393a317039410d919d9",
+        "width" : 64
+      } ],
+      "name" : "Memory of Water",
+      "type" : "album",
+      "uri" : "spotify:album:7hVvnvA7Mg8c0YU5Zskvcq"
+    },
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/2apBpVDmdfVb2zji0CB2bd"
+      },
+      "href" : "https://api.spotify.com/v1/artists/2apBpVDmdfVb2zji0CB2bd",
+      "id" : "2apBpVDmdfVb2zji0CB2bd",
+      "name" : "Cherushii",
+      "type" : "artist",
+      "uri" : "spotify:artist:2apBpVDmdfVb2zji0CB2bd"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/2B5soBYqne8coa7QYaiRSQ"
+      },
+      "href" : "https://api.spotify.com/v1/artists/2B5soBYqne8coa7QYaiRSQ",
+      "id" : "2B5soBYqne8coa7QYaiRSQ",
+      "name" : "Maria Minerva",
+      "type" : "artist",
+      "uri" : "spotify:artist:2B5soBYqne8coa7QYaiRSQ"
+    } ],
+    "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN" ],
+    "disc_number" : 1,
+    "duration_ms" : 292500,
+    "explicit" : false,
+    "external_ids" : {
+      "isrc" : "USA2Z1510970"
+    },
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/track/51cvis39ONOS9ZmUbzqOqW"
+    },
+    "href" : "https://api.spotify.com/v1/tracks/51cvis39ONOS9ZmUbzqOqW",
+    "id" : "51cvis39ONOS9ZmUbzqOqW",
+    "name" : "Thin Line (feat. Maria Minerva)",
+    "popularity" : 24,
+    "preview_url" : "https://p.scdn.co/mp3-preview/823bd4127ae7bc1c5bf47c4612ea410f8ec0d325?cid=8897482848704f2a8f8d7c79726a70d4",
+    "track_number" : 4,
+    "type" : "track",
+    "uri" : "spotify:track:51cvis39ONOS9ZmUbzqOqW"
+  }, {
+    "album" : {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2apBpVDmdfVb2zji0CB2bd"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2apBpVDmdfVb2zji0CB2bd",
+        "id" : "2apBpVDmdfVb2zji0CB2bd",
+        "name" : "Cherushii",
+        "type" : "artist",
+        "uri" : "spotify:artist:2apBpVDmdfVb2zji0CB2bd"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/7hVvnvA7Mg8c0YU5Zskvcq"
+      },
+      "href" : "https://api.spotify.com/v1/albums/7hVvnvA7Mg8c0YU5Zskvcq",
+      "id" : "7hVvnvA7Mg8c0YU5Zskvcq",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/405764eb636307ee9f2a58fd27b8d7bece9865fc",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/075c245fd5eb9a86a7dd109bc8c9f61d7b4563ad",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/30e632fa19261ecfe055a393a317039410d919d9",
+        "width" : 64
+      } ],
+      "name" : "Memory of Water",
+      "type" : "album",
+      "uri" : "spotify:album:7hVvnvA7Mg8c0YU5Zskvcq"
+    },
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/2apBpVDmdfVb2zji0CB2bd"
+      },
+      "href" : "https://api.spotify.com/v1/artists/2apBpVDmdfVb2zji0CB2bd",
+      "id" : "2apBpVDmdfVb2zji0CB2bd",
+      "name" : "Cherushii",
+      "type" : "artist",
+      "uri" : "spotify:artist:2apBpVDmdfVb2zji0CB2bd"
+    } ],
+    "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN" ],
+    "disc_number" : 1,
+    "duration_ms" : 332458,
+    "explicit" : false,
+    "external_ids" : {
+      "isrc" : "USA2Z1510968"
+    },
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/track/54DjjgS0AhiVHUnG1px9O0"
+    },
+    "href" : "https://api.spotify.com/v1/tracks/54DjjgS0AhiVHUnG1px9O0",
+    "id" : "54DjjgS0AhiVHUnG1px9O0",
+    "name" : "Pillow Palace",
+    "popularity" : 15,
+    "preview_url" : "https://p.scdn.co/mp3-preview/18805e24bb26c0b1f76b1ecf95dd638b76d59723?cid=8897482848704f2a8f8d7c79726a70d4",
+    "track_number" : 2,
+    "type" : "track",
+    "uri" : "spotify:track:54DjjgS0AhiVHUnG1px9O0"
+  }, {
+    "album" : {
+      "album_type" : "compilation",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+        },
+        "href" : "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+        "id" : "0LyfQWJT6nXafLPZqxe9Of",
+        "name" : "Various Artists",
+        "type" : "artist",
+        "uri" : "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/4cvuKVXM36hKU2AIpXtk74"
+      },
+      "href" : "https://api.spotify.com/v1/albums/4cvuKVXM36hKU2AIpXtk74",
+      "id" : "4cvuKVXM36hKU2AIpXtk74",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/664def08e7eb3b428f1562b763be0891370fd734",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/aa16bd88005c569e0773cd19fa28d6e39077bf50",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/3d703eda876fe7401d25b16d677cffe2b3bc8e25",
+        "width" : 64
+      } ],
+      "name" : "Meow Wolf's Arcade Soundtracks: Wiggy's Plasma Plex",
+      "type" : "album",
+      "uri" : "spotify:album:4cvuKVXM36hKU2AIpXtk74"
+    },
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/2apBpVDmdfVb2zji0CB2bd"
+      },
+      "href" : "https://api.spotify.com/v1/artists/2apBpVDmdfVb2zji0CB2bd",
+      "id" : "2apBpVDmdfVb2zji0CB2bd",
+      "name" : "Cherushii",
+      "type" : "artist",
+      "uri" : "spotify:artist:2apBpVDmdfVb2zji0CB2bd"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/2B5soBYqne8coa7QYaiRSQ"
+      },
+      "href" : "https://api.spotify.com/v1/artists/2B5soBYqne8coa7QYaiRSQ",
+      "id" : "2B5soBYqne8coa7QYaiRSQ",
+      "name" : "Maria Minerva",
+      "type" : "artist",
+      "uri" : "spotify:artist:2B5soBYqne8coa7QYaiRSQ"
+    }, {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/3OoopL4u6XqnI7ctVC1uWc"
+      },
+      "href" : "https://api.spotify.com/v1/artists/3OoopL4u6XqnI7ctVC1uWc",
+      "id" : "3OoopL4u6XqnI7ctVC1uWc",
+      "name" : "David Last",
+      "type" : "artist",
+      "uri" : "spotify:artist:3OoopL4u6XqnI7ctVC1uWc"
+    } ],
+    "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN" ],
+    "disc_number" : 1,
+    "duration_ms" : 438680,
+    "explicit" : false,
+    "external_ids" : {
+      "isrc" : "QMKD21300190"
+    },
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/track/1rnHBvvGQKjYQXLJc0YU8n"
+    },
+    "href" : "https://api.spotify.com/v1/tracks/1rnHBvvGQKjYQXLJc0YU8n",
+    "id" : "1rnHBvvGQKjYQXLJc0YU8n",
+    "name" : "Thin Line - David Last Remix",
+    "popularity" : 14,
+    "preview_url" : "https://p.scdn.co/mp3-preview/8eca90f89975be6367bdd19a45698621f71e51b9?cid=8897482848704f2a8f8d7c79726a70d4",
+    "track_number" : 11,
+    "type" : "track",
+    "uri" : "spotify:track:1rnHBvvGQKjYQXLJc0YU8n"
+  }, {
+    "album" : {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2apBpVDmdfVb2zji0CB2bd"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2apBpVDmdfVb2zji0CB2bd",
+        "id" : "2apBpVDmdfVb2zji0CB2bd",
+        "name" : "Cherushii",
+        "type" : "artist",
+        "uri" : "spotify:artist:2apBpVDmdfVb2zji0CB2bd"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/7hVvnvA7Mg8c0YU5Zskvcq"
+      },
+      "href" : "https://api.spotify.com/v1/albums/7hVvnvA7Mg8c0YU5Zskvcq",
+      "id" : "7hVvnvA7Mg8c0YU5Zskvcq",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/405764eb636307ee9f2a58fd27b8d7bece9865fc",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/075c245fd5eb9a86a7dd109bc8c9f61d7b4563ad",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/30e632fa19261ecfe055a393a317039410d919d9",
+        "width" : 64
+      } ],
+      "name" : "Memory of Water",
+      "type" : "album",
+      "uri" : "spotify:album:7hVvnvA7Mg8c0YU5Zskvcq"
+    },
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/2apBpVDmdfVb2zji0CB2bd"
+      },
+      "href" : "https://api.spotify.com/v1/artists/2apBpVDmdfVb2zji0CB2bd",
+      "id" : "2apBpVDmdfVb2zji0CB2bd",
+      "name" : "Cherushii",
+      "type" : "artist",
+      "uri" : "spotify:artist:2apBpVDmdfVb2zji0CB2bd"
+    } ],
+    "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN" ],
+    "disc_number" : 1,
+    "duration_ms" : 437573,
+    "explicit" : false,
+    "external_ids" : {
+      "isrc" : "USA2Z1510973"
+    },
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/track/3v9zS6Wh91An30RFqLOrss"
+    },
+    "href" : "https://api.spotify.com/v1/tracks/3v9zS6Wh91An30RFqLOrss",
+    "id" : "3v9zS6Wh91An30RFqLOrss",
+    "name" : "Everything Is in Color",
+    "popularity" : 12,
+    "preview_url" : "https://p.scdn.co/mp3-preview/45ceda7ad9f88772ad58aafb4f3b648de4e57908?cid=8897482848704f2a8f8d7c79726a70d4",
+    "track_number" : 7,
+    "type" : "track",
+    "uri" : "spotify:track:3v9zS6Wh91An30RFqLOrss"
+  }, {
+    "album" : {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2apBpVDmdfVb2zji0CB2bd"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2apBpVDmdfVb2zji0CB2bd",
+        "id" : "2apBpVDmdfVb2zji0CB2bd",
+        "name" : "Cherushii",
+        "type" : "artist",
+        "uri" : "spotify:artist:2apBpVDmdfVb2zji0CB2bd"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/7hVvnvA7Mg8c0YU5Zskvcq"
+      },
+      "href" : "https://api.spotify.com/v1/albums/7hVvnvA7Mg8c0YU5Zskvcq",
+      "id" : "7hVvnvA7Mg8c0YU5Zskvcq",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/405764eb636307ee9f2a58fd27b8d7bece9865fc",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/075c245fd5eb9a86a7dd109bc8c9f61d7b4563ad",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/30e632fa19261ecfe055a393a317039410d919d9",
+        "width" : 64
+      } ],
+      "name" : "Memory of Water",
+      "type" : "album",
+      "uri" : "spotify:album:7hVvnvA7Mg8c0YU5Zskvcq"
+    },
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/2apBpVDmdfVb2zji0CB2bd"
+      },
+      "href" : "https://api.spotify.com/v1/artists/2apBpVDmdfVb2zji0CB2bd",
+      "id" : "2apBpVDmdfVb2zji0CB2bd",
+      "name" : "Cherushii",
+      "type" : "artist",
+      "uri" : "spotify:artist:2apBpVDmdfVb2zji0CB2bd"
+    } ],
+    "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN" ],
+    "disc_number" : 1,
+    "duration_ms" : 405034,
+    "explicit" : false,
+    "external_ids" : {
+      "isrc" : "USA2Z1510971"
+    },
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/track/4VMHEDBl3RjmDwkaw3Sl3j"
+    },
+    "href" : "https://api.spotify.com/v1/tracks/4VMHEDBl3RjmDwkaw3Sl3j",
+    "id" : "4VMHEDBl3RjmDwkaw3Sl3j",
+    "name" : "Moonflower Galaxy",
+    "popularity" : 11,
+    "preview_url" : "https://p.scdn.co/mp3-preview/2543982c8762197b96cbae2ee69986328c95055a?cid=8897482848704f2a8f8d7c79726a70d4",
+    "track_number" : 5,
+    "type" : "track",
+    "uri" : "spotify:track:4VMHEDBl3RjmDwkaw3Sl3j"
+  }, {
+    "album" : {
+      "album_type" : "single",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2apBpVDmdfVb2zji0CB2bd"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2apBpVDmdfVb2zji0CB2bd",
+        "id" : "2apBpVDmdfVb2zji0CB2bd",
+        "name" : "Cherushii",
+        "type" : "artist",
+        "uri" : "spotify:artist:2apBpVDmdfVb2zji0CB2bd"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/5vo12Xq27ToWhkB8ttSGSm"
+      },
+      "href" : "https://api.spotify.com/v1/albums/5vo12Xq27ToWhkB8ttSGSm",
+      "id" : "5vo12Xq27ToWhkB8ttSGSm",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/2e470318a97c7df820cd341d81bc063332092187",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/5cc471985f6218366ce3b9fada1b0f62556c5a19",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/87c2fae11a2b4404424076ae431c67ef68875eb0",
+        "width" : 64
+      } ],
+      "name" : "Far Away so Close",
+      "type" : "album",
+      "uri" : "spotify:album:5vo12Xq27ToWhkB8ttSGSm"
+    },
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/2apBpVDmdfVb2zji0CB2bd"
+      },
+      "href" : "https://api.spotify.com/v1/artists/2apBpVDmdfVb2zji0CB2bd",
+      "id" : "2apBpVDmdfVb2zji0CB2bd",
+      "name" : "Cherushii",
+      "type" : "artist",
+      "uri" : "spotify:artist:2apBpVDmdfVb2zji0CB2bd"
+    } ],
+    "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN" ],
+    "disc_number" : 1,
+    "duration_ms" : 488871,
+    "explicit" : false,
+    "external_ids" : {
+      "isrc" : "USA2Z1511034"
+    },
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/track/0prOWIq2CUd7BaX0vRRvSW"
+    },
+    "href" : "https://api.spotify.com/v1/tracks/0prOWIq2CUd7BaX0vRRvSW",
+    "id" : "0prOWIq2CUd7BaX0vRRvSW",
+    "name" : "Nightsteps",
+    "popularity" : 11,
+    "preview_url" : "https://p.scdn.co/mp3-preview/78e08f661975511e75cdcb59ab982e7146d76e63?cid=8897482848704f2a8f8d7c79726a70d4",
+    "track_number" : 3,
+    "type" : "track",
+    "uri" : "spotify:track:0prOWIq2CUd7BaX0vRRvSW"
+  }, {
+    "album" : {
+      "album_type" : "single",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2apBpVDmdfVb2zji0CB2bd"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2apBpVDmdfVb2zji0CB2bd",
+        "id" : "2apBpVDmdfVb2zji0CB2bd",
+        "name" : "Cherushii",
+        "type" : "artist",
+        "uri" : "spotify:artist:2apBpVDmdfVb2zji0CB2bd"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/78nTdvRL6IgwH6bad0lKzU"
+      },
+      "href" : "https://api.spotify.com/v1/albums/78nTdvRL6IgwH6bad0lKzU",
+      "id" : "78nTdvRL6IgwH6bad0lKzU",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/847361506ef68bb1071075c4606b8669a80f26c8",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/18fe7032494800b23ea5eefa7fdcbbb209d89dd0",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/05eafc592dae721f66600b73399719f3e194f1fd",
+        "width" : 64
+      } ],
+      "name" : "Queen of Cups",
+      "type" : "album",
+      "uri" : "spotify:album:78nTdvRL6IgwH6bad0lKzU"
+    },
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/2apBpVDmdfVb2zji0CB2bd"
+      },
+      "href" : "https://api.spotify.com/v1/artists/2apBpVDmdfVb2zji0CB2bd",
+      "id" : "2apBpVDmdfVb2zji0CB2bd",
+      "name" : "Cherushii",
+      "type" : "artist",
+      "uri" : "spotify:artist:2apBpVDmdfVb2zji0CB2bd"
+    } ],
+    "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN" ],
+    "disc_number" : 1,
+    "duration_ms" : 401353,
+    "explicit" : false,
+    "external_ids" : {
+      "isrc" : "USA2Z1311476"
+    },
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/track/2OYEnajBpiuP9uUIrJjnPS"
+    },
+    "href" : "https://api.spotify.com/v1/tracks/2OYEnajBpiuP9uUIrJjnPS",
+    "id" : "2OYEnajBpiuP9uUIrJjnPS",
+    "name" : "Queen of Cups",
+    "popularity" : 10,
+    "preview_url" : "https://p.scdn.co/mp3-preview/55320545dd1fd837bfe1b84141c98d82f468fca9?cid=8897482848704f2a8f8d7c79726a70d4",
+    "track_number" : 1,
+    "type" : "track",
+    "uri" : "spotify:track:2OYEnajBpiuP9uUIrJjnPS"
+  }, {
+    "album" : {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2apBpVDmdfVb2zji0CB2bd"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2apBpVDmdfVb2zji0CB2bd",
+        "id" : "2apBpVDmdfVb2zji0CB2bd",
+        "name" : "Cherushii",
+        "type" : "artist",
+        "uri" : "spotify:artist:2apBpVDmdfVb2zji0CB2bd"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/7hVvnvA7Mg8c0YU5Zskvcq"
+      },
+      "href" : "https://api.spotify.com/v1/albums/7hVvnvA7Mg8c0YU5Zskvcq",
+      "id" : "7hVvnvA7Mg8c0YU5Zskvcq",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/405764eb636307ee9f2a58fd27b8d7bece9865fc",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/075c245fd5eb9a86a7dd109bc8c9f61d7b4563ad",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/30e632fa19261ecfe055a393a317039410d919d9",
+        "width" : 64
+      } ],
+      "name" : "Memory of Water",
+      "type" : "album",
+      "uri" : "spotify:album:7hVvnvA7Mg8c0YU5Zskvcq"
+    },
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/2apBpVDmdfVb2zji0CB2bd"
+      },
+      "href" : "https://api.spotify.com/v1/artists/2apBpVDmdfVb2zji0CB2bd",
+      "id" : "2apBpVDmdfVb2zji0CB2bd",
+      "name" : "Cherushii",
+      "type" : "artist",
+      "uri" : "spotify:artist:2apBpVDmdfVb2zji0CB2bd"
+    } ],
+    "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN" ],
+    "disc_number" : 1,
+    "duration_ms" : 426268,
+    "explicit" : false,
+    "external_ids" : {
+      "isrc" : "USA2Z1510969"
+    },
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/track/69wF1KAoO92pAnsET3MixB"
+    },
+    "href" : "https://api.spotify.com/v1/tracks/69wF1KAoO92pAnsET3MixB",
+    "id" : "69wF1KAoO92pAnsET3MixB",
+    "name" : "Ultraviolet Nights",
+    "popularity" : 9,
+    "preview_url" : "https://p.scdn.co/mp3-preview/bc1b401e6ec28072abf5dc4a37d206fbf29c1e44?cid=8897482848704f2a8f8d7c79726a70d4",
+    "track_number" : 3,
+    "type" : "track",
+    "uri" : "spotify:track:69wF1KAoO92pAnsET3MixB"
+  }, {
+    "album" : {
+      "album_type" : "album",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2apBpVDmdfVb2zji0CB2bd"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2apBpVDmdfVb2zji0CB2bd",
+        "id" : "2apBpVDmdfVb2zji0CB2bd",
+        "name" : "Cherushii",
+        "type" : "artist",
+        "uri" : "spotify:artist:2apBpVDmdfVb2zji0CB2bd"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/7hVvnvA7Mg8c0YU5Zskvcq"
+      },
+      "href" : "https://api.spotify.com/v1/albums/7hVvnvA7Mg8c0YU5Zskvcq",
+      "id" : "7hVvnvA7Mg8c0YU5Zskvcq",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/405764eb636307ee9f2a58fd27b8d7bece9865fc",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/075c245fd5eb9a86a7dd109bc8c9f61d7b4563ad",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/30e632fa19261ecfe055a393a317039410d919d9",
+        "width" : 64
+      } ],
+      "name" : "Memory of Water",
+      "type" : "album",
+      "uri" : "spotify:album:7hVvnvA7Mg8c0YU5Zskvcq"
+    },
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/2apBpVDmdfVb2zji0CB2bd"
+      },
+      "href" : "https://api.spotify.com/v1/artists/2apBpVDmdfVb2zji0CB2bd",
+      "id" : "2apBpVDmdfVb2zji0CB2bd",
+      "name" : "Cherushii",
+      "type" : "artist",
+      "uri" : "spotify:artist:2apBpVDmdfVb2zji0CB2bd"
+    } ],
+    "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN" ],
+    "disc_number" : 1,
+    "duration_ms" : 147633,
+    "explicit" : false,
+    "external_ids" : {
+      "isrc" : "USA2Z1510967"
+    },
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/track/68LuTizsuLpqyEZf7rEtCz"
+    },
+    "href" : "https://api.spotify.com/v1/tracks/68LuTizsuLpqyEZf7rEtCz",
+    "id" : "68LuTizsuLpqyEZf7rEtCz",
+    "name" : "I Dreamed I Saw You by the Lake",
+    "popularity" : 9,
+    "preview_url" : "https://p.scdn.co/mp3-preview/737633fb6cd03795b3abe32a09d46a3912cb5de9?cid=8897482848704f2a8f8d7c79726a70d4",
+    "track_number" : 1,
+    "type" : "track",
+    "uri" : "spotify:track:68LuTizsuLpqyEZf7rEtCz"
+  }, {
+    "album" : {
+      "album_type" : "single",
+      "artists" : [ {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/artist/2apBpVDmdfVb2zji0CB2bd"
+        },
+        "href" : "https://api.spotify.com/v1/artists/2apBpVDmdfVb2zji0CB2bd",
+        "id" : "2apBpVDmdfVb2zji0CB2bd",
+        "name" : "Cherushii",
+        "type" : "artist",
+        "uri" : "spotify:artist:2apBpVDmdfVb2zji0CB2bd"
+      } ],
+      "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN" ],
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/album/5vo12Xq27ToWhkB8ttSGSm"
+      },
+      "href" : "https://api.spotify.com/v1/albums/5vo12Xq27ToWhkB8ttSGSm",
+      "id" : "5vo12Xq27ToWhkB8ttSGSm",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/2e470318a97c7df820cd341d81bc063332092187",
+        "width" : 640
+      }, {
+        "height" : 300,
+        "url" : "https://i.scdn.co/image/5cc471985f6218366ce3b9fada1b0f62556c5a19",
+        "width" : 300
+      }, {
+        "height" : 64,
+        "url" : "https://i.scdn.co/image/87c2fae11a2b4404424076ae431c67ef68875eb0",
+        "width" : 64
+      } ],
+      "name" : "Far Away so Close",
+      "type" : "album",
+      "uri" : "spotify:album:5vo12Xq27ToWhkB8ttSGSm"
+    },
+    "artists" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/2apBpVDmdfVb2zji0CB2bd"
+      },
+      "href" : "https://api.spotify.com/v1/artists/2apBpVDmdfVb2zji0CB2bd",
+      "id" : "2apBpVDmdfVb2zji0CB2bd",
+      "name" : "Cherushii",
+      "type" : "artist",
+      "uri" : "spotify:artist:2apBpVDmdfVb2zji0CB2bd"
+    } ],
+    "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TH", "TR", "TW", "US", "UY", "VN" ],
+    "disc_number" : 1,
+    "duration_ms" : 471420,
+    "explicit" : false,
+    "external_ids" : {
+      "isrc" : "USA2Z1511033"
+    },
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/track/4TXAvViqNp65m8VAIRxkm7"
+    },
+    "href" : "https://api.spotify.com/v1/tracks/4TXAvViqNp65m8VAIRxkm7",
+    "id" : "4TXAvViqNp65m8VAIRxkm7",
+    "name" : "Set You Free",
+    "popularity" : 8,
+    "preview_url" : "https://p.scdn.co/mp3-preview/2e87b658d10335d4d8c5b7ed1af4b75ec40b3c84?cid=8897482848704f2a8f8d7c79726a70d4",
+    "track_number" : 2,
+    "type" : "track",
+    "uri" : "spotify:track:4TXAvViqNp65m8VAIRxkm7"
+  } ]
 }
