@@ -1,0 +1,29 @@
+/*Global Styles*/
+body {
+  background-color: #282828;
+  color: #ffffff;
+}
+
+/*Navbar Styles*/
+.navbar-light .navbar-brand {
+  color: #ffffff !important;
+  font-size: 310%;
+}
+
+.bg-light {
+  background-color: inherit !important;
+}
+
+/*Artist Styles*/
+.bookBtn {
+  background-color: red;
+}
+
+.artistList {
+  display: block;
+}
+
+/*Song Styles*/
+.song {
+  margin: none;
+}
