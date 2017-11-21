@@ -23,6 +23,27 @@ body {
   display: block;
 }
 
+.artist-container {
+  position: relative;
+}
+
+.artist-image {
+  width: 20%;
+  border-radius: 50px;
+  box-shadow:  2px 2px 15px #00d770;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  position: inherit;
+  left: 5%;
+}
+
+.artist-text {
+  left: 32%;
+  top: 0%;
+  position: absolute;
+}
+
 /*Song Styles*/
 .song {
   margin: none;
