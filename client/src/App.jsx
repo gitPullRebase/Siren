@@ -1,4 +1,5 @@
 import React from "react";
+import SF_artist_data from "../../Database/SF_artist_data.js";
 
 import Navbar from "./Components/Navbar.jsx";
 import Search from "./Components/Search.jsx";
@@ -9,7 +10,7 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      artists: []
+      artists: SF_artist_data
     };
   }
   componentDidMount() {}
