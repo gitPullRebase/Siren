@@ -10,12 +10,13 @@
   "scripts": {
     "dev": "webpack -d --watch",
     "build": "webpack -p",
-    "server": "nodemon server/server.js"
+    "server": "nodemon server/ServerIndex.js"
   },
   "dependencies": {
     "axios": "^0.16.2",
     "body-parser": "^1.18.2",
     "express": "^4.16.0",
+    "pg": "^7.4.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-router-dom": "^4.2.2",
