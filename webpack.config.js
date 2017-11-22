@@ -17,9 +17,15 @@ module.exports = {
       {
         test: /\.jsx?/,
         include: SRC_DIR,
+        exclude: /(node_modules|bower_components)/,
         loader: "babel-loader",
         query: {
-          presets: ["es2015", { modules: false }, "react", "stage-2"]
+          presets: [
+            ["es2015", { loose: true, modules: false }],
+            "react",
+            "stage-2"
+          ],
+          plugins: ["babel-plugin-transform-runtime"].map(require.resolve)
         }
       }
     ]
