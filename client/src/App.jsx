@@ -17,36 +17,44 @@ class App extends React.Component {
     this.state = {
       artists: SF_artist_data,
       tracks: SF_ArtistTracks,
-      search: ""
+      search: '',
+      clickedArtist: ''
     };
+    this.setArtist = this.setArtist.bind(this);
   }
 
   searchClickHandler(input) {
-    if (input.toLowerCase() === "san francisco") {
+    if(input.toLowerCase() === 'san francisco'){
       this.setState({
-        search: "San Francisco",
         artists: SF_artist_data,
-        tracks: SF_ArtistTracks
-      });
-    } else if (input.toLowerCase() === "los angeles") {
+        tracks: SF_ArtistTracks,
+        clickedArtist: ''
+      })
+    } else if(input.toLowerCase() === 'los angeles'){
       this.setState({
-        search: "Los Angeles",
         artists: LA_artist_data,
-        tracks: LA_ArtistTracks
-      });
+        tracks: LA_ArtistTracks,
+        clickedArtist: ''
+      })
     } else {
       this.setState({
-        search: "New York",
         artists: NY_artist_data,
-        tracks: NY_ArtistTracks
-      });
+        tracks: NY_ArtistTracks,
+        clickedArtist: ''
+      })
     }
-  }
 
-  onChange(input) {
+  }
+  onChange(input){
     this.setState = {
       search: input.target.value.toLowerCase()
     };
+  }
+
+  setArtist(artist) {
+    this.setState({
+      clickedArtist: artist
+    });
   }
 
   componentDidMount() {}
@@ -60,8 +68,12 @@ class App extends React.Component {
           onChange={this.onChange.bind(this)}
         />
         <div className="row">
-          <ArtistList artists={this.state.artists} name={this.state.search} />
-          <SongsList tracks={this.state.tracks} />
+          <ArtistList
+            artists={this.state.artists}
+            setArtist={this.setArtist} />
+          <SongsList
+            tracks={this.state.tracks}
+            clickedArtist={this.state.clickedArtist} />
         </div>
       </div>
     );

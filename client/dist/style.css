@@ -64,6 +64,10 @@ body {
 }
 
 /*Song Styles*/
+.modal-body {
+  color: black;
+}
+
 .song {
   margin: none;
 }

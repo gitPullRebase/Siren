@@ -3,7 +3,7 @@ import React from 'react';
 const Song = (props) => (
   <div className="song">
     <iframe
-      src={`https://open.spotify.com/embed?uri=spotify:track:${props.artist[0].id}`}
+      src={`https://open.spotify.com/embed?uri=spotify:track:${props.artist}`}
       frameBorder="0"
       allowTransparency="true"
       height="118"
