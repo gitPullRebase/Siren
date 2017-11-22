@@ -1,38 +1,37 @@
 const pg = require("pg");
 const sampleArtistsSF = require("./artistData/SF_artist_data.js");
-const SFArtistTopTracks = require("./artistData/SF_artist_top_tracks.json")
+const SFArtistTopTracks = require("./artistData/SF_artist_top_tracks.json");
 
 var connection =
   `${process.env.DATABASE_URL}/artists` ||
-  "postgres://postgres:rebase@localhost:5432/artists"
+  "postgres://postgres:rebase@localhost:5432/artists";
 
-var knex = require('knex') ({
-	client: 'pg',
-	connection: connection
-})
+var knex = require("knex")({
+  client: "pg",
+  connection: connection
+});
 
-let bookshelf = require('bookshelf')(knex);
+let bookshelf = require("bookshelf")(knex);
 
 let Artist = bookshelf.Model.extend({
-	tableName: 'artist'
+  tableName: "artist"
 });
 
 let Date = bookshelf.Model.extend({
-	tableName: 'date'
+  tableName: "date"
 });
 
 let Artist_Availability = bookshelf.Model.extend({
-	tableName: 'artist_availability'
+  tableName: "artist_availability"
 });
 
 let Requested_Gigs = bookshelf.Model.extend({
-	tableName: 'requested_gigs'
+  tableName: "requested_gigs"
 });
 
 let Single = bookshelf.Model.extend({
-	tableName: 'single'
+  tableName: "single"
 });
-
 
 // Example of populating the data (Uses promises)
 // new Artist({
@@ -45,7 +44,6 @@ let Single = bookshelf.Model.extend({
 
 // Destroys/Ends connection
 // knex.destroy();
-
 
 /*
 	TO CONNECT VIA TERMINAL (password might be different for each user)
