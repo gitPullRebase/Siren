@@ -14,9 +14,28 @@ body {
   background-color: inherit !important;
 }
 
+/*Search Styles*/
+
+/*.input-group .form-control {
+  background-color: darkgray;
+}*/
+
+.btn {
+  background-color: #00d770;
+}
+
+.btn:hover {
+  background-color: #03964f;
+}
+
 /*Artist Styles*/
 .bookBtn {
-  background-color: red;
+  background-color: #00d770;
+  border-color: black;
+}
+
+.bookBtn:hover {
+  background-color: #03964f;
 }
 
 .artistList {

@@ -4,7 +4,7 @@ const Artist = props => {
   return (
     <div className="artist-container">
 
-      <img className="artist-image" src={props.artist.images[1].url}alt="Artist Pic"/>
+      <img className="artist-image" src={props.artist.images[0].url}alt="Artist Pic"/>
       <div className="artist-text">
         <div>Artist: {props.artist.name}</div>
         <a href={props.artist.uri}>
