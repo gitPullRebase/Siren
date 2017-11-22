@@ -10,7 +10,8 @@ const ArtistList = props => (
         return (
           <div>
             <li>
-              <Artist artist={artist} />
+              <Artist artist={artist}
+                      setArtist={props.setArtist} />
             </li>
             <br />
           </div>

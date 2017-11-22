@@ -16,34 +16,45 @@ class App extends React.Component {
     super();
     this.state = {
       artists: SF_artist_data,
-      tracks: SF_ArtistTracks, 
-      search: ''
+      tracks: SF_ArtistTracks,
+      search: '',
+      clickedArtist: ''
     };
+    this.setArtist = this.setArtist.bind(this);
   }
- 
-  searchClickHandler(input) { 
-    if(input.toLowerCase() === 'san francisco'){ 
-      this.setState({ 
-        artists: SF_artist_data, 
-        tracks: SF_ArtistTracks
+
+  searchClickHandler(input) {
+    if(input.toLowerCase() === 'san francisco'){
+      this.setState({
+        artists: SF_artist_data,
+        tracks: SF_ArtistTracks,
+        clickedArtist: ''
       })
-    } else if(input.toLowerCase() === 'los angeles'){ 
-      this.setState({ 
-        artists: LA_artist_data, 
-        tracks: LA_ArtistTracks
+    } else if(input.toLowerCase() === 'los angeles'){
+      this.setState({
+        artists: LA_artist_data,
+        tracks: LA_ArtistTracks,
+        clickedArtist: ''
       })
-    } else { 
-      this.setState({ 
-        artists: NY_artist_data, 
-        tracks: NY_ArtistTracks
+    } else {
+      this.setState({
+        artists: NY_artist_data,
+        tracks: NY_ArtistTracks,
+        clickedArtist: ''
       })
     }
-  
+
   }
-  onChange(input){ 
-    this.setState = { 
+  onChange(input){
+    this.setState = {
       search: input.target.value.toLowerCase()
     }
+  }
+
+  setArtist(artist) {
+    this.setState({
+      clickedArtist: artist
+    });
   }
 
   componentDidMount() {}
@@ -54,8 +65,12 @@ class App extends React.Component {
         <Navbar />
         <Search onClick = {this.searchClickHandler.bind(this)} onChange = {this.onChange.bind(this)}/>
         <div className="row">
-          <ArtistList artists={this.state.artists} />
-          <SongsList tracks={this.state.tracks} />
+          <ArtistList
+            artists={this.state.artists}
+            setArtist={this.setArtist} />
+          <SongsList
+            tracks={this.state.tracks}
+            clickedArtist={this.state.clickedArtist} />
         </div>
       </div>
     );
