@@ -9,6 +9,7 @@
     "node": ">=6.4.0"
   },
   "scripts": {
+    "postinstall": "webpack -p",
     "dev": "webpack -d --watch",
     "build": "webpack -p",
     "start": "nodemon Server/ServerIndex.js",
