@@ -11,7 +11,7 @@
   "scripts": {
     "dev": "webpack -d --watch",
     "build": "webpack -p",
-    "server": "nodemon Server/ServerIndex.js",
+    "start": "nodemon Server/ServerIndex.js",
     "test": "jest"
   },
   "dependencies": {
