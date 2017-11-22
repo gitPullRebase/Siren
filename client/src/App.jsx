@@ -1,10 +1,10 @@
 import React from "react";
-import SF_artist_data from "../../Database/SF_artist_data.js";
-import SF_ArtistTracks from "../../Database/SF_artist_top_tracks.json";
-import LA_artist_data from "../../Database/LA_artist_data.js";
-import LA_ArtistTracks from "../../Database/LA_artist_top_tracks.json";
-import NY_artist_data from "../../Database/NY_artist_data.js";
-import NY_ArtistTracks from "../../Database/NY_artist_top_tracks.json";
+import SF_artist_data from "../../Database/artistData/SF_artist_data.js";
+import SF_ArtistTracks from "../../Database/artistData/SF_artist_top_tracks.json";
+import LA_artist_data from "../../Database/artistData/LA_artist_data.js";
+import LA_ArtistTracks from "../../Database/artistData/LA_artist_top_tracks.json";
+import NY_artist_data from "../../Database/artistData/NY_artist_data.js";
+import NY_ArtistTracks from "../../Database/artistData/NY_artist_top_tracks.json";
 
 import Navbar from "./Components/Navbar.jsx";
 import Search from "./Components/Search.jsx";

@@ -1,5 +1,6 @@
 ### node etc ###
 .vscode
+yarn.lock
 
 # Logs
 logs
