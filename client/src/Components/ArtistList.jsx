@@ -6,11 +6,11 @@ const ArtistList = props => (
   <div className="col artistList">
     <h3>Artists Available in {props.name}</h3>
     <ol>
-      {props.artists.map( artist => {
+      {props.artists.map((artist, index) => {
         return (
-          <div>
+          <div key={index}>
             <li>
-              <Artist artist={artist} />
+              <Artist bookNowHandler={props.bookNowHandler} artist={artist} />
             </li>
             <br />
           </div>
