@@ -1,19 +1,51 @@
 const pg = require("pg");
-const sampleArtistsSF = require("./SF_artist_data.js");
-const SFArtistTopTracks = require("./SF_artist_top_tracks.js")
+const sampleArtistsSF = require("./artistData/SF_artist_data.js");
+const SFArtistTopTracks = require("./artistData/SF_artist_top_tracks.json")
 
 var connection =
-  `${process.env.DATABSE_URL}/artists` ||
-  "postgres://postgres:rebase@localhost:5432/artists";
+  `${process.env.DATABASE_URL}/artists` ||
+  "postgres://postgres:rebase@localhost:5432/artists"
 
-var client = new pg.Client(connection);
+var knex = require('knex') ({
+	client: 'pg',
+	connection: connection
+})
 
-client.connect();
+let bookshelf = require('bookshelf')(knex);
 
-// Example query:
-// let query = client.query('INSERT into artist (number) VALUES (6)', function() {
-//     client.end();
+let Artist = bookshelf.Model.extend({
+	tableName: 'artist'
+});
+
+let Date = bookshelf.Model.extend({
+	tableName: 'date'
+});
+
+let Artist_Availability = bookshelf.Model.extend({
+	tableName: 'artist_availability'
+});
+
+let Requested_Gigs = bookshelf.Model.extend({
+	tableName: 'requested_gigs'
+});
+
+let Single = bookshelf.Model.extend({
+	tableName: 'single'
+});
+
+
+// Example of populating the data (Uses promises)
+// new Artist({
+// 	username: 'xan',
+// 	city: 'xan',
+// 	country: 'xan'
+// }).save().then(function() {
+// 	knex.destroy();
 // });
+
+// Destroys/Ends connection
+// knex.destroy();
+
 
 /*
 	TO CONNECT VIA TERMINAL (password might be different for each user)
