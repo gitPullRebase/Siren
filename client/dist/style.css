@@ -14,13 +14,53 @@ body {
   background-color: inherit !important;
 }
 
+/*Search Styles*/
+
+/*.input-group .form-control {
+  background-color: darkgray;
+}*/
+
+.btn {
+  background-color: #00d770;
+}
+
+.btn:hover {
+  background-color: #03964f;
+}
+
 /*Artist Styles*/
 .bookBtn {
-  background-color: red;
+  background-color: #00d770;
+  border-color: black;
+}
+
+.bookBtn:hover {
+  background-color: #03964f;
 }
 
 .artistList {
   display: block;
+}
+
+.artist-container {
+  position: relative;
+}
+
+.artist-image {
+  width: 20%;
+  border-radius: 50px;
+  box-shadow:  2px 2px 15px #00d770;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  position: inherit;
+  left: 5%;
+}
+
+.artist-text {
+  left: 32%;
+  top: 0%;
+  position: absolute;
 }
 
 /*Song Styles*/
