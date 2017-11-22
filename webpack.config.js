@@ -25,7 +25,7 @@ module.exports = {
             "react",
             "stage-2"
           ],
-          plugins: ["transform-runtime"]
+          plugins: ["transform-runtime"].map(require.resolve)
         }
       }
     ]
