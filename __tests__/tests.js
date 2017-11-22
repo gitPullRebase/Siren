@@ -7,7 +7,7 @@ feature easy!
 Refer below for writing correct tests:
 
 1. Create a new section for your tests using comments 
-  (ex: //Tests for Artist Component & Artist List Component)
+  (ex: /*Tests for Artist Component & Artist List Component)
 
 2. Import whatever you have to 
   (ex: import ArtistList from '../client/src/Components/ArtistList.jsx')
@@ -33,6 +33,7 @@ INITIAL IMPORTS
 import React from "react";
 import { mount } from "enzyme";
 import { shallow } from "enzyme";
+import sinon from "sinon";
 
 /*
 TESTS FOR ARTIST LIST COMPONENT
@@ -43,15 +44,75 @@ test("ArtistList component renders however many components specified", () => {
   const artists = [
     {
       name: "Biggie Smalls",
-      uri: "www.fakesite.com"
+      uri: "www.fakesite.com",
+      images: [
+        {
+          height: 640,
+          url:
+            "https://i.scdn.co/image/4e9029bb24f55c60216a7076574ce619d0d16775",
+          width: 640
+        },
+        {
+          height: 320,
+          url:
+            "https://i.scdn.co/image/2d42a4be32d338906ac1d27d4360877fc0cae924",
+          width: 320
+        },
+        {
+          height: 160,
+          url:
+            "https://i.scdn.co/image/cef6aaefeb4538c394da5e89df30eb22ce416aa0",
+          width: 160
+        }
+      ]
     },
     {
       name: "Eminem",
-      uri: "www.fakesite.com"
+      uri: "www.fakesite.com",
+      images: [
+        {
+          height: 640,
+          url:
+            "https://i.scdn.co/image/4e9029bb24f55c60216a7076574ce619d0d16775",
+          width: 640
+        },
+        {
+          height: 320,
+          url:
+            "https://i.scdn.co/image/2d42a4be32d338906ac1d27d4360877fc0cae924",
+          width: 320
+        },
+        {
+          height: 160,
+          url:
+            "https://i.scdn.co/image/cef6aaefeb4538c394da5e89df30eb22ce416aa0",
+          width: 160
+        }
+      ]
     },
     {
       name: "Jay-Z",
-      uri: "www.fakesite.com"
+      uri: "www.fakesite.com",
+      images: [
+        {
+          height: 640,
+          url:
+            "https://i.scdn.co/image/4e9029bb24f55c60216a7076574ce619d0d16775",
+          width: 640
+        },
+        {
+          height: 320,
+          url:
+            "https://i.scdn.co/image/2d42a4be32d338906ac1d27d4360877fc0cae924",
+          width: 320
+        },
+        {
+          height: 160,
+          url:
+            "https://i.scdn.co/image/cef6aaefeb4538c394da5e89df30eb22ce416aa0",
+          width: 160
+        }
+      ]
     }
   ];
 
@@ -65,11 +126,51 @@ test('ArtistList component should render a "book now" button for every artist', 
   const artists = [
     {
       name: "Biggie Smalls",
-      uri: "www.fakesite.com"
+      uri: "www.fakesite.com",
+      images: [
+        {
+          height: 640,
+          url:
+            "https://i.scdn.co/image/4e9029bb24f55c60216a7076574ce619d0d16775",
+          width: 640
+        },
+        {
+          height: 320,
+          url:
+            "https://i.scdn.co/image/2d42a4be32d338906ac1d27d4360877fc0cae924",
+          width: 320
+        },
+        {
+          height: 160,
+          url:
+            "https://i.scdn.co/image/cef6aaefeb4538c394da5e89df30eb22ce416aa0",
+          width: 160
+        }
+      ]
     },
     {
       name: "Eminem",
-      uri: "www.fakesite.com"
+      uri: "www.fakesite.com",
+      images: [
+        {
+          height: 640,
+          url:
+            "https://i.scdn.co/image/4e9029bb24f55c60216a7076574ce619d0d16775",
+          width: 640
+        },
+        {
+          height: 320,
+          url:
+            "https://i.scdn.co/image/2d42a4be32d338906ac1d27d4360877fc0cae924",
+          width: 320
+        },
+        {
+          height: 160,
+          url:
+            "https://i.scdn.co/image/cef6aaefeb4538c394da5e89df30eb22ce416aa0",
+          width: 160
+        }
+      ]
     }
   ];
 
@@ -88,20 +189,81 @@ test("Artist component renders a component with given artist data", () => {
   //create a fake artist data that is passed into the Artist component
   const artist = {
     name: "Biggie Smalls",
-    uri: "www.fakesite.com"
+    uri: "www.fakesite.com",
+    images: [
+      {
+        height: 640,
+        url: "https://i.scdn.co/image/4e9029bb24f55c60216a7076574ce619d0d16775",
+        width: 640
+      },
+      {
+        height: 320,
+        url: "https://i.scdn.co/image/2d42a4be32d338906ac1d27d4360877fc0cae924",
+        width: 320
+      },
+      {
+        height: 160,
+        url: "https://i.scdn.co/image/cef6aaefeb4538c394da5e89df30eb22ce416aa0",
+        width: 160
+      }
+    ]
   };
   const artistComponent = shallow(<Artist artist={artist} />);
   expect(artistComponent.find(".artist-text")).to.have.length(1);
 });
 
 test("at least two divs is always rendered", () => {
+  const artist = {
+    name: "Biggie Smalls",
+    uri: "www.fakesite.com",
+    images: [
+      {
+        height: 640,
+        url: "https://i.scdn.co/image/4e9029bb24f55c60216a7076574ce619d0d16775",
+        width: 640
+      },
+      {
+        height: 320,
+        url: "https://i.scdn.co/image/2d42a4be32d338906ac1d27d4360877fc0cae924",
+        width: 320
+      },
+      {
+        height: 160,
+        url: "https://i.scdn.co/image/cef6aaefeb4538c394da5e89df30eb22ce416aa0",
+        width: 160
+      }
+    ]
+  };
   const artistComponent = shallow(<Artist artist={artist} />);
   expect(artistComponent.find("div").length.toBeGreaterThanOrEqual(2));
 });
 
 test('"book now" button simulates click events', () => {
+  const artist = {
+    name: "Biggie Smalls",
+    uri: "www.fakesite.com",
+    images: [
+      {
+        height: 640,
+        url: "https://i.scdn.co/image/4e9029bb24f55c60216a7076574ce619d0d16775",
+        width: 640
+      },
+      {
+        height: 320,
+        url: "https://i.scdn.co/image/2d42a4be32d338906ac1d27d4360877fc0cae924",
+        width: 320
+      },
+      {
+        height: 160,
+        url: "https://i.scdn.co/image/cef6aaefeb4538c394da5e89df30eb22ce416aa0",
+        width: 160
+      }
+    ]
+  };
   const onButtonClick = sinon.spy();
-  const artistComponent = shallow(<Artist onButtonClick={onButtonClick} />);
+  const artistComponent = shallow(
+    <Artist artist={artist} onButtonClick={onButtonClick} />
+  );
   artistComponent.find(".bookBtn").simulate("click");
   expect(onButtonClick.calledOnce).to.equal(true);
 });
