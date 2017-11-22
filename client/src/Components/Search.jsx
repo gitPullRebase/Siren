@@ -25,10 +25,6 @@ class Search extends React.Component {
 				</span>
 			</div>
 			)
-
 	}
-
-
 }
-
 export default Search;
