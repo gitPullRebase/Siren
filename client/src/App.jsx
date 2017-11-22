@@ -43,10 +43,6 @@ class App extends React.Component {
     }
   }
 
-  bookNowHandler() {
-    window.alert("Book Now Working!");
-  }
-
   onChange(input) {
     this.setState = {
       search: input.target.value.toLowerCase()
@@ -64,11 +60,7 @@ class App extends React.Component {
           onChange={this.onChange.bind(this)}
         />
         <div className="row">
-          <ArtistList
-            bookNowHandler={this.bookNowHandler.bind(this)}
-            artists={this.state.artists}
-            name={this.state.search}
-          />
+          <ArtistList artists={this.state.artists} name={this.state.search} />
           <SongsList tracks={this.state.tracks} />
         </div>
       </div>

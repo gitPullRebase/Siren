@@ -13,12 +13,7 @@ const Artist = props => {
         <a href={props.artist.uri}>
           <div>Artist URL: {props.artist.uri}</div>
         </a>
-        <input
-          onClick={props.bookNowHandler}
-          className="bookBtn"
-          type="submit"
-          value="Book Now"
-        />
+        <input className="bookBtn" type="submit" value="Book Now" />
       </div>
     </div>
   );

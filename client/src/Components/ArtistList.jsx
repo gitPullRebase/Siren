@@ -10,7 +10,7 @@ const ArtistList = props => (
         return (
           <div key={index}>
             <li>
-              <Artist bookNowHandler={props.bookNowHandler} artist={artist} />
+              <Artist artist={artist} />
             </li>
             <br />
           </div>
