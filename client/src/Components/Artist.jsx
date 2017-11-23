@@ -14,7 +14,7 @@ const Artist = props => {
           Artist: {props.artist.name}
         </div>
         <a href={props.artist.uri}>
-          <div>Artist URL: {props.artist.uri}</div>
+          <div>Artist Profile</div>
         </a>
         <input
           className="bookBtn"
