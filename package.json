@@ -12,8 +12,12 @@
     "dev": "webpack -d --watch",
     "build": "webpack -p",
     "server": "nodemon Server/ServerIndex.js",
+<<<<<<< HEAD
     "start": "node Server/ServerIndex.js",
     "test": "jest"
+=======
+    "dbSetup": "node Database/index.js" 
+>>>>>>> populate db with data from files
   },
   "dependencies": {
     "axios": "^0.16.2",
