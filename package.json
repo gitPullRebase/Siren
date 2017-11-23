@@ -11,9 +11,9 @@
     "postinstall": "webpack -p",
     "dev": "webpack -d --watch",
     "build": "webpack -p",
-    "server": "nodemon Server/ServerIndex.js",
     "start": "node Server/ServerIndex.js",
-    "test": "jest"
+    "test": "jest",
+    "dbSetup": "node Database/index.js" 
   },
   "dependencies": {
     "axios": "^0.16.2",
