@@ -8,27 +8,43 @@ const MessageList = props => {
   let isArtist = props.isArtist;
 
   if (isArtist) {
-    chatrooms.map(chatroom => {
-      return (
-        <Message
-          isArtist={props.isArtist}
-          chatroom={chatroom}
-          messageClickHandler={props.messageClickHandler}
-          declineClickHandler={props.declineClickHandler}
-          acceptClickHandler={props.acceptClickHandler}
-        />
-      );
-    });
+    return (
+      <div>
+        {chatrooms.map((chatroom, index) => {
+          return (
+            <div key={index}>
+              <li>
+                <Message
+                  isArtist={props.isArtist}
+                  chatroom={chatroom}
+                  messageClickHandler={props.messageClickHandler}
+                  declineClickHandler={props.declineClickHandler}
+                  acceptClickHandler={props.acceptClickHandler}
+                />
+              </li>
+            </div>
+          );
+        })};
+      </div>
+    );
   } else {
-    chatrooms.map(chatroom => {
-      return (
-        <Message
-          isArtist={props.isArtist}
-          chatroom={chatroom}
-          messageClickHandler={props.messageClickHandler}
-        />
-      );
-    });
+    return (
+      <div>
+        {chatrooms.map((chatroom, index) => {
+          return (
+            <div key={index}>
+              <li>
+                <Message
+                  isArtist={props.isArtist}
+                  chatroom={chatroom}
+                  messageClickHandler={props.messageClickHandler}
+                />
+              </li>
+            </div>
+          );
+        })};
+      </div>
+    );
   }
 };
 

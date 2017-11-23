@@ -3,7 +3,7 @@ import Navbar from "./Navbar.jsx";
 import MessageList from "./MessageList.jsx";
 
 class ArtistProfile extends React.Component {
-  constructor() {
+  constructor(props) {
     super(props);
     this.state = {
       chatrooms: [],
