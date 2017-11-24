@@ -5,7 +5,6 @@ import LA_artist_data from "../../Database/artistData/LA_artist_data.js";
 import LA_ArtistTracks from "../../Database/artistData/LA_artist_top_tracks.json";
 import NY_artist_data from "../../Database/artistData/NY_artist_data.js";
 import NY_ArtistTracks from "../../Database/artistData/NY_artist_top_tracks.json";
-
 import Navbar from "./Components/Navbar.jsx";
 import Search from "./Components/Search.jsx";
 import ArtistList from "./Components/ArtistList.jsx";
@@ -30,11 +29,11 @@ class App extends React.Component {
         tracks: SF_ArtistTracks,
         clickedArtist: ''
       })
-    } else if(input.toLowerCase() === 'los angeles'){
-      this.setState({
-        artists: LA_artist_data,
-        tracks: LA_ArtistTracks,
-        clickedArtist: ''
+    } else if(input.toLowerCase() === 'los angeles' || input.toLowerCase() === 'la')  { 
+      this.setState({ 
+        search : "Los Angeles",
+        artists: LA_artist_data, 
+        tracks: LA_ArtistTracks
       })
     } else {
       this.setState({

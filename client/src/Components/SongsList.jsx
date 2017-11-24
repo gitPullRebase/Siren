@@ -22,5 +22,4 @@ const SongsList = (props) => {
     </div>
   );
 }
-
 export default SongsList;
