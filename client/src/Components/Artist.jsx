@@ -1,8 +1,13 @@
 import React from "react";
 
+import BookedModal from './BookedModal.jsx';
+
 const Artist = props => {
   return (
-    <div className="artist-container">
+    <div
+      onClick={() => props.setArtist(props.artist.name)}
+      className="artist-container"
+    >
       <img
         className="artist-image"
         src={props.artist.images[0].url}
@@ -11,10 +16,10 @@ const Artist = props => {
       />
       <div className="artist-text">
         <div onClick={() => props.setArtist(props.artist.name)}>
-          Artist: {props.artist.name}
+          {props.artist.name}
         </div>
         <a href={props.artist.uri}>
-          <div>Artist URL: {props.artist.uri}</div>
+          <div>Profile</div>
         </a>
         <input
           className="bookBtn"
@@ -24,43 +29,10 @@ const Artist = props => {
           data-target="#bookedModal"
         />
       </div>
+      <hr />
 
       {/* MODAL COMPONENT */}
-      <div
-        className="modal fade"
-        id="bookedModal"
-        tabIndex="-1"
-        role="dialog"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div className="modal-dialog" role="document">
-          <div className="modal-content">
-            <div className="modal-header">
-              <button
-                type="button"
-                className="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div className="modal-body text-center">
-              This Artist has been booked or is currently unavailble.
-            </div>
-            <div className="modal-footer">
-              <button
-                type="button"
-                className="btn btn-secondary"
-                data-dismiss="modal"
-              >
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+
     </div>
   );
 };
