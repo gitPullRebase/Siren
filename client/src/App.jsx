@@ -15,7 +15,7 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      currentUser = "",
+      currentUser: "",
       artists: SF_artist_data,
       tracks: SF_ArtistTracks,
       search: "",
@@ -63,10 +63,7 @@ class App extends React.Component {
 
   profileClickHandler() {
     //if user is regular user then render user Profile
-
-
     //if user is artist then render artist profile
-
   }
 
   componentDidMount() {}
