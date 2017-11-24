@@ -66,6 +66,10 @@ class App extends React.Component {
     return (
       <div className="container">
         <Navbar />
+        <div className="landing-wrapper">
+          <div className="landing" />
+        </div>
+        <br />
         <Search
           onClick={this.searchClickHandler.bind(this)}
           onChange={this.onChange.bind(this)}

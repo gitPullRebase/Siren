@@ -1,25 +1,59 @@
 /*Global Styles*/
-body {
+body,
+html {
+  background-color: #282828;
   color: #ffffff;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  font-family: "Avenir Next" !important;
+}
+
+h5 {
+  text-align: center;
 }
 
 /*Landing Dock Styles*/
+.landing-wrapper {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .landing {
-  background-image: url("bgPhoto.jpeg");
+  width: 100%;
+  height: 500px;
+  background-image: url("photo.png");
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+  background-position: right;
+  background-size: cover;
 }
 
 /*Navbar Styles*/
 .navbar-light .navbar-brand {
   color: #ffffff !important;
-  font-size: 310%;
-  font-family: cursive;
+  font-size: 250%;
+  font-family: "Avenir Next" !important;
 }
 
 .bg-light {
-  background-color: inherit !important;
+  width: 110%;
+  height: 70px;
+  background-color: #000000 !important;
+}
+
+.profileBtn {
+  position: absolute;
+  padding-right: 10px;
+  float: right;
+  right: 0;
+  font-family: "Avenir Next" !important;
+}
+
+.login-container {
+  position: relative;
+  float: right;
 }
 
 .google-login {
@@ -29,11 +63,12 @@ body {
   padding: 0 15px 0 46px;
   border: none;
   text-align: left;
-  line-height: 34px;
+  line-height: 32px;
   white-space: nowrap;
   border-radius: 0.2em;
-  font-size: 16px;
+  font-size: 14px;
   color: #fff;
+  float: right;
 }
 
 .google-login:before {
@@ -96,6 +131,15 @@ body {
 
 .artist-container {
   position: relative;
+  margin: 2px 0px 2px 5px;
+}
+
+.artist-container:hover {
+  position: relative;
+  background-color: black;
+  width: 450px;
+  height: 110px;
+  border-radius: 5px;
 }
 
 .artist-image {
@@ -109,6 +153,14 @@ body {
   left: 5%;
   padding: 0;
   line-height: 50px;
+}
+
+hr {
+  background: white;
+  margin-top: 20px;
+  margin-left: -20px;
+  margin-bottom: -10px;
+  width: 450px;
 }
 
 .artist-text {

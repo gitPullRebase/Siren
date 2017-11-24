@@ -24,7 +24,7 @@ class Login extends React.Component {
       process.env.GOOGLE_CLIENT ||
       "51693968421-6ti10a1g4idu1on0otidvjb4jdapm08f.apps.googleusercontent.com";
     return (
-      <div>
+      <div className="login-container">
         <GoogleLogin
           socialId={clientId}
           className="google-login loginBtn--google"

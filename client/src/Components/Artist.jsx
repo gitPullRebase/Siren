@@ -2,7 +2,10 @@ import React from "react";
 
 const Artist = props => {
   return (
-    <div className="artist-container">
+    <div
+      onClick={() => props.setArtist(props.artist.name)}
+      className="artist-container"
+    >
       <img
         className="artist-image"
         src={props.artist.images[0].url}
@@ -11,10 +14,10 @@ const Artist = props => {
       />
       <div className="artist-text">
         <div onClick={() => props.setArtist(props.artist.name)}>
-          Artist: {props.artist.name}
+          {props.artist.name}
         </div>
         <a href={props.artist.uri}>
-          <div>Artist Profile</div>
+          <div>Profile</div>
         </a>
         <input
           className="bookBtn"
@@ -24,6 +27,7 @@ const Artist = props => {
           data-target="#bookedModal"
         />
       </div>
+      <hr />
 
       {/* MODAL COMPONENT */}
       <div

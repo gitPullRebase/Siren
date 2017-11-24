@@ -6,6 +6,7 @@ const Navbar = () => (
     <a className="navbar-brand" href="#">
       Siren
     </a>
+    <div className="profileBtn">Profile</div>
     <Login />
   </nav>
 );

@@ -11,7 +11,7 @@ class Search extends React.Component {
         <input
           type="text"
           className="form-control"
-          placeholder="Search..."
+          placeholder="Search for a city..."
           aria-label="Search..."
           ref={input => (this._cityName = input)}
         />
