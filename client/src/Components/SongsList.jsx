@@ -7,11 +7,11 @@ const SongsList = props => {
   let artist = props.clickedArtist;
 
   let render = map(props.tracks, artist => {
-    return <Song artist={artist[0].id} />;
+    return <Song artist={artist[0].id} key={artist[0].id} />;
   });
   if (artist !== "") {
-    render = props.tracks[`${artist}`].map(album => {
-      return <Song artist={album.id} />;
+    render = props.tracks[`${artist}`].map( (album, index) => {
+      return <Song artist={album.id} key={index} />;
     });
   }
 

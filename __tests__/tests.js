@@ -1,24 +1,24 @@
-/*  Jest is really FREAKING AWESOME because it comes with everything 
+/*  Jest is really FREAKING AWESOME because it comes with everything
 packaged together. This means no more extra libraries for testing. Jest
-also allows for both front-end (only React though I believe) and 
+also allows for both front-end (only React though I believe) and
 back-end testing. Really makes writing unit tests for your particular
 feature easy!
 
 Refer below for writing correct tests:
 
-1. Create a new section for your tests using comments 
+1. Create a new section for your tests using comments
   (ex: /*Tests for Artist Component & Artist List Component)
 
-2. Import whatever you have to 
+2. Import whatever you have to
   (ex: import ArtistList from '../client/src/Components/ArtistList.jsx')
-  
-2b. Everything else has already been imported such as React, { mount } 
+
+2b. Everything else has already been imported such as React, { mount }
 from enzyme, etc.
 
-3. Write 5 tests that pertain to only YOUR ticket; use the example tests 
+3. Write 5 tests that pertain to only YOUR ticket; use the example tests
 for guidance
 
-4. Don't worry about other people's tests that are already in here, just 
+4. Don't worry about other people's tests that are already in here, just
 keep adding yours to the top
 
 Special Note: According to Jest Docs, you should only have 2-3 tests for your
@@ -26,7 +26,7 @@ React components. Bless up!!
 
 */
 
-/* 
+/*
 INITIAL IMPORTS
  */
 
@@ -347,5 +347,64 @@ test('"book now" button should exist', () => {
   const numberBtn = artistComponent.find(".bookBtn").length;
   expect(numberBtn).toBe(1);
 });
+
+// Tests for SongsList.jsx
+import SongsList from '../client/src/Components/SongsList.jsx';
+
+test('SongsList should render 3 songs', () => {
+  const artists = {
+    Bassnectar: [
+      {id: '1W4CZ57WzY1w8fVH53hD4L'},
+      {id: '1ti43ZT6bc4o1eGOSnBHkO'},
+      {id: '6oa0iUWXuBhCJ419Tm0RKV'}
+    ],
+    Giraffage: [
+      {id: '7mb8p8MJ6zZUgu7b0mKDel'},
+      {id: '7Fg0NsDZWTnQBVE9OYph1S'},
+      {id: '0G8cT5tSi9q8OXQ68An917'}
+    ],
+    'T-Mass': [
+      {id: '0UmEBl3nxQJoDWDBosOtZE'},
+      {id: '5ZbjbgG08lqqpw43dPt1Fp'},
+      {id: '63sI1hXz3WsPJy4nVt8cVD'}
+    ]
+  }
+  const songsList = mount(<SongsList tracks={artists} clickedArtist={''} />);
+  expect(songsList.find(Song).length).toBe(3);
+});
+
+test('Songlist should change to render a particular Artists tracks', () => {
+  const artists = {
+    Bassnectar: [
+      {id: '1W4CZ57WzY1w8fVH53hD4L'},
+      {id: '1ti43ZT6bc4o1eGOSnBHkO'},
+      {id: '6oa0iUWXuBhCJ419Tm0RKV'}
+    ],
+    Giraffage: [
+      {id: '7mb8p8MJ6zZUgu7b0mKDel'},
+      {id: '7Fg0NsDZWTnQBVE9OYph1S'},
+      {id: '0G8cT5tSi9q8OXQ68An917'}
+    ],
+    'T-Mass': [
+      {id: '0UmEBl3nxQJoDWDBosOtZE'},
+      {id: '5ZbjbgG08lqqpw43dPt1Fp'},
+      {id: '63sI1hXz3WsPJy4nVt8cVD'}
+    ]
+  }
+
+  const songsList = mount(<SongsList tracks={artists} clickedArtist={'Bassnectar'} />);
+  expect(songsList.find(Song).length).toBe(3);
+});
+
+// Tests for Songs.jsx
+import Song from '../client/src/Components/Song.jsx';
+
+test('Song Component should render a Embeded player from Spotify', () => {
+  const artist = '1JPy5PsJtkhftfdr6saN2i';
+
+  const songComponent = shallow(<Song artist={artist} />);
+  expect(songComponent.find('iframe').length).toBe(1);
+});
+
 
 //Tests for ServerIndex.js
