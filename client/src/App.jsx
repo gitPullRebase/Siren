@@ -26,14 +26,14 @@ class App extends React.Component {
   }
 
   searchClickHandler(input) {
-    if (input.toLowerCase() === "san francisco") {
+    if (input.toLowerCase() === "san francisco" || input.toLowerCase() === 'sf') {
       this.setState({
         artists: SF_artist_data,
         tracks: SF_ArtistTracks,
         clickedArtist: "",
         city: "San Francisco"
       });
-    } else if (input.toLowerCase() === "los angeles") {
+    } else if (input.toLowerCase() === "los angeles" || input.toLowerCase() === 'la' ) {
       this.setState({
         artists: LA_artist_data,
         tracks: LA_ArtistTracks,
