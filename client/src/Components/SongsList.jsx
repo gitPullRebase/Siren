@@ -16,7 +16,7 @@ const SongsList = props => {
   }
 
   return (
-    <div className="col">
+    <div className="song-list">
       <h5>Songs (Click on artists for their songs)</h5>
       <br />
       {render}

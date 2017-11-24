@@ -1,13 +1,17 @@
 import React from "react";
-import Login from "./Login.jsx";
+import GoogleLogin from "./GoogleLogin.jsx";
+import FacebookLogin from "./FacebookLogin.jsx";
 
 const Navbar = () => (
   <nav className="navbar navbar-expand-lg navbar-light bg-light">
     <a className="navbar-brand" href="#">
       Siren
     </a>
-    <div className="profileBtn">Profile</div>
-    <Login />
+    <div onClick={props.profileClickHandler} className="profileBtn">
+      Profile
+    </div>
+    <GoogleLogin />
+    <FacebookLogin />
   </nav>
 );
 
