@@ -1,4 +1,5 @@
 import React from "react";
+import Prompt from './Prompt.jsx';
 
 const Artist = props => {
   return (
@@ -64,5 +65,7 @@ const Artist = props => {
     </div>
   );
 };
+
+
 
 export default Artist;
