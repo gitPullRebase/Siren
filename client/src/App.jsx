@@ -15,37 +15,41 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
+      currentUser: "",
       artists: SF_artist_data,
       tracks: SF_ArtistTracks,
-      search: '',
-      clickedArtist: ''
+      search: "",
+      clickedArtist: "",
+      city: "San Francisco"
     };
     this.setArtist = this.setArtist.bind(this);
   }
 
   searchClickHandler(input) {
-    if(input.toLowerCase() === 'san francisco'){
+    if (input.toLowerCase() === "san francisco") {
       this.setState({
         artists: SF_artist_data,
         tracks: SF_ArtistTracks,
-        clickedArtist: ''
-      })
-    } else if(input.toLowerCase() === 'los angeles'){
+        clickedArtist: "",
+        city: "San Francisco"
+      });
+    } else if (input.toLowerCase() === "los angeles") {
       this.setState({
         artists: LA_artist_data,
         tracks: LA_ArtistTracks,
-        clickedArtist: ''
-      })
+        clickedArtist: "",
+        city: "Los Angeles"
+      });
     } else {
       this.setState({
         artists: NY_artist_data,
         tracks: NY_ArtistTracks,
-        clickedArtist: ''
-      })
+        clickedArtist: "",
+        city: "New York"
+      });
     }
-
   }
-  onChange(input){
+  onChange(input) {
     this.setState = {
       search: input.target.value.toLowerCase()
     };
@@ -57,23 +61,36 @@ class App extends React.Component {
     });
   }
 
+  profileClickHandler() {
+    //if user is regular user then render user Profile
+    //if user is artist then render artist profile
+  }
+
   componentDidMount() {}
 
   render() {
     return (
       <div className="container">
-        <Navbar />
+        <Navbar profileClickHandler={this.profileClickHandler.bind(this)} />
+        <div className="landing-wrapper">
+          <div className="landing" />
+        </div>
+        <br />
         <Search
           onClick={this.searchClickHandler.bind(this)}
           onChange={this.onChange.bind(this)}
         />
+        <br />
         <div className="row">
           <ArtistList
             artists={this.state.artists}
-            setArtist={this.setArtist} />
+            setArtist={this.setArtist}
+            city={this.state.city}
+          />
           <SongsList
             tracks={this.state.tracks}
-            clickedArtist={this.state.clickedArtist} />
+            clickedArtist={this.state.clickedArtist}
+          />
         </div>
       </div>
     );
