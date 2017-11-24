@@ -9,12 +9,9 @@ const ArtistList = props => (
     <ol>
       {props.artists.map((artist, index) => {
         return (
-          <div key={index}>
-            <li>
-              <Artist artist={artist} setArtist={props.setArtist} />
-            </li>
-            <br />
-          </div>
+          <li key={index}>
+            <Artist artist={artist} setArtist={props.setArtist} />
+          </li>
         );
       })}
     </ol>
