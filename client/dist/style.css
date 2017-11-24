@@ -1,7 +1,14 @@
 /*Global Styles*/
 body {
-  background-image: url("/Images/bgPhoto.jpeg");
   color: #ffffff;
+}
+
+/*Landing Dock Styles*/
+.landing {
+  background-image: url("bgPhoto.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 /*Navbar Styles*/
