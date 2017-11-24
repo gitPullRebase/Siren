@@ -34,12 +34,89 @@ import React from "react";
 import { mount } from "enzyme";
 import { shallow } from "enzyme";
 import sinon from "sinon";
+import UserProfile from "../client/src/Components/UserProfile.jsx";
+import MessageList from "../client/src/Components/MessageList.jsx";
+import ArtistProfile from "../client/src/Components/ArtistProfile.jsx";
+import Message from "../client/src/Components/Message.jsx";
 
 /*
 CONTINUE TO ADD TESTS ON TOP OF EACH OTHER! :D
 */
 
+/*
+TESTS FOR USER PROFILE COMPONENT
+*/
 
+test("should render 2 divs only", () => {
+  const userProfileComponent = shallow(<UserProfile />);
+  expect(userProfileComponent.find("div").length).toBe(2);
+});
+
+test("should render <Message List/> Component", () => {
+  const userProfileComponent = shallow(<UserProfile />);
+  expect(userProfileComponent.find(MessageList).length).toBe(1);
+});
+
+/*
+TESTS FOR ARTIST PROFILE COMPONENT
+*/
+
+test("should render 2 divs only", () => {
+  const artistProfileComponent = shallow(<ArtistProfile />);
+  expect(artistProfileComponent.find("div").length).toBe(2);
+});
+test("should render <Message List/> Component", () => {
+  const artistProfileComponent = shallow(<ArtistProfile />);
+  expect(artistProfileComponent.find(MessageList).length).toBe(1);
+});
+
+/*
+TESTS FOR MESSAGE LIST COMPONENT
+*/
+
+test("Message List should render 3 <Message /> components", () => {
+  const chatrooms = [
+    {
+      name1: ""
+    },
+    {
+      name2: ""
+    },
+    {
+      name3: ""
+    }
+  ];
+  const messageListComponent = shallow(
+    <MessageList isArtist={false} chatrooms={chatrooms} />
+  );
+  expect(messageListComponent.find(Message).length).toBe(3);
+});
+
+/*
+TESTS FOR MESSAGE COMPONENT
+*/
+
+test("at least one div is always rendered", () => {
+  const chatroom = {
+    name1: ""
+  };
+  const message = shallow(<Message chatroom={chatroom} />);
+  expect(message.find("div").length).toBeGreaterThanOrEqual(1);
+});
+
+test("should render accept button if artist", () => {
+  const chatroom = { name1: "" };
+  const isArtist = true;
+  const message = shallow(<Message chatroom={chatroom} isArtist={isArtist} />);
+  expect(message.find(".accept").length).toBe(1);
+});
+
+test("should render decline button if artist", () => {
+  const chatroom = { name1: "" };
+  const isArtist = true;
+  const message = shallow(<Message chatroom={chatroom} isArtist={isArtist} />);
+  expect(message.find(".decline").length).toBe(1);
+});
 
 /*
 TESTS FOR ARTIST LIST COMPONENT
