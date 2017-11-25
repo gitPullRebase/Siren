@@ -30,3 +30,7 @@ client/dist/bundle.js
 node_modules/
 bower_components/
 .DS_Store
+
+# Database data
+Database/migrations
+Database/seeds

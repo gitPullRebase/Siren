@@ -1,5 +1,4 @@
 var environment = process.env.NODE_ENV || 'development';
-const path = require('path');
 var config = {
 	development: {
 		client: 'pg',
