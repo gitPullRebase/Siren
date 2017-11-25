@@ -38,7 +38,7 @@ h5 {
 }
 
 .bg-light {
-  width: 110%;
+  width: 100%;
   height: 70px;
   background-color: #000000 !important;
 }
@@ -144,6 +144,7 @@ h5 {
 
 .bookBtn:hover {
   background-color: #03964f;
+  cursor: pointer;
 }
 
 .artistList {
@@ -153,27 +154,35 @@ h5 {
 .artist-container {
   position: relative;
   margin: 2px 0px 2px 5px;
+  background-color: #282828;
+  height: 135px;
 }
 
 .artist-container:hover {
   position: relative;
   background-color: black;
-  width: 450px;
-  height: 110px;
+  width: auto;
+  height: 135px;
   border-radius: 5px;
 }
 
 .artist-image {
   width: 20%;
-  border-radius: 50px;
-  box-shadow: 2px 2px 15px #00d770;
+  border-radius: 57px;
+  box-shadow: 1px 1px 6px #00d770;
   border-style: solid;
   border-color: black;
   border-width: 1px;
   position: inherit;
   left: 5%;
+  top: 5%;
   padding: 0;
   line-height: 50px;
+}
+
+.artist-image:hover {
+  box-shadow: 3px 3px 40px #00d770;
+  cursor: pointer;
 }
 
 hr {
@@ -186,9 +195,10 @@ hr {
 
 .artist-text {
   left: 32%;
-  top: 0%;
+  top: 10%;
   position: absolute;
   margin-top: 10px;
+  cursor: pointer;
 }
 
 /*Song Styles*/
@@ -197,5 +207,12 @@ hr {
 }
 
 .song {
-  margin: none;
+  background-color: #282828;
+}
+
+
+/*Modal Styles*/
+
+.modal-header {
+  color: black;
 }

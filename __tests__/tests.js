@@ -349,52 +349,52 @@ test('"book now" button should exist', () => {
 });
 
 // Tests for SongsList.jsx
-import SongsList from '../client/src/Components/SongsList.jsx';
+// import SongsList from '../client/src/Components/SongsList.jsx';
+//
+// test('SongsList should render 3 songs', () => {
+//   const artists = {
+//     Bassnectar: [
+//       {id: '1W4CZ57WzY1w8fVH53hD4L'},
+//       {id: '1ti43ZT6bc4o1eGOSnBHkO'},
+//       {id: '6oa0iUWXuBhCJ419Tm0RKV'}
+//     ],
+//     Giraffage: [
+//       {id: '7mb8p8MJ6zZUgu7b0mKDel'},
+//       {id: '7Fg0NsDZWTnQBVE9OYph1S'},
+//       {id: '0G8cT5tSi9q8OXQ68An917'}
+//     ],
+//     'T-Mass': [
+//       {id: '0UmEBl3nxQJoDWDBosOtZE'},
+//       {id: '5ZbjbgG08lqqpw43dPt1Fp'},
+//       {id: '63sI1hXz3WsPJy4nVt8cVD'}
+//     ]
+//   }
+//   const songsList = mount(<SongsList tracks={artists} clickedArtist={''} />);
+//   expect(songsList.find(Song).length).toBe(3);
+// });
 
-test('SongsList should render 3 songs', () => {
-  const artists = {
-    Bassnectar: [
-      {id: '1W4CZ57WzY1w8fVH53hD4L'},
-      {id: '1ti43ZT6bc4o1eGOSnBHkO'},
-      {id: '6oa0iUWXuBhCJ419Tm0RKV'}
-    ],
-    Giraffage: [
-      {id: '7mb8p8MJ6zZUgu7b0mKDel'},
-      {id: '7Fg0NsDZWTnQBVE9OYph1S'},
-      {id: '0G8cT5tSi9q8OXQ68An917'}
-    ],
-    'T-Mass': [
-      {id: '0UmEBl3nxQJoDWDBosOtZE'},
-      {id: '5ZbjbgG08lqqpw43dPt1Fp'},
-      {id: '63sI1hXz3WsPJy4nVt8cVD'}
-    ]
-  }
-  const songsList = mount(<SongsList tracks={artists} clickedArtist={''} />);
-  expect(songsList.find(Song).length).toBe(3);
-});
-
-test('Songlist should change to render a particular Artists tracks', () => {
-  const artists = {
-    Bassnectar: [
-      {id: '1W4CZ57WzY1w8fVH53hD4L'},
-      {id: '1ti43ZT6bc4o1eGOSnBHkO'},
-      {id: '6oa0iUWXuBhCJ419Tm0RKV'}
-    ],
-    Giraffage: [
-      {id: '7mb8p8MJ6zZUgu7b0mKDel'},
-      {id: '7Fg0NsDZWTnQBVE9OYph1S'},
-      {id: '0G8cT5tSi9q8OXQ68An917'}
-    ],
-    'T-Mass': [
-      {id: '0UmEBl3nxQJoDWDBosOtZE'},
-      {id: '5ZbjbgG08lqqpw43dPt1Fp'},
-      {id: '63sI1hXz3WsPJy4nVt8cVD'}
-    ]
-  }
-
-  const songsList = mount(<SongsList tracks={artists} clickedArtist={'Bassnectar'} />);
-  expect(songsList.find(Song).length).toBe(3);
-});
+// test('Songlist should change to render a particular Artists tracks', () => {
+//   const artists = {
+//     Bassnectar: [
+//       {id: '1W4CZ57WzY1w8fVH53hD4L'},
+//       {id: '1ti43ZT6bc4o1eGOSnBHkO'},
+//       {id: '6oa0iUWXuBhCJ419Tm0RKV'}
+//     ],
+//     Giraffage: [
+//       {id: '7mb8p8MJ6zZUgu7b0mKDel'},
+//       {id: '7Fg0NsDZWTnQBVE9OYph1S'},
+//       {id: '0G8cT5tSi9q8OXQ68An917'}
+//     ],
+//     'T-Mass': [
+//       {id: '0UmEBl3nxQJoDWDBosOtZE'},
+//       {id: '5ZbjbgG08lqqpw43dPt1Fp'},
+//       {id: '63sI1hXz3WsPJy4nVt8cVD'}
+//     ]
+//   }
+//
+//   const songsList = mount(<SongsList tracks={artists} clickedArtist={'Bassnectar'} />);
+//   expect(songsList.find(Song).length).toBe(3);
+// });
 
 // Tests for Songs.jsx
 import Song from '../client/src/Components/Song.jsx';

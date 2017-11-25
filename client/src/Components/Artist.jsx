@@ -3,33 +3,37 @@ import Book from './Book.jsx'
 import BookedModal from './BookedModal.jsx';
 
 class Artist extends React.Component {
-  constructor(props){ 
+  constructor(props){
     super(props)
-    this.state = { 
-      visible: false, 
+    this.state = {
+      visible: false,
       showModal: false
     }
   }
   handleOpenModal () {
     this.setState({ showModal: true });
   }
-  
+
   handleCloseModal () {
     this.setState({ showModal: false });
   }
-  onClickHandler (input) { 
+  onClickHandler (input) {
     console.log("Message has been sent: ", input)
     // will be continued with post ajax calls to artist inbox db.
   }
 
-  render() { 
-    const BookModal = (this.state.showModal ? <Book showModal = {this.state.showModal} handleOpenModal = {this.handleOpenModal.bind(this)} handleCloseModal = {this.handleCloseModal.bind(this)} onClick = {this.onClickHandler.bind(this)}/> : null)
+  render() {
+    const BookModal = (this.state.showModal ? <Book /> : <BookedModal />)
+
+
+    // (this.state.showModal ?
+    //   <Book showModal={this.state.showModal}
+    //         handleOpenModal={this.handleOpenModal.bind(this)}
+    //         handleCloseModal={this.handleCloseModal.bind(this)}
+    //         onClick={this.onClickHandler.bind(this)}/> : <BookedModal />)
 
     return (
-    <div
-      onClick={() => this.props.setArtist(this.props.artist.name)}
-      className="artist-container"
-    >
+    <div className="artist-container">
       <img
         className="artist-image"
         src={this.props.artist.images[0].url}
@@ -48,15 +52,14 @@ class Artist extends React.Component {
           type="submit"
           value="Book Now"
           onClick = {this.handleOpenModal.bind(this)}
+          data-toggle="modal" data-target="#bookedModal"
         />
         {BookModal}
       </div>
-      <hr />
-
     </div>
   );
   }
-  
+
 };
 
 export default Artist;

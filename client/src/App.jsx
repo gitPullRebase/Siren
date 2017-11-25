@@ -19,7 +19,7 @@ class App extends React.Component {
       artists: SF_artist_data,
       tracks: SF_ArtistTracks,
       search: "",
-      clickedArtist: "",
+      artist: SF_artist_data[0].name,
       city: "San Francisco"
     };
     this.setArtist = this.setArtist.bind(this);
@@ -57,7 +57,7 @@ class App extends React.Component {
 
   setArtist(artist) {
     this.setState({
-      clickedArtist: artist
+      artist: artist
     });
   }
 
@@ -70,27 +70,30 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="container">
+      <div>
         <Navbar profileClickHandler={this.profileClickHandler.bind(this)} />
         <div className="landing-wrapper">
           <div className="landing" />
         </div>
-        <br />
-        <Search
-          onClick={this.searchClickHandler.bind(this)}
-          onChange={this.onChange.bind(this)}
-        />
-        <br />
-        <div className="row">
-          <ArtistList
-            artists={this.state.artists}
-            setArtist={this.setArtist}
-            city={this.state.city}
+        <div className="container">
+
+          <br />
+          <Search
+            onClick={this.searchClickHandler.bind(this)}
+            onChange={this.onChange.bind(this)}
           />
-          <SongsList
-            tracks={this.state.tracks}
-            clickedArtist={this.state.clickedArtist}
-          />
+          <br />
+          <div className="row">
+            <ArtistList
+              artists={this.state.artists}
+              setArtist={this.setArtist}
+              city={this.state.city}
+            />
+            <SongsList
+              tracks={this.state.tracks}
+              artist={this.state.artist}
+            />
+          </div>
         </div>
       </div>
     );
