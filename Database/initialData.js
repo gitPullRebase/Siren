@@ -70,7 +70,7 @@ for (var artist in SFArtistTopTracks) {
 	for (var i = 0; i < artistAlbum.length; i++) {
 		let id = artistAlbum[i].id;
 		new table.Single({
-			name: id,
+			single_id: id,
 			artist: artist
 		}).save()
 		.catch((err) => {
@@ -84,7 +84,7 @@ for (var artist in LAArtistTopTracks) {
 	for (var i = 0; i < artistAlbum.length; i++) {
 		let id = artistAlbum[i].id;
 		new table.Single({
-			name: id,
+			single_id: id,
 			artist: artist
 		}).save()
 		.catch((err) => {
@@ -98,7 +98,7 @@ for (var artist in NYArtistTopTracks) {
 	for (var i = 0; i < artistAlbum.length; i++) {
 		let id = artistAlbum[i].id;
 		new table.Single({
-			name: id,
+			single_id: id,
 			artist: artist
 		}).save()
 		.catch((err) => {
