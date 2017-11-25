@@ -44,7 +44,7 @@ CREATE TABLE IF NOT EXISTS requested_gigs (
 
 CREATE TABLE IF NOT EXISTS single (
 	id SERIAL PRIMARY KEY,
-	name varchar(40),
+	name varchar(40) UNIQUE,
 	artist varchar(40)
 );
 	-- artist_id INTEGER,
