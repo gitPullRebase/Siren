@@ -3,15 +3,17 @@ import GoogleLogin from "./GoogleLogin.jsx";
 import FacebookLogin from "./FacebookLogin.jsx";
 
 const Navbar = (props) => (
-  <nav className="navbar navbar-expand-lg navbar-light bg-light">
+  <nav className="navbar navbar-expand-lg navbar-light bg-light navbar">
     <a className="navbar-brand" href="#">
       Siren
     </a>
-    <div onClick={props.profileClickHandler} className="profileBtn">
-      Profile
-    </div>
-    <GoogleLogin />
-    <FacebookLogin />
+    <ul className="navbar-nav mr-auto">
+      <div onClick={props.profileClickHandler} className="nav-item profileBtn">
+        Profile
+      </div>
+      <GoogleLogin />
+      <FacebookLogin />
+    </ul>
   </nav>
 );
 

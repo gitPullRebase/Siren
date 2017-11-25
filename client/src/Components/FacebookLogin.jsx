@@ -21,7 +21,7 @@ class Login extends React.Component {
       data: userObj
     }).then( () => {
       //redirect to appropriate page
-      
+
     });
 
     //then the client will have the ability to check his profile
@@ -35,7 +35,7 @@ class Login extends React.Component {
   render() {
     let clientId = process.env.FACEBOOK_CLIENT || "515823602108032";
     return (
-      <div>
+      <div className="nav-item">
         <FacebookLogin
           socialId={clientId}
           language="en_US"

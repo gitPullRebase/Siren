@@ -38,7 +38,7 @@ h5 {
 }
 
 .bg-light {
-  width: 110%;
+  width: 100%;
   height: 70px;
   background-color: #000000 !important;
 }
@@ -144,6 +144,7 @@ h5 {
 
 .bookBtn:hover {
   background-color: #03964f;
+  cursor: pointer;
 }
 
 .artistList {
@@ -179,6 +180,11 @@ h5 {
   line-height: 50px;
 }
 
+.artist-image:hover {
+  box-shadow: 3px 3px 40px #00d770;
+  cursor: pointer;
+}
+
 hr {
   background: white;
   margin-top: 20px;
@@ -192,6 +198,7 @@ hr {
   top: 10%;
   position: absolute;
   margin-top: 10px;
+  cursor: pointer;
 }
 
 /*Song Styles*/
@@ -201,4 +208,11 @@ hr {
 
 .song {
   background-color: #282828;
+}
+
+
+/*Modal Styles*/
+
+.modal-header {
+  color: black;
 }

@@ -23,17 +23,17 @@ class Artist extends React.Component {
   }
 
   render() {
-    const BookModal = (this.state.showModal ?
-      <Book showModal={this.state.showModal}
-            handleOpenModal={this.handleOpenModal.bind(this)}
-            handleCloseModal={this.handleCloseModal.bind(this)}
-            onClick={this.onClickHandler.bind(this)}/> : <BookedModal />)
+    const BookModal = (this.state.showModal ? <Book /> : <BookedModal />)
+
+
+    // (this.state.showModal ?
+    //   <Book showModal={this.state.showModal}
+    //         handleOpenModal={this.handleOpenModal.bind(this)}
+    //         handleCloseModal={this.handleCloseModal.bind(this)}
+    //         onClick={this.onClickHandler.bind(this)}/> : <BookedModal />)
 
     return (
-    <div
-      onClick={() => this.props.setArtist(this.props.artist.name)}
-      className="artist-container"
-    >
+    <div className="artist-container">
       <img
         className="artist-image"
         src={this.props.artist.images[0].url}
@@ -52,6 +52,7 @@ class Artist extends React.Component {
           type="submit"
           value="Book Now"
           onClick = {this.handleOpenModal.bind(this)}
+          data-toggle="modal" data-target="#bookedModal"
         />
         {BookModal}
       </div>

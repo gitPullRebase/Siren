@@ -6,7 +6,7 @@ const Song = props => (
       src={`https://open.spotify.com/embed?uri=spotify:track:${props.artist}`}
       frameBorder="0"
       allowTransparency="true"
-      height="100"
+      height="135"
       width="500"
     />
   </div>
