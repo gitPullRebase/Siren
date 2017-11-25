@@ -7,7 +7,7 @@ CREATE TABLE IF NOT EXISTS users (
 	id SERIAL PRIMARY KEY,
 	username varchar(40),
 	token varchar(300),
-	role boolean,
+	role boolean
 );
 
 CREATE TABLE IF NOT EXISTS artist (
