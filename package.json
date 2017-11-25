@@ -13,7 +13,7 @@
     "build": "webpack -p",
     "start": "node Server/ServerIndex.js",
     "test": "jest",
-    "dbSetup": "node Database/index.js"
+    "dbSetup": "node Database/initialData.js"
   },
   "dependencies": {
     "axios": "^0.16.2",
