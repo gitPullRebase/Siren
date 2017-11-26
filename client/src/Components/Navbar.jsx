@@ -1,20 +1,19 @@
 import React from "react";
 import GoogleLogin from "./GoogleLogin.jsx";
 import FacebookLogin from "./FacebookLogin.jsx";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
-const Navbar = (props) => (
-  <nav className="navbar navbar-expand-lg navbar-light bg-light navbar">
+const Navbar = props => (
+  <nav className="navbar navbar-expand-lg navbar-light bg-light">
     <a className="navbar-brand" href="#">
       Siren
     </a>
     <ul className="navbar-nav mr-auto">
       <Link to="/artist">
-        <div onClick={props.profileClickHandler} className="nav-item profileBtn">
+        <a href="#" className="profileBtn" onClick={props.profileClickHandler}>
           Profile
-        </div>
+        </a>
       </Link>
-      <GoogleLogin />
       <FacebookLogin />
     </ul>
   </nav>
