@@ -24,7 +24,7 @@ const MessageList = props => {
               </li>
             </div>
           );
-        })};
+        })}
       </div>
     );
   } else {
@@ -42,7 +42,7 @@ const MessageList = props => {
               </li>
             </div>
           );
-        })};
+        })}
       </div>
     );
   }

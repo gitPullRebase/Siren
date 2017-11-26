@@ -17,14 +17,16 @@ class UserProfile extends React.Component {
 
   render() {
     return (
-      <div className="container">
+      <div>
         <Navbar />
-        <div className="row">
-          <MessageList
-            messageClickHandler={this.messageClickHandler.bind(this)}
-            chatrooms={this.state.chatrooms}
-            isArtist={this.state.isArtist}
-          />
+        <div className="container">
+          <div className="row">
+            <MessageList
+              messageClickHandler={this.messageClickHandler.bind(this)}
+              chatrooms={this.state.chatrooms}
+              isArtist={this.state.isArtist}
+            />
+          </div>
         </div>
       </div>
     );

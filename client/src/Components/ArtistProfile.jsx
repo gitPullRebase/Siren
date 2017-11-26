@@ -25,16 +25,18 @@ class ArtistProfile extends React.Component {
 
   render() {
     return (
-      <div className="container">
+      <div>
         <Navbar />
-        <div className="row">
-          <MessageList
-            messageClickHandler={this.messageClickHandler.bind(this)}
-            declineClickHandler={this.declineClickHandler.bind(this)}
-            acceptClickHandler={this.acceptClickHandler.bind(this)}
-            isArtist={this.state.isArtist}
-            chatrooms={this.state.chatrooms}
-          />
+        <div className="container">
+          <div className="row">
+            <MessageList
+              messageClickHandler={this.messageClickHandler.bind(this)}
+              declineClickHandler={this.declineClickHandler.bind(this)}
+              acceptClickHandler={this.acceptClickHandler.bind(this)}
+              isArtist={this.state.isArtist}
+              chatrooms={this.state.chatrooms}
+            />
+          </div>
         </div>
       </div>
     );

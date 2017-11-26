@@ -47,9 +47,9 @@ CONTINUE TO ADD TESTS ON TOP OF EACH OTHER! :D
 TESTS FOR USER PROFILE COMPONENT
 */
 
-test("should render 2 divs only", () => {
+test("should render 3 divs only", () => {
   const userProfileComponent = shallow(<UserProfile />);
-  expect(userProfileComponent.find("div").length).toBe(2);
+  expect(userProfileComponent.find("div").length).toBe(3);
 });
 
 test("should render <Message List/> Component", () => {
@@ -61,9 +61,9 @@ test("should render <Message List/> Component", () => {
 TESTS FOR ARTIST PROFILE COMPONENT
 */
 
-test("should render 2 divs only", () => {
+test("should render 3 divs only", () => {
   const artistProfileComponent = shallow(<ArtistProfile />);
-  expect(artistProfileComponent.find("div").length).toBe(2);
+  expect(artistProfileComponent.find("div").length).toBe(3);
 });
 test("should render <Message List/> Component", () => {
   const artistProfileComponent = shallow(<ArtistProfile />);
