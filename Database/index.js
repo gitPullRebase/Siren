@@ -4,6 +4,7 @@ var connection =
   // `${process.env.DATABASE_URL}/artists` ||
   "postgres://postgres:rebase@localhost:5432/artists";
 
+
 var knex = require("knex")({
   client: "pg",
   connection: connection
