@@ -1,21 +1,32 @@
 const pg = require("pg");
-var connection =
-  // `${process.env.DATABASE_URL}/artists` ||
-  "postgres://postgres:rebase@localhost:5432/artists";
+const dbPassword = require("../config/config.js").dbPassword;
+const port = 5432;
 
+// console.log('TEST ID', SFArtistTopTracks['Bassnectar'][0].id);
+var connection =
+  `${process.env.DATABASE_URL}/artists` ||
+  `postgres://postgres:${dbPassword}@localhost:5432/artists`;
 
 var knex = require("knex")({
   client: "pg",
   connection: connection
 });
 
-let bookshelf = require('bookshelf')(knex);
+// Client var to do raw sql queries for joins between tables
+// let client = new pg.Client(connection);
+// client.connect();
+
+let bookshelf = require("bookshelf")(knex);
+
+let User = bookshelf.Model.extend({
+  tableName: "users"
+});
 
 let Artist = bookshelf.Model.extend({
-	tableName: 'artist'
-	// single: function() {
-	// 	return this.hasMany(single);
-	// }
+  tableName: "artist"
+  // single: function() {
+  // 	return this.hasMany(single);
+  // }
 });
 
 let Date = bookshelf.Model.extend({
@@ -32,10 +43,6 @@ let Requested_Gigs = bookshelf.Model.extend({
 
 let Single = bookshelf.Model.extend({
   tableName: "single"
-});
-
-let User = bookshelf.Model.extend({
-  tableName: "users"
 });
 
 module.exports.knex = knex;

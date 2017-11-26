@@ -10,26 +10,20 @@ class Login extends React.Component {
   responseFacebook(response) {
     console.log(response);
     let userObj = {
+      facebookID: response.id,
       accessToken: response.accessToken,
       username: response.name
     };
 
     //need to ask server to check if user is client or artist
     axios({
-      method: 'POST',
-      url: '/initialLogin',
+      method: "post",
+      url: "/initialLogin",
       data: userObj
-    }).then( () => {
-      //redirect to appropriate page
-
+    }).then(() => {
+      this.props.setFacebookId(userObj.facebookID);
+      //redirect to initial page without login button and with profile button + log out button
     });
-
-    //then the client will have the ability to check his profile
-    //depending on whether he is artist or user
-
-    //store cookie onto database for user
-
-    //redirect them to same landing page without log in
   }
 
   render() {

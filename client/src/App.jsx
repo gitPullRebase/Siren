@@ -1,9 +1,9 @@
-import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import React from "react";
+import { Switch, Route } from "react-router-dom";
 
-import Home from './Home.jsx';
-import UserProfile from './Components/UserProfile.jsx';
-import ArtistProfile from './Components/ArtistProfile.jsx';
+import Home from "./Home.jsx";
+import UserProfile from "./Components/UserProfile.jsx";
+import ArtistProfile from "./Components/ArtistProfile.jsx";
 
 const App = () => (
   <div>
@@ -14,7 +14,5 @@ const App = () => (
     </Switch>
   </div>
 );
-
-
 
 export default App;

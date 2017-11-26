@@ -11,7 +11,7 @@ import Search from "./Components/Search.jsx";
 import ArtistList from "./Components/ArtistList.jsx";
 import SongsList from "./Components/SongsList.jsx";
 
-class App extends React.Component {
+class Home extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -20,20 +20,27 @@ class App extends React.Component {
       tracks: SF_ArtistTracks,
       search: "",
       artist: SF_artist_data[0].name,
-      city: "San Francisco"
+      city: "San Francisco",
+      facebookId: ""
     };
     this.setArtist = this.setArtist.bind(this);
   }
 
   searchClickHandler(input) {
-    if (input.toLowerCase() === "san francisco" || input.toLowerCase() === 'sf') {
+    if (
+      input.toLowerCase() === "san francisco" ||
+      input.toLowerCase() === "sf"
+    ) {
       this.setState({
         artists: SF_artist_data,
         tracks: SF_ArtistTracks,
         clickedArtist: "",
         city: "San Francisco"
       });
-    } else if (input.toLowerCase() === "los angeles" || input.toLowerCase() === 'la' ) {
+    } else if (
+      input.toLowerCase() === "los angeles" ||
+      input.toLowerCase() === "la"
+    ) {
       this.setState({
         artists: LA_artist_data,
         tracks: LA_ArtistTracks,
@@ -62,8 +69,23 @@ class App extends React.Component {
   }
 
   profileClickHandler() {
-    //if user is regular user then render user Profile
-    //if user is artist then render artist profile
+    axios({
+      method: "post",
+      url: "/userCheck",
+      data: this.state.facebookId
+    }).then(userObj => {
+      let artist = userObj.role;
+      //if user is regular user then render user Profile
+      if (artist) {
+      } else {
+      }
+    });
+  }
+
+  setFacebookId(facebookId) {
+    this.setState({
+      facebookId: facebookId
+    });
   }
 
   componentDidMount() {}
@@ -71,13 +93,15 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Navbar profileClickHandler={this.profileClickHandler.bind(this)} />
+        <Navbar
+          profileClickHandler={this.profileClickHandler.bind(this)}
+          setFacebookId={this.setFacebookId.bind(this)}
+        />
         <div className="landing-wrapper">
           <div className="landing" />
         </div>
         <div className="container">
-
-          <br/>
+          <br />
           <Search
             onClick={this.searchClickHandler.bind(this)}
             onChange={this.onChange.bind(this)}
@@ -89,10 +113,7 @@ class App extends React.Component {
               setArtist={this.setArtist}
               city={this.state.city}
             />
-            <SongsList
-              tracks={this.state.tracks}
-              artist={this.state.artist}
-            />
+            <SongsList tracks={this.state.tracks} artist={this.state.artist} />
           </div>
         </div>
       </div>
@@ -100,4 +121,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default Home;
