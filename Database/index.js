@@ -12,10 +12,9 @@ const LAArtistTopTracks = require("./artistData/LA_artist_top_tracks.json");
 const sampleArtistsNY = require("./artistData/NY_artist_data.js");
 const NYArtistTopTracks = require("./artistData/NY_artist_top_tracks.json");
 
-// console.log('TEST ID', SFArtistTopTracks['Bassnectar'][0].id);
 var connection =
   `${process.env.DATABASE_URL}/artists` ||
-  "postgres://postgres:rebase@localhost:5432/artists";
+  "postgres://postgres:postgres@localhost:5432/artists";
 
 var knex = require("knex")({
   client: "pg",
@@ -50,7 +49,6 @@ let Requested_Gigs = bookshelf.Model.extend({
 let Single = bookshelf.Model.extend({
   tableName: "single"
 });
-
 
 // >>Populates artist table for SF<<
 for (let artist = 0; artist < sampleArtistsSF.length; artist++) {
