@@ -8,7 +8,6 @@ CREATE TABLE IF NOT EXISTS users (
 	username varchar(40),
 	token varchar(300),
 	role boolean,
-	cookies varchar(100)
 );
 
 CREATE TABLE IF NOT EXISTS artist (

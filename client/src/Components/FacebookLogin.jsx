@@ -25,8 +25,6 @@ class Login extends React.Component {
 
     //then the client will have the ability to check his profile
     //depending on whether he is artist or user
-
-    //store cookie onto database for user
   }
 
   render() {

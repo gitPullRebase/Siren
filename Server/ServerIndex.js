@@ -1,6 +1,7 @@
 const express = require("express");
 const port = process.env.PORT || 8080;
 const app = express();
+<<<<<<< HEAD
 const bodyParser = require('body-parser');
 const table = require('../Database/index.js')
 const context = table.knex
@@ -10,6 +11,11 @@ var a = 0
 let artistId = ''
 let userId = ''
 
+=======
+const bodyParser = require("body-parser");
+const saveUser = require("../Database/index.js").saveUser;
+const checkArtistTable = require("../Database/index.js").checkArtistTable;
+>>>>>>> fixed conflicts
 
 app.use(bodyParser.json());
 app.use(express.static(__dirname + "/../client/dist"));
@@ -99,23 +105,21 @@ const save = require("");
 
 
 app.post("/initialLogin", (req, res) => {
-  
   let token = req.body.accessToken;
   let name = req.body.username;
 
   //check if user is an artist in our "artist" table
-  let userObj = req.body;
-
-  save(userObj)
-
-});
-
-  res.send();
-
+  checkArtistTable(name);
+  // .then(boolean => {
+  //   //save user into users database
+  //   saveUser(name, token, boolean);
+  // })
+  // .then(() => {
+  //   res.send();
+  // });
 });
 
 
 app.listen(port, () => {
   console.log("Listening on port ", port);
-  console.log("wtf");
 });
