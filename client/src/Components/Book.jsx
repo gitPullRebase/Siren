@@ -36,7 +36,7 @@ class Book extends React.Component {
               <button
                 type="button"
                 className="btn btn-primary"
-                onClick={ () => this.props.onClick(this._message.value) }>Send Message</button>
+                onClick={ () => this.props.onClick(this._message.value) }> Send Message </button>
             </div>
           </div>
         </div>

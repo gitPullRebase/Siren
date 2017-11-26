@@ -77,7 +77,7 @@ class App extends React.Component {
         </div>
         <div className="container">
 
-          <br />
+          <br/>
           <Search
             onClick={this.searchClickHandler.bind(this)}
             onChange={this.onChange.bind(this)}

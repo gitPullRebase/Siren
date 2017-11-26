@@ -1,6 +1,8 @@
 import React from "react";
 import Book from './Book.jsx'
 import BookedModal from './BookedModal.jsx';
+import axios from 'axios'
+import $ from 'jquery'
 
 class Artist extends React.Component {
   constructor(props){
@@ -9,6 +11,7 @@ class Artist extends React.Component {
       visible: false,
       showModal: false
     }
+    this.onClickHandler = this.onClickHandler.bind(this)
   }
   handleOpenModal () {
     this.setState({ showModal: true });
@@ -18,12 +21,31 @@ class Artist extends React.Component {
     this.setState({ showModal: false });
   }
   onClickHandler (input) {
+    var artistName = this.props.artist.name
+    var hardCodedUser = 'Aygerim Test'
     console.log("Message has been sent: ", input)
+    // console.log("Who artist: ", this.props.artist.name)
+    $.ajax({
+        url: '/user',
+        method: 'POST',
+        data: JSON.stringify({
+          'artist': artistName,
+          'message': input, 
+          'user': hardCodedUser
+        }),
+        contentType: 'application/json',
+        success: (data) => {
+          console.log('succeeded', data)
+        },
+        error: (xhr, status, error) => {
+          console.log('err', xhr, status, error);
+        }
+      });
     // will be continued with post ajax calls to artist inbox db.
   }
 
   render() {
-    const BookModal = (this.state.showModal ? <Book /> : <BookedModal />)
+    const BookModal = (this.state.showModal ? <Book onClick = {this.onClickHandler} /> : <BookedModal />)
 
 
     // (this.state.showModal ?

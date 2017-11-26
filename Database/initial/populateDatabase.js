@@ -41,6 +41,7 @@ exports.up = function(knex, Promise) {
       table.integer('artist_id').unsigned().references('id').inTable('artist');
       table.integer('date_id').unsigned().references('id').inTable('date');
       table.integer('user_id').unsigned().references('id').inTable('users');
+      table.string('message');
     }),
     knex.schema.createTable('single', function(table) {
       table.increments('id').primary();
