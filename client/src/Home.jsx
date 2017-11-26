@@ -20,7 +20,8 @@ class Home extends React.Component {
       tracks: SF_ArtistTracks,
       search: "",
       artist: SF_artist_data[0].name,
-      city: "San Francisco"
+      city: "San Francisco",
+      facebookId: ""
     };
     this.setArtist = this.setArtist.bind(this);
   }
@@ -68,8 +69,23 @@ class Home extends React.Component {
   }
 
   profileClickHandler() {
-    //if user is regular user then render user Profile
-    //if user is artist then render artist profile
+    axios({
+      method: "post",
+      url: "/userCheck",
+      data: this.state.facebookId
+    }).then(userObj => {
+      let artist = userObj.role;
+      //if user is regular user then render user Profile
+      if (artist) {
+      } else {
+      }
+    });
+  }
+
+  setFacebookId(facebookId) {
+    this.setState({
+      facebookId: facebookId
+    });
   }
 
   componentDidMount() {}
@@ -77,7 +93,10 @@ class Home extends React.Component {
   render() {
     return (
       <div>
-        <Navbar profileClickHandler={this.profileClickHandler.bind(this)} />
+        <Navbar
+          profileClickHandler={this.profileClickHandler.bind(this)}
+          setFacebookId={this.setFacebookId.bind(this)}
+        />
         <div className="landing-wrapper">
           <div className="landing" />
         </div>

@@ -1,11 +1,11 @@
 const pg = require("pg");
+const dbPassword = require("../config/config.js").dbPassword;
 const port = 5432;
-var password = "postgres" || "rebase";
+
 // console.log('TEST ID', SFArtistTopTracks['Bassnectar'][0].id);
 var connection =
-  // `${process.env.DATABASE_URL}/artists` ||
-  `postgres://postgres:${password}@localhost:5432/artists`;
-
+  `${process.env.DATABASE_URL}/artists` ||
+  `postgres://postgres:${dbPassword}@localhost:5432/artists`;
 
 var knex = require("knex")({
   client: "pg",

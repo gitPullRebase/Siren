@@ -14,7 +14,7 @@ const Navbar = props => (
           Profile
         </a>
       </Link>
-      <FacebookLogin />
+      <FacebookLogin setFacebookId={props.setFacebookId} />
     </ul>
   </nav>
 );
