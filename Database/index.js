@@ -1,8 +1,8 @@
 const pg = require("pg");
-
 var connection =
   // `${process.env.DATABASE_URL}/artists` ||
   "postgres://postgres:rebase@localhost:5432/artists";
+
 
 var knex = require("knex")({
   client: "pg",
@@ -34,13 +34,17 @@ let Single = bookshelf.Model.extend({
   tableName: "single"
 });
 
+let User = bookshelf.Model.extend({
+  tableName: "users"
+});
+
 module.exports.knex = knex;
 module.exports.Artist = Artist;
 module.exports.Date = Date;
 module.exports.Artist_Availability = Artist_Availability;
 module.exports.Requested_Gigs = Requested_Gigs;
 module.exports.Single = Single;
-
+module.exports.User = User;
 
 /*
 	TO CONNECT VIA TERMINAL (password might be different for each user)
