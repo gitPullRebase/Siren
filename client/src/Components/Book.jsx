@@ -1,9 +1,12 @@
-import React from 'react'
-import ReactModal from 'react-modal'
+import React from "react";
+import ReactModal from "react-modal";
 
 class Book extends React.Component {
+  constructor(props) {
+    super(props);
+  }
 
-  render () {
+  render() {
     return (
       <div
         className="modal fade"
@@ -16,7 +19,9 @@ class Book extends React.Component {
         <div className="modal-dialog" role="document">
           <div className="modal-content">
             <div className="modal-header text-center">
-              <h5 className="modal-title" id="exampleModalLabel">Send Message</h5>
+              <h5 className="modal-title" id="exampleModalLabel">
+                Send Message
+              </h5>
               <button
                 type="button"
                 className="close"
@@ -28,15 +33,21 @@ class Book extends React.Component {
             </div>
             <div className="modal-body text-center">
               <textarea
-                ref={input => this._message = input}
-                className="form-control" rows="4">
-              </textarea>
+                ref={input => (this._message = input)}
+                className="form-control"
+                rows="4"
+              />
             </div>
             <div className="modal-footer">
               <button
                 type="button"
                 className="btn btn-primary"
-                onClick={ () => this.props.onClick(this._message.value) }> Send Message </button>
+                onClick={() => this.props.onClick(this._message.value)}
+                // onClick={() => this.props.onClickHandler(this._message.value)}
+              >
+                {" "}
+                Send Message{" "}
+              </button>
             </div>
           </div>
         </div>
@@ -46,7 +57,8 @@ class Book extends React.Component {
 }
 
 export default Book;
-{/* <div>
+{
+  /* <div>
   <ReactModal
      isOpen={this.props.showModal}
      onRequestClose = {this.props.handleCloseModal}
@@ -57,4 +69,5 @@ export default Book;
   <button onClick={ () => this.props.onClick(this._message.value) }> Send </button>
     <button onClick={this.props.handleCloseModal}>Cancel</button>
   </ReactModal>
-</div> */}
+</div> */
+}

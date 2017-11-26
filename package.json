@@ -1,7 +1,8 @@
 {
   "name": "Siren",
   "version": "1.0.0",
-  "description": "Siren is a location-based DJ/Artist finder that lets users easily and quickly book gigs",
+  "description":
+    "Siren is a location-based DJ/Artist finder that lets users easily and quickly book gigs",
   "author": "Aygerim Sauletkhan, David Arellano, Edwin Chu, Vu Chau",
   "license": "MIT",
   "engines": {
@@ -14,9 +15,12 @@
     "start": "node Server/ServerIndex.js",
     "server": "nodemon Server/ServerIndex.js",
     "test": "jest",
-    "dbSetup": "knex migrate:make tables && cp Database/initial/populateDatabase.js Database/migrations/* && npm run setup2",
-    "setup2": "knex migrate:latest && knex seed:make insertData && npm run setup3",
-    "setup3": "cp Database/initial/populateTable.js Database/seeds/insertData.js && knex seed:run"
+    "dbSetup":
+      "knex migrate:make tables && cp Database/initial/populateDatabase.js Database/migrations/* && npm run setup2",
+    "setup2":
+      "knex migrate:latest && knex seed:make insertData && npm run setup3",
+    "setup3":
+      "cp Database/initial/populateTable.js Database/seeds/insertData.js && knex seed:run"
   },
   "dependencies": {
     "axios": "^0.16.2",
