@@ -10,6 +10,7 @@ class Login extends React.Component {
   responseFacebook(response) {
     console.log(response);
     let userObj = {
+      facebookID: response.id,
       accessToken: response.accessToken,
       username: response.name
     };
@@ -20,11 +21,9 @@ class Login extends React.Component {
       url: "/initialLogin",
       data: userObj
     }).then(() => {
-      //redirect to appropriate page
+      this.props.setStateFacebookId(userObj.facebookID);
+      //redirect to initial page without login button and with profile button + log out button
     });
-
-    //then the client will have the ability to check his profile
-    //depending on whether he is artist or user
   }
 
   render() {

@@ -5,6 +5,7 @@ CREATE DATABASE artists;
 
 CREATE TABLE IF NOT EXISTS users (
 	id SERIAL PRIMARY KEY,
+	facebookID varchar(40),
 	username varchar(40),
 	token varchar(300),
 	role boolean
@@ -35,7 +36,7 @@ CREATE TABLE IF NOT EXISTS requested_gigs (
 	name varchar(40),
 	date_id INTEGER,
 	artist_id INTEGER,
-	user_id INTEGER,
+	facebook_id varchar(40),
 	FOREIGN KEY (user_id) REFERENCES users (id),
 	FOREIGN KEY (artist_id) REFERENCES artist (id),
 	FOREIGN KEY (date_id) REFERENCES date (id)
