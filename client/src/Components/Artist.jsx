@@ -1,8 +1,8 @@
 import React from "react";
 import Book from './Book.jsx'
 import BookedModal from './BookedModal.jsx';
-import axios from 'axios'
-import $ from 'jquery'
+import axios from 'axios';
+import $ from 'jquery';
 
 class Artist extends React.Component {
   constructor(props){
@@ -30,7 +30,7 @@ class Artist extends React.Component {
         method: 'POST',
         data: JSON.stringify({
           'artist': artistName,
-          'message': input, 
+          'message': input,
           'user': hardCodedUser
         }),
         contentType: 'application/json',

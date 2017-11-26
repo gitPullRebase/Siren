@@ -2,7 +2,7 @@ var environment = process.env.NODE_ENV || 'development';
 var config = {
 	development: {
 		client: 'pg',
-		connection: 'postgres://postgres:rebase@localhost:5432/artists',
+		connection: 'postgres://postgres:postgres@localhost:5432/artists',
 		migrations: {
 			directory: __dirname + '/Database/migrations'
 		},

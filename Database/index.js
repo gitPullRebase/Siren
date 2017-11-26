@@ -1,7 +1,8 @@
 const pg = require("pg");
+const dbPassword = require("../config/config.js");
 var connection =
   // `${process.env.DATABASE_URL}/artists` ||
-  "postgres://postgres:rebase@localhost:5432/artists";
+  `postgres://postgres:${dbPassword}@localhost:5432/artists`;
 
 
 var knex = require("knex")({
@@ -62,7 +63,7 @@ module.exports.User = User;
 
 	psql -U postgres -f [filename]
 
-	For ours: 
+	For ours:
 	psql -U postgres -f schema.sql
 
 */

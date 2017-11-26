@@ -11,7 +11,7 @@ import Search from "./Components/Search.jsx";
 import ArtistList from "./Components/ArtistList.jsx";
 import SongsList from "./Components/SongsList.jsx";
 
-class App extends React.Component {
+class Home extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -100,4 +100,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default Home;
