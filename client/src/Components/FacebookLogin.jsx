@@ -16,20 +16,17 @@ class Login extends React.Component {
 
     //need to ask server to check if user is client or artist
     axios({
-      method: 'POST',
-      url: '/initialLogin',
+      method: "post",
+      url: "/initialLogin",
       data: userObj
-    }).then( () => {
+    }).then(() => {
       //redirect to appropriate page
-
     });
 
     //then the client will have the ability to check his profile
     //depending on whether he is artist or user
 
     //store cookie onto database for user
-
-    //redirect them to same landing page without log in
   }
 
   render() {

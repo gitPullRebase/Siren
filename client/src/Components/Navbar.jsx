@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Navbar = props => (
   <nav className="navbar navbar-expand-lg navbar-light bg-light">
     <a className="navbar-brand" href="#">
-      Siren
+      Siren.
     </a>
     <ul className="navbar-nav mr-auto">
       <Link to="/artist">

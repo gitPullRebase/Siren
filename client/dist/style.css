@@ -145,6 +145,8 @@ h5 {
 .bookBtn {
   background-color: #00d770;
   border-color: black;
+  color: black;
+  font-weight: bold;
 }
 
 .bookBtn:hover {

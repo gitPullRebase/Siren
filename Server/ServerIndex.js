@@ -9,6 +9,8 @@ var now = moment();
 var a = 0 
 let artistId = ''
 let userId = ''
+
+
 app.use(bodyParser.json());
 app.use(express.static(__dirname + "/../client/dist"));
 
@@ -91,17 +93,29 @@ app.post('/user', (req, res)=>{
 })
 app.post('/initialLogin', (req, res) => {
   //check if user is an artist
+const bodyParser = require("body-parser");
+const save = require("");
+
+
+
+app.post("/initialLogin", (req, res) => {
   
-  //save user into users database along with cookie 
+  let token = req.body.accessToken;
+  let name = req.body.username;
 
-  //redirect them to appropriate page without login buttons
+  //check if user is an artist in our "artist" table
+  let userObj = req.body;
 
+  save(userObj)
 
 });
 
+  res.send();
+
+});
 
 
 app.listen(port, () => {
   console.log("Listening on port ", port);
+  console.log("wtf");
 });
-
