@@ -1,4 +1,6 @@
 const pg = require("pg");
+const port = 5432;
+// console.log('TEST ID', SFArtistTopTracks['Bassnectar'][0].id);
 var connection =
   // `${process.env.DATABASE_URL}/artists` ||
   "postgres://postgres:rebase@localhost:5432/artists";
