@@ -30,8 +30,7 @@ class Login extends React.Component {
   }
 
   render() {
-    let clientId = process.env.FACEBOOK_CLIENT;
-    //|| config.FBclient;
+    let clientId = process.env.FACEBOOK_CLIENT || "515823602108032";
     return (
       <div className="nav-item">
         <FacebookLogin
