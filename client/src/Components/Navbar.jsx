@@ -9,16 +9,18 @@ const Navbar = props => {
         Siren.
       </a>
       <ul className="navbar-nav mr-auto">
-        <Link to="/artist">
+        <Link to={{ pathname: props.route}}>
           <a
             href="#"
             className="profileBtn"
-            onClick={props.profileClickHandler}
           >
             Profile
           </a>
         </Link>
-        <FacebookLogin setFacebookId={props.setFacebookId} />
+        <FacebookLogin
+          setFacebookId={props.setFacebookId}
+          profileClickHandler={props.profileClickHandler}
+        />
       </ul>
     </nav>
   );

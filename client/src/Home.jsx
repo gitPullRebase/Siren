@@ -19,6 +19,7 @@ class Home extends React.Component {
       route: ""
     };
     this.setArtist = this.setArtist.bind(this);
+    this.profileClickHandler = this.profileClickHandler.bind(this)
   }
 
   searchClickHandler(input) {
@@ -122,13 +123,14 @@ class Home extends React.Component {
   }
 
   profileClickHandler() {
+    console.log('PROFILE CLICK HANDLER');
     axios({
       method: "post",
       url: "/userCheck",
       data: { facebookId: this.state.facebookId }
     }).then(userObj => {
       console.log("userObj ", userObj);
-      let artist = userObj.role;
+      let artist = userObj.data[0].role;
       console.log("artist is ", artist);
       //if user is regular user then render user Profile
       if (artist) {
@@ -143,6 +145,7 @@ class Home extends React.Component {
     this.setState({
       facebookId: facebookId
     });
+    this.profileClickHandler();
   }
 
   componentDidMount() {
@@ -175,7 +178,7 @@ class Home extends React.Component {
     return (
       <div>
         <Navbar
-          profileClickHandler={this.profileClickHandler.bind(this)}
+          profileClickHandler={this.profileClickHandler}
           setFacebookId={this.setFacebookId.bind(this)}
           route={this.state.route}
         />
