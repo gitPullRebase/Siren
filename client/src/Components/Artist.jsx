@@ -18,11 +18,12 @@ class Artist extends React.Component {
   }
 
   handleCloseModal() {
+    console.log("closed")
     this.setState({ showModal: false });
   }
   onClickHandler(input) {
     var artistName = this.props.artist.username;
-
+    console.log("Artist name confirmation: ", this.props.artist.username)
     // -----!!! The user name is hardcoded, please update it with current clicking user name ---
     var hardCodedUser = "Aygerim Test";
     console.log("Message has been sent: ", input);
@@ -41,17 +42,21 @@ class Artist extends React.Component {
   }
 
   render() {
-    const BookModal = this.state.showModal ? (
-      <Book onClick={this.onClickHandler} />
-    ) : (
-      <BookedModal />
-    );
+// <<<<<<< HEAD
+//     const BookModal = this.state.showModal ? (
+//       <Book onClick={this.onClickHandler} />
+//     ) : (
+//       <BookedModal />
+//     );
 
-    // (this.state.showModal ?
-    //   <Book showModal={this.state.showModal}
-    //         handleOpenModal={this.handleOpenModal.bind(this)}
-    //         handleCloseModal={this.handleCloseModal.bind(this)}
-    //         onClick={this.onClickHandler.bind(this)}/> : <BookedModal />)
+//     // (this.state.showModal ?
+//     //   <Book showModal={this.state.showModal}
+//     //         handleOpenModal={this.handleOpenModal.bind(this)}
+//     //         handleCloseModal={this.handleCloseModal.bind(this)}
+//     //         onClick={this.onClickHandler.bind(this)}/> : <BookedModal />)
+// =======
+     const popup = (this.state.showModal ? <Book showModal = {this.state.showModal} 
+      handleOpenModal = {this.handleOpenModal.bind(this)} handleCloseModal = {this.handleCloseModal.bind(this)} onClick = {this.onClickHandler.bind(this)}/> : null)
 
     return (
       <div className="artist-container">
@@ -76,7 +81,7 @@ class Artist extends React.Component {
             data-toggle="modal"
             data-target="#bookedModal"
           />
-          {BookModal}
+          {popup}
         </div>
       </div>
     );
