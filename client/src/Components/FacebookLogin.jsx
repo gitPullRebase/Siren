@@ -1,6 +1,7 @@
 import axios from "axios";
 import React from "react";
 import { FacebookLogin } from "react-facebook-login-component";
+//import config from "../../config/config.js";
 
 class Login extends React.Component {
   constructor(props, context) {
@@ -29,7 +30,8 @@ class Login extends React.Component {
   }
 
   render() {
-    let clientId = process.env.FACEBOOK_CLIENT || "515823602108032";
+    let clientId = process.env.FACEBOOK_CLIENT;
+    //|| config.FBclient;
     return (
       <div className="nav-item">
         <FacebookLogin
