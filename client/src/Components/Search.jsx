@@ -10,7 +10,7 @@ class Search extends React.Component {
   /**
    * onEnter enable enter key to trigger this.props.onClick which is a search handler function
    * @param  {object} e event object from key press on enter
-   * @return {[type]}
+   * @return {null}
    */
   onEnter(e) {
     if (e.key === "Enter") {
