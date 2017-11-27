@@ -1,5 +1,5 @@
 var environment = process.env.NODE_ENV || "development";
-const dbPassword = require("./config/config.js").dbPassword;
+//const dbPassword = require("./config/config.js").dbPassword;
 
 var config = {
   development: {
@@ -14,7 +14,7 @@ var config = {
   },
   production: {
     client: "pg",
-    connection: `${process.env.DATABASE_URL}/artists`,
+    connection: `${process.env.DATABASE_URL}`,
     migrations: {
       directory: __dirname + "/Database/migrations"
     },
