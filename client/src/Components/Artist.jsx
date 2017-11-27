@@ -14,6 +14,7 @@ class Artist extends React.Component {
     this.onClickHandler = this.onClickHandler.bind(this);
   }
 
+
   /**
    * handleOpenModal changes the showModal state to true to render the popup
    * @return {[type]}
