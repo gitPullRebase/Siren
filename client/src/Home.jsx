@@ -127,6 +127,7 @@ class Home extends React.Component {
       url: "/userCheck",
       data: { facebookId: this.state.facebookId }
     }).then(userObj => {
+      console.log("userObj ", userObj);
       let artist = userObj.role;
       console.log("artist is ", artist);
       //if user is regular user then render user Profile
@@ -176,6 +177,7 @@ class Home extends React.Component {
         <Navbar
           profileClickHandler={this.profileClickHandler.bind(this)}
           setFacebookId={this.setFacebookId.bind(this)}
+          route={this.state.route}
         />
         <div className="landing-wrapper">
           <div className="landing" />
