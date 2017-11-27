@@ -1,32 +1,69 @@
 {
   "name": "Siren",
   "version": "1.0.0",
-  "description": "Siren is DJ/Artist finder for users seeking musicians to play for them",
+  "description": "Siren is a location-based DJ/Artist finder that lets users easily and quickly book gigs",
   "author": "Aygerim Sauletkhan, David Arellano, Edwin Chu, Vu Chau",
   "license": "MIT",
   "engines": {
     "node": ">=6.4.0"
   },
   "scripts": {
+    "postinstall": "webpack -p",
     "dev": "webpack -d --watch",
     "build": "webpack -p",
-    "server": "nodemon server/server.js"
+    "start": "node Server/ServerIndex.js",
+    "server": "nodemon Server/ServerIndex.js",
+    "test": "jest",
+    "dbSetup": "rm -rf Database/migrations && rm -rf Database/seeds && npm run setup1",
+    "setup1": "knex migrate:make tables && cp Database/initial/populateDatabase.js Database/migrations/* && npm run setup2",
+    "setup2": "knex migrate:latest && knex seed:make insertData && npm run setup3",
+    "setup3": "cp Database/initial/populateTable.js Database/seeds/insertData.js && knex seed:run"
   },
   "dependencies": {
     "axios": "^0.16.2",
-    "body-parser": "^1.18.2",
-    "express": "^4.16.0",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
-    "react-router-dom": "^4.2.2",
-    "request": "^2.83.0"
-  },
-  "devDependencies": {
-    "babel-core": "^6.25.0",
+    "babel-core": "^6.26.0",
+    "babel-jest": "^21.2.0",
     "babel-loader": "^7.1.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
+    "babel-runtime": "^6.26.0",
+    "body-parser": "^1.18.2",
+    "bookshelf": "^0.11.1",
+    "express": "^4.16.0",
+    "jquery": "^3.2.1",
+    "knex": "^0.13.0",
+    "lodash": "^4.17.4",
+    "moment": "^2.19.2",
+    "pg": "^7.4.0",
+    "react": "^15.6.2",
+    "react-dom": "^15.6.2",
+    "react-facebook-login-component": "^0.9.1",
+    "react-modal": "^3.1.4",
+    "react-router-dom": "^4.2.2",
+    "react-test-renderer": "^15.6.2",
+    "request": "^2.83.0",
     "webpack": "^2.6.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-jest": "^21.2.0",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "enzyme": "^3.2.0",
+    "enzyme-adapter-react-15": "^1.0.5",
+    "jest": "^21.2.1",
+    "jest-cli": "^21.2.1",
+    "react-addons-test-utils": "^15.6.2",
+    "regenerator-runtime": "^0.11.0",
+    "sinon": "^4.1.2",
+    "webpack": "^2.6.1"
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "./setupTests.js"
   }
 }
