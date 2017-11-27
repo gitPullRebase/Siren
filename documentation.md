@@ -24,6 +24,70 @@
 </dd>
 </dl>
 
+
+<dl>
+<dt><a href="#setFacebookId">setFacebookId(facebookId)</a></dt>
+<dd><p>setFacebookId - sets the Facebook ID state of current user that is logged in</p>
+</dd>
+<dt><a href="#setCurrentUser">setCurrentUser(currentUser)</a></dt>
+<dd><p>setCurrentUser sets state of current user that is logged in</p>
+</dd>
+<dt><a href="#searchClickHandler">searchClickHandler(input)</a></dt>
+<dd><p>searchClickHandler handles different inputs of cities</p>
+</dd>
+<dt><a href="#onChange">onChange(input)</a></dt>
+<dd><p>onChange handles change of text inside search bar</p>
+</dd>
+<dt><a href="#setArtist">setArtist(artist)</a></dt>
+<dd><p>setArtist sets artist and tracks states of artist that was selected on the page using a POST request</p>
+</dd>
+<dt><a href="#setTracks">setTracks(tracks)</a></dt>
+<dd><p>setTracks sets state of tracks</p>
+</dd>
+<dt><a href="#onEnter">onEnter(e)</a> ⇒ <code>null</code></dt>
+<dd><p>onEnter enable enter key to trigger this.props.onClick which is a search handler function</p>
+</dd>
+<dt><a href="#responseFacebook">responseFacebook(response)</a> ⇒ <code>null</code></dt>
+<dd><p>responseFacebook</p>
+</dd>
+<dt><a href="#handleOpenModal">handleOpenModal()</a> ⇒</dt>
+<dd><p>handleOpenModal changes the showModal state to true to render the popup</p>
+</dd>
+<dt><a href="#handleCloseModal">handleCloseModal()</a> ⇒</dt>
+<dd><p>handleCloseModal changes the showModal state to false to hide the popup</p>
+</dd>
+<dt><a href="#onClickHandler">onClickHandler(input)</a> ⇒</dt>
+<dd><p>onClickHandler make post request to sent he message to the artist.</p>
+</dd>
+</dl>
+
+<dl>
+<dt><a href="#seed">seed(knex, Promise)</a> ⇒ <code>Promise</code></dt>
+<dd><p>seed This function is created with creating a seed with knex and is used to add starterdata into tables</p>
+</dd>
+<dt><a href="#createSFArtist">createSFArtist(knex, artist)</a> ⇒ <code>Promise</code></dt>
+<dd></dd>
+<dt><a href="#createLAArtist">createLAArtist(knex, artist)</a> ⇒ <code>Promise</code></dt>
+<dd></dd>
+<dt><a href="#createNYArtist">createNYArtist(knex, artist)</a> ⇒ <code>Promise</code></dt>
+<dd></dd>
+<dt><a href="#createDate">createDate(knex, day)</a> ⇒ <code>Promise</code></dt>
+<dd></dd>
+<dt><a href="#createSingle">createSingle(knex, artist, id)</a> ⇒ <code>Promise</code></dt>
+<dd></dd>
+<dt><a href="#createUser">createUser(knex, artist)</a> ⇒ <code>Promise</code></dt>
+<dd></dd>
+</dl>
+
+<dl>
+<dt><a href="#up">up(knex, Promise)</a> ⇒ <code>Promise</code></dt>
+<dd><p>up This will generate all the tables in the database</p>
+</dd>
+<dt><a href="#down">down(knex, Promise)</a> ⇒ <code>Promise</code></dt>
+<dd></dd>
+</dl>
+
+
 <a name="saveUser"></a>
 
 ## saveUser(name, token, facebookId, boolean)
@@ -105,15 +169,8 @@ getCurrentUser gets the specified user from the Users table using their Facebook
 | facebookId | <code>string</code> | the user's facebookId |
 
 
-## Functions
 
-<dl>
-<dt><a href="#up">up(knex, Promise)</a> ⇒ <code>Promise</code></dt>
-<dd><p>up This will generate all the tables in the database</p>
-</dd>
-<dt><a href="#down">down(knex, Promise)</a> ⇒ <code>Promise</code></dt>
-<dd></dd>
-</dl>
+
 
 <a name="up"></a>
 
@@ -140,25 +197,8 @@ up This will generate all the tables in the database
 
 
 
-## Functions
 
-<dl>
-<dt><a href="#seed">seed(knex, Promise)</a> ⇒ <code>Promise</code></dt>
-<dd><p>seed This function is created with creating a seed with knex and is used to add starterdata into tables</p>
-</dd>
-<dt><a href="#createSFArtist">createSFArtist(knex, artist)</a> ⇒ <code>Promise</code></dt>
-<dd></dd>
-<dt><a href="#createLAArtist">createLAArtist(knex, artist)</a> ⇒ <code>Promise</code></dt>
-<dd></dd>
-<dt><a href="#createNYArtist">createNYArtist(knex, artist)</a> ⇒ <code>Promise</code></dt>
-<dd></dd>
-<dt><a href="#createDate">createDate(knex, day)</a> ⇒ <code>Promise</code></dt>
-<dd></dd>
-<dt><a href="#createSingle">createSingle(knex, artist, id)</a> ⇒ <code>Promise</code></dt>
-<dd></dd>
-<dt><a href="#createUser">createUser(knex, artist)</a> ⇒ <code>Promise</code></dt>
-<dd></dd>
-</dl>
+
 
 <a name="seed"></a>
 
@@ -241,43 +281,6 @@ seed This function is created with creating a seed with knex and is used to add 
 | artist | <code>Object</code> |  |
 
 
-## Functions
-
-<dl>
-<dt><a href="#setFacebookId">setFacebookId(facebookId)</a></dt>
-<dd><p>setFacebookId - sets the Facebook ID state of current user that is logged in</p>
-</dd>
-<dt><a href="#setCurrentUser">setCurrentUser(currentUser)</a></dt>
-<dd><p>setCurrentUser sets state of current user that is logged in</p>
-</dd>
-<dt><a href="#searchClickHandler">searchClickHandler(input)</a></dt>
-<dd><p>searchClickHandler handles different inputs of cities</p>
-</dd>
-<dt><a href="#onChange">onChange(input)</a></dt>
-<dd><p>onChange handles change of text inside search bar</p>
-</dd>
-<dt><a href="#setArtist">setArtist(artist)</a></dt>
-<dd><p>setArtist sets artist and tracks states of artist that was selected on the page using a POST request</p>
-</dd>
-<dt><a href="#setTracks">setTracks(tracks)</a></dt>
-<dd><p>setTracks sets state of tracks</p>
-</dd>
-<dt><a href="#onEnter">onEnter(e)</a> ⇒ <code>null</code></dt>
-<dd><p>onEnter enable enter key to trigger this.props.onClick which is a search handler function</p>
-</dd>
-<dt><a href="#responseFacebook">responseFacebook(response)</a> ⇒ <code>null</code></dt>
-<dd><p>responseFacebook</p>
-</dd>
-<dt><a href="#handleOpenModal">handleOpenModal()</a> ⇒</dt>
-<dd><p>handleOpenModal changes the showModal state to true to render the popup</p>
-</dd>
-<dt><a href="#handleCloseModal">handleCloseModal()</a> ⇒</dt>
-<dd><p>handleCloseModal changes the showModal state to false to hide the popup</p>
-</dd>
-<dt><a href="#onClickHandler">onClickHandler(input)</a> ⇒</dt>
-<dd><p>onClickHandler make post request to sent he message to the artist.</p>
-</dd>
-</dl>
 
 <a name="setFacebookId"></a>
 
