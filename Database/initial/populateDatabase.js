@@ -10,6 +10,13 @@
     knex migrate:latest
 */
 
+/**
+ * up [description]
+ * @param {[type]} [varname] [description]
+ * @param {[type]} [varname] [description]
+ * @return {[type]} [description]
+
+ */
 exports.up = function(knex, Promise) {
   return Promise.all([
     knex.schema.createTable("users", function(table) {

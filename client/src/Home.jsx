@@ -20,12 +20,20 @@ class Home extends React.Component {
     this.setArtist = this.setArtist.bind(this);
   }
 
+  /**
+   * setCurrentUser [description]
+   * @param {[type]} [varname] [description]
+   */
   setCurrentUser(currentUser) {
     this.setState({
       currentUser: currentUser
     });
   }
 
+  /**
+   * searchClickHandler [description]
+   * @param {[type]} [varname] [description]
+   */
   searchClickHandler(input) {
     if (
       input.toLowerCase() === "san francisco" ||
@@ -101,12 +109,22 @@ class Home extends React.Component {
       });
     }
   }
+
+  /**
+   * onChange [description]
+   * @param {[type]} [varname] [description]
+   */
   onChange(input) {
     this.setState = {
       search: input.target.value.toLowerCase()
     };
   }
 
+
+  /**
+   * setArtist [description]
+   * @param {[type]} [varname] [description]
+   */
   setArtist(artist) {
     axios({
       method: "post",
@@ -120,12 +138,36 @@ class Home extends React.Component {
     });
   }
 
+
+  /**
+   * setTracks [description]
+   * @param {[type]} [varname] [description]
+   */
   setTracks(tracks) {
     this.setState({
       tracks: tracks
     });
   }
 
+
+  /**
+   * profileClickHandler [description]
+   * @param {[type]} [varname] [description]
+   */
+  profileClickHandler() {
+    axios({
+      method: "post",
+      url: "/userCheck",
+      data: { facebookId: this.props.facebookId }
+    }).then(userObj => {
+      let artist = userObj.role;
+      if (artist) {
+        this.setState({ route: "/artist" });
+      } else {
+        this.setState({ route: "/user" });
+      }
+    });
+  }
 
   componentDidMount() {
     axios({

@@ -6,6 +6,12 @@ class Login extends React.Component {
   constructor(props, context) {
     super(props, context);
   }
+
+  /**
+   * responseFacebook
+   * @param {[type]} [varname] [description]
+   * @return {[type]}
+   */
   responseFacebook(response) {
     let userObj = {
       facebookID: response.id,
