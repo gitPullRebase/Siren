@@ -17,15 +17,12 @@ class App extends React.Component {
   }
 
   profileClickHandler() {
-    console.log('PROFILE CLICK HANDLER');
     axios({
       method: "post",
       url: "/userCheck",
       data: { facebookId: this.state.facebookId }
     }).then(userObj => {
-      console.log("userObj ", userObj);
       let artist = userObj.data[0].role;
-      console.log("artist is ", artist);
       //if user is regular user then render user Profile
       if (artist) {
         this.setState({ route: "/artist" });

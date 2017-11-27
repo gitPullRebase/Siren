@@ -4,7 +4,7 @@ const port = 5432;
 
 var connection =
   `postgres://postgres:${dbPassword}@localhost:5432/artists` ||
-  `${process.env.DATABASE_URL}/artists`;
+  `${process.env.DATABASE_URL}`;
 
 var knex = require("knex")({
   client: "pg",
