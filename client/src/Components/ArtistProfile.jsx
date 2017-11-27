@@ -15,12 +15,19 @@ class ArtistProfile extends React.Component {
   componentDidMount() {
     axios({
       method: "post",
-      url: "/chatrooms",
+      url: "/currentUser",
       data: { facebookId: this.props.facebookId }
-    }).then(chatroomsObj => {
-      let returnedChatrooms = chatroomsObj.data;
-      this.setState({
-        chatrooms: returnedChatrooms
+    }).then(userObj => {
+      let userId = userObj.data[0].id;
+      axios({
+        method: "post",
+        url: "/chatrooms",
+        data: { userId: userId }
+      }).then(chatroomsObj => {
+        let returnedChatrooms = chatroomsObj.data;
+        this.setState({
+          chatrooms: returnedChatrooms
+        });
       });
     });
   }

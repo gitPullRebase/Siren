@@ -11,10 +11,6 @@ var knex = require("knex")({
   connection: connection
 });
 
-// Client var to do raw sql queries for joins between tables
-// let client = new pg.Client(connection);
-// client.connect();
-
 let bookshelf = require("bookshelf")(knex);
 
 let User = bookshelf.Model.extend({
@@ -23,9 +19,6 @@ let User = bookshelf.Model.extend({
 
 let Artist = bookshelf.Model.extend({
   tableName: "artist"
-  // single: function() {
-  // 	return this.hasMany(single);
-  // }
 });
 
 let Date = bookshelf.Model.extend({
