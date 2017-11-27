@@ -10,16 +10,17 @@ import Navbar from "./Components/Navbar.jsx";
 import Search from "./Components/Search.jsx";
 import ArtistList from "./Components/ArtistList.jsx";
 import SongsList from "./Components/SongsList.jsx";
+import axios from "axios";
 
 class Home extends React.Component {
   constructor() {
     super();
     this.state = {
       currentUser: "",
-      artists: SF_artist_data,
-      tracks: SF_ArtistTracks,
+      artists: [],
+      tracks: [],
       search: "",
-      artist: SF_artist_data[0].name,
+      artist: "",
       city: "San Francisco",
       facebookId: ""
     };
@@ -31,28 +32,76 @@ class Home extends React.Component {
       input.toLowerCase() === "san francisco" ||
       input.toLowerCase() === "sf"
     ) {
-      this.setState({
-        artists: SF_artist_data,
-        tracks: SF_ArtistTracks,
-        clickedArtist: "",
-        city: "San Francisco"
+      axios({
+        method: "post",
+        url: "/initArtists",
+        data: { city: "San Francisco" }
+      }).then(returnedArtists => {
+        let artist = returnedArtists.data[0].username;
+        let artists = returnedArtists.data;
+        let dataObj = { artist: artist, artists: artists };
+        axios({
+          method: "post",
+          url: "/initTracks",
+          data: dataObj
+        }).then(returnedTracks => {
+          console.log("returned Tracks is ", returnedTracks.data);
+          this.setState({
+            artist: artist,
+            artists: artists,
+            tracks: returnedTracks.data,
+            city: "San Francisco"
+          });
+        });
       });
     } else if (
       input.toLowerCase() === "los angeles" ||
       input.toLowerCase() === "la"
     ) {
-      this.setState({
-        artists: LA_artist_data,
-        tracks: LA_ArtistTracks,
-        clickedArtist: "",
-        city: "Los Angeles"
+      axios({
+        method: "post",
+        url: "/initArtists",
+        data: { city: "Los Angeles" }
+      }).then(returnedArtists => {
+        let artist = returnedArtists.data[0].username;
+        let artists = returnedArtists.data;
+        let dataObj = { artist: artist, artists: artists };
+        axios({
+          method: "post",
+          url: "/initTracks",
+          data: dataObj
+        }).then(returnedTracks => {
+          console.log("returned Tracks is ", returnedTracks.data);
+          this.setState({
+            artist: artist,
+            artists: artists,
+            tracks: returnedTracks.data,
+            city: "Los Angeles"
+          });
+        });
       });
     } else {
-      this.setState({
-        artists: NY_artist_data,
-        tracks: NY_ArtistTracks,
-        clickedArtist: "",
-        city: "New York"
+      axios({
+        method: "post",
+        url: "/initArtists",
+        data: { city: "New York" }
+      }).then(returnedArtists => {
+        let artist = returnedArtists.data[0].username;
+        let artists = returnedArtists.data;
+        let dataObj = { artist: artist, artists: artists };
+        axios({
+          method: "post",
+          url: "/initTracks",
+          data: dataObj
+        }).then(returnedTracks => {
+          console.log("returned Tracks is ", returnedTracks.data);
+          this.setState({
+            artist: artist,
+            artists: artists,
+            tracks: returnedTracks.data,
+            city: "New York"
+          });
+        });
       });
     }
   }
@@ -63,8 +112,21 @@ class Home extends React.Component {
   }
 
   setArtist(artist) {
+    axios({
+      method: "post",
+      url: "/initTracks",
+      data: { artist: artist }
+    }).then(tracks => {
+      this.setState({
+        artist: artist,
+        tracks: tracks.data
+      });
+    });
+  }
+
+  setTracks(tracks) {
     this.setState({
-      artist: artist
+      tracks: tracks
     });
   }
 
@@ -88,7 +150,32 @@ class Home extends React.Component {
     });
   }
 
-  componentDidMount() {}
+  componentDidMount() {
+    axios({
+      method: "post",
+      url: "/initArtists",
+      data: { city: "San Francisco" }
+    }).then(returnedArtists => {
+      let artist = returnedArtists.data[0].username;
+      let artists = returnedArtists.data;
+      let dataObj = {
+        artist: artist,
+        artists: artists
+      };
+      axios({
+        method: "post",
+        url: "/initTracks",
+        data: dataObj
+      }).then(returnedTracks => {
+        console.log("returned Tracks is ", returnedTracks.data);
+        this.setState({
+          artist: artist,
+          artists: artists,
+          tracks: returnedTracks.data
+        });
+      });
+    });
+  }
 
   render() {
     return (
@@ -111,6 +198,7 @@ class Home extends React.Component {
             <ArtistList
               artists={this.state.artists}
               setArtist={this.setArtist}
+              setTracks={this.setTracks}
               city={this.state.city}
             />
             <SongsList tracks={this.state.tracks} artist={this.state.artist} />

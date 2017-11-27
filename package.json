@@ -1,8 +1,7 @@
 {
   "name": "Siren",
   "version": "1.0.0",
-  "description":
-    "Siren is a location-based DJ/Artist finder that lets users easily and quickly book gigs",
+  "description": "Siren is a location-based DJ/Artist finder that lets users easily and quickly book gigs",
   "author": "Aygerim Sauletkhan, David Arellano, Edwin Chu, Vu Chau",
   "license": "MIT",
   "engines": {
@@ -37,12 +36,10 @@
     "knex": "^0.13.0",
     "lodash": "^4.17.4",
     "moment": "^2.19.2",
-    "passport-facebook": "^2.1.1",
     "pg": "^7.4.0",
     "react": "^15.6.2",
     "react-dom": "^15.6.2",
     "react-facebook-login-component": "^0.9.1",
-    "react-google-login-component": "^0.9.2",
     "react-modal": "^3.1.4",
     "react-router-dom": "^4.2.2",
     "react-test-renderer": "^15.6.2",
