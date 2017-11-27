@@ -31,7 +31,8 @@ exports.up = function(knex, Promise) {
       table.string("day");
     }),
     knex.schema.createTable("requested_gigs", function(table) {
-      table.increments("id").primary();  
+      table.increments("id").primary();
+      table.string("message");
       table
         .integer("artist_id")
         .unsigned()

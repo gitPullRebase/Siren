@@ -8,7 +8,6 @@ class Login extends React.Component {
   }
 
   responseFacebook(response) {
-    console.log(response);
     let userObj = {
       facebookID: response.id,
       accessToken: response.accessToken,
@@ -34,7 +33,7 @@ class Login extends React.Component {
           socialId={clientId}
           language="en_US"
           scope="public_profile,email"
-          responseHandler={this.responseFacebook}
+          responseHandler={this.responseFacebook.bind(this)}
           xfbml={true}
           fields="id,email,name"
           version="v2.5"

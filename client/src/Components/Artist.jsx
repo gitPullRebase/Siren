@@ -26,21 +26,17 @@ class Artist extends React.Component {
     // -----!!! The user name is hardcoded, please update it with current clicking user name ---
     var hardCodedUser = "Aygerim Test";
     console.log("Message has been sent: ", input);
-    $.ajax({
+    // console.log("Who artist: ", this.props.artist.name)
+    axios({
       url: "/user",
-      method: "POST",
-      data: JSON.stringify({
+      method: "post",
+      data: {
         artist: artistName,
         message: input,
         user: hardCodedUser
-      }),
-      contentType: "application/json",
-      success: data => {
-        console.log("succeeded", data);
-      },
-      error: (xhr, status, error) => {
-        console.log("err", xhr, status, error);
       }
+    }).then(() => {
+      console.log("succeeded", data);
     });
   }
 
@@ -49,18 +45,13 @@ class Artist extends React.Component {
       <Book onClick={this.onClickHandler} />
     ) : (
       <BookedModal />
-
-    );  
-
-
+    );
 
     // (this.state.showModal ?
     //   <Book showModal={this.state.showModal}
     //         handleOpenModal={this.handleOpenModal.bind(this)}
     //         handleCloseModal={this.handleCloseModal.bind(this)}
     //         onClick={this.onClickHandler.bind(this)}/> : <BookedModal />)
-
-
 
     return (
       <div className="artist-container">
