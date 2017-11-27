@@ -3,6 +3,13 @@ import React from "react";
 class Search extends React.Component {
   constructor(props) {
     super(props);
+    this.onEnter = this.onEnter.bind(this);
+  }
+  onEnter(e) {
+    console.log(e.charCode)
+    if (e.key === 'Enter') {
+      this.props.onClick(this._cityName.value);
+    }
   }
 
   render() {
@@ -14,6 +21,7 @@ class Search extends React.Component {
           placeholder="Search for a city..."
           aria-label="Search..."
           ref={input => (this._cityName = input)}
+          onKeyPress={this.onEnter}
         />
         <span className="input-group-btn">
           <button

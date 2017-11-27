@@ -5,7 +5,6 @@ import Song from "./Song.jsx";
 
 const SongsList = props => {
   let render;
-  console.log("------", props);
   let artist = props.artist;
   if (Object.keys(props.tracks).length > 0) {
     render = props.tracks.map((album, index) => {

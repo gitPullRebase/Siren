@@ -8,7 +8,7 @@ const Navbar = props => (
       Siren.
     </a>
     <ul className="navbar-nav mr-auto">
-      <Link to="/artist">
+      <Link to={props.route}>
         <a href="#" className="profileBtn" onClick={props.profileClickHandler}>
           Profile
         </a>

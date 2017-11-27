@@ -6,9 +6,7 @@ class Login extends React.Component {
   constructor(props, context) {
     super(props, context);
   }
-
   responseFacebook(response) {
-    console.log(response);
     let userObj = {
       facebookID: response.id,
       accessToken: response.accessToken,
