@@ -12,9 +12,25 @@ let userId = "";
 const saveUser = require("../Database/dbFunction.js").saveUser;
 const checkArtistTable = require("../Database/dbFunction.js").checkArtistTable;
 const checkUsersTable = require("../Database/dbFunction.js").checkUsersTable;
+const getArtists = require("../Database/dbFunction.js").getArtists;
+const getTracks = require("../Database/dbFunction.js").getTracks;
 
 app.use(bodyParser.json());
 app.use(express.static(__dirname + "/../client/dist"));
+
+app.get("/initArtists", (req, res) => {
+  let city = "San Francisco";
+  getArtists(city).then(artists => {
+    res.json(artists);
+  });
+});
+
+app.post("/initTracks", (req, res) => {
+  let artist = req.body.artist;
+  getTracks(artist).then(tracks => {
+    res.json(tracks);
+  });
+});
 
 app.post("/user", (req, res) => {
   ++a;

@@ -4,8 +4,8 @@ const port = 5432;
 
 // console.log('TEST ID', SFArtistTopTracks['Bassnectar'][0].id);
 var connection =
-  `${process.env.DATABASE_URL}/artists` ||
-  `postgres://postgres:${dbPassword}@localhost:5432/artists`;
+  `postgres://postgres:${dbPassword}@localhost:5432/artists` ||
+  `${process.env.DATABASE_URL}/artists`;
 
 var knex = require("knex")({
   client: "pg",

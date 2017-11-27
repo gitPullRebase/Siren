@@ -1,5 +1,4 @@
 import React from "react";
-import GoogleLogin from "./GoogleLogin.jsx";
 import FacebookLogin from "./FacebookLogin.jsx";
 import { Link } from "react-router-dom";
 

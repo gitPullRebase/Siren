@@ -10,16 +10,17 @@ import Navbar from "./Components/Navbar.jsx";
 import Search from "./Components/Search.jsx";
 import ArtistList from "./Components/ArtistList.jsx";
 import SongsList from "./Components/SongsList.jsx";
+import axios from "axios";
 
 class Home extends React.Component {
   constructor() {
     super();
     this.state = {
       currentUser: "",
-      artists: SF_artist_data,
-      tracks: SF_ArtistTracks,
+      artists: [],
+      tracks: [],
       search: "",
-      artist: SF_artist_data[0].name,
+      artist: "",
       city: "San Francisco",
       facebookId: ""
     };
@@ -63,8 +64,21 @@ class Home extends React.Component {
   }
 
   setArtist(artist) {
+    axios({
+      method: "post",
+      url: "/initTracks",
+      data: { artist: artist }
+    }).then(tracks => {
+      this.setState({
+        artist: artist,
+        tracks: tracks.data
+      });
+    });
+  }
+
+  setTracks(tracks) {
     this.setState({
-      artist: artist
+      tracks: tracks
     });
   }
 
@@ -88,7 +102,31 @@ class Home extends React.Component {
     });
   }
 
-  componentDidMount() {}
+  componentDidMount() {
+    axios({
+      method: "get",
+      url: "/initArtists"
+    }).then(returnedArtists => {
+      let artist = returnedArtists.data[0].username;
+      let artists = returnedArtists.data;
+      let dataObj = {
+        artist: artist,
+        artists: artists
+      };
+      axios({
+        method: "post",
+        url: "/initTracks",
+        data: dataObj
+      }).then(returnedTracks => {
+        console.log("returned Tracks is ", returnedTracks.data);
+        this.setState({
+          artist: artist,
+          artists: artists,
+          tracks: returnedTracks.data
+        });
+      });
+    });
+  }
 
   render() {
     return (
@@ -111,6 +149,7 @@ class Home extends React.Component {
             <ArtistList
               artists={this.state.artists}
               setArtist={this.setArtist}
+              setTracks={this.setTracks}
               city={this.state.city}
             />
             <SongsList tracks={this.state.tracks} artist={this.state.artist} />
