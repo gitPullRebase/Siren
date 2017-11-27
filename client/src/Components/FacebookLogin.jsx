@@ -7,10 +7,6 @@ class Login extends React.Component {
     super(props, context);
   }
 
-  setId = () => {
-    this.props.setFacebookId(this.state.facebookId);
-  };
-
   responseFacebook(response) {
     let userObj = {
       facebookID: response.id,
@@ -34,7 +30,6 @@ class Login extends React.Component {
     return (
       <div className="nav-item">
         <FacebookLogin
-          onClick={this.setId}
           socialId={clientId}
           language="en_US"
           scope="public_profile,email"
