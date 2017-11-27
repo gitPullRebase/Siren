@@ -149,26 +149,6 @@ class Home extends React.Component {
     });
   }
 
-
-  /**
-   * profileClickHandler [description]
-   * @param {[type]} [varname] [description]
-   */
-  profileClickHandler() {
-    axios({
-      method: "post",
-      url: "/userCheck",
-      data: { facebookId: this.props.facebookId }
-    }).then(userObj => {
-      let artist = userObj.role;
-      if (artist) {
-        this.setState({ route: "/artist" });
-      } else {
-        this.setState({ route: "/user" });
-      }
-    });
-  }
-
   componentDidMount() {
     axios({
       method: "post",

@@ -2,7 +2,10 @@ import React from "react";
 import { map } from "lodash";
 
 import Song from "./Song.jsx";
-
+/**
+ * [SongsList description]
+ * @param {[type]} props [props is an array of song tracks for each artist]
+ */
 const SongsList = props => {
   let render;
   let artist = props.artist;

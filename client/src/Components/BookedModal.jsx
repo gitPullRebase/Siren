@@ -1,5 +1,12 @@
 import React from 'react';
 
+
+/**
+ * [BookedModal description]
+ * Booked Modal was going to render if Artist has been book while seeking artists.
+ * We did not have enough time to make this a feature but something one could implement
+ * in the futue...
+ */
 const BookedModal = () => (
   <div
     className="modal fade"
