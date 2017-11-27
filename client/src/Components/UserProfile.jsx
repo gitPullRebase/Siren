@@ -35,7 +35,7 @@ class UserProfile extends React.Component {
   }
 
   /**
-   * messageClickHandler - not implemented yet 
+   * messageClickHandler - not implemented yet
    * @return {[type]}
    */
   messageClickHandler() {

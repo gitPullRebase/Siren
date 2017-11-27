@@ -227,3 +227,33 @@ hr {
 .modal-header {
   color: black;
 }
+
+/*Message Styles*/
+#message {
+  color: black;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-bottom: 20px;
+}
+
+.message-btn {
+  float: right;
+  border: 1px solid rgba(0, 0, 0, 0.425);
+  margin: 8px 3px;
+}
+
+.decline-btn {
+  float: right;
+  border: 1px solid rgba(0, 0, 0, 0.425);
+  margin: 8px 3px;
+  background-color: #dd4b39;
+}
+
+.decline-btn:hover {
+  background-color: #bb3f30;
+  cursor: pointer;
+}
+
+.text-center {
+  margin-top: 15px;
+}
