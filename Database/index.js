@@ -1,19 +1,15 @@
 const pg = require("pg");
-//const dbPassword = require("../config/config.js").dbPassword;
+const dbPassword = require("../config/config.js").dbPassword;
 const port = 5432;
 
 var connection =
-  //`postgres://postgres:${dbPassword}@localhost:5432/artists` ||
+  `postgres://postgres:${dbPassword}@localhost:5432/artists` ||
   `${process.env.DATABASE_URL}`;
 
 var knex = require("knex")({
   client: "pg",
   connection: connection
 });
-
-// Client var to do raw sql queries for joins between tables
-// let client = new pg.Client(connection);
-// client.connect();
 
 let bookshelf = require("bookshelf")(knex);
 
@@ -23,9 +19,6 @@ let User = bookshelf.Model.extend({
 
 let Artist = bookshelf.Model.extend({
   tableName: "artist"
-  // single: function() {
-  // 	return this.hasMany(single);
-  // }
 });
 
 let Date = bookshelf.Model.extend({

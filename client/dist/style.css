@@ -43,6 +43,10 @@ h5 {
   background-color: #000000 !important;
 }
 
+.profileBtn-toolbar {
+  margin-bottom: 20px;
+}
+
 .profileBtn {
   color: white !important;
   position: absolute;

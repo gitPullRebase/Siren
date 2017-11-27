@@ -1,6 +1,6 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import axios from 'axios';
+import axios from "axios";
 
 import Home from "./Home.jsx";
 import UserProfile from "./Components/UserProfile.jsx";
@@ -23,7 +23,6 @@ class App extends React.Component {
       data: { facebookId: this.state.facebookId }
     }).then(userObj => {
       let artist = userObj.data[0].role;
-      //if user is regular user then render user Profile
       if (artist) {
         this.setState({ route: "/artist" });
       } else {
@@ -33,7 +32,7 @@ class App extends React.Component {
   }
 
   /**
-   * setFacebookId  
+   * setFacebookId
    * @param {[type]} [varname] [description]
    */
   setFacebookId(facebookId) {
