@@ -126,20 +126,6 @@ class Home extends React.Component {
     });
   }
 
-  profileClickHandler() {
-    axios({
-      method: "post",
-      url: "/userCheck",
-      data: { facebookId: this.props.facebookId }
-    }).then(userObj => {
-      let artist = userObj.role;
-      if (artist) {
-        this.setState({ route: "/artist" });
-      } else {
-        this.setState({ route: "/user" });
-      }
-    });
-  }
 
   componentDidMount() {
     axios({
@@ -171,9 +157,8 @@ class Home extends React.Component {
     return (
       <div>
         <Navbar
-          route={this.state.route}
-          profileClickHandler={this.profileClickHandler.bind(this)}
-          setFacebookId={this.props.setFacebookId.bind(this)}
+          route={this.props.route}
+          setFacebookId={this.props.setFacebookId}
         />
         <div className="landing-wrapper">
           <div className="landing" />

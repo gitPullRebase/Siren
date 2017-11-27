@@ -9,8 +9,11 @@ const Navbar = props => {
         Siren.
       </a>
       <ul className="navbar-nav mr-auto">
-        <Link to={props.route}>
-          <a className="profileBtn" onClick={props.profileClickHandler}>
+        <Link to={{ pathname: props.route}}>
+          <a
+            href="#"
+            className="profileBtn"
+          >
             Profile
           </a>
         </Link>
