@@ -5,6 +5,13 @@ class Search extends React.Component {
     super(props);
     this.onEnter = this.onEnter.bind(this);
   }
+  
+
+  /**
+   * onEnter enable enter key to trigger this.props.onClick which is a search handler function
+   * @param  {object} e event object from key press on enter
+   * @return {null}
+   */
   onEnter(e) {
     if (e.key === "Enter") {
       this.props.onClick(this._cityName.value);

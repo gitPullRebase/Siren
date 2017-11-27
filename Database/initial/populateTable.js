@@ -18,6 +18,13 @@ const LAArtistTopTracks = require("../artistData/LA_artist_top_tracks.json");
 const sampleArtistsNY = require("../artistData/NY_artist_data.js");
 const NYArtistTopTracks = require("../artistData/NY_artist_top_tracks.json");
 
+
+/**
+ * seed [description]
+ * @param {[type]} [varname] [description]
+ * @param {[type]} [varname] [description]
+ * @return {[type]} [description]
+ */
 exports.seed = function(knex, Promise) {
   return knex("artist")
     .del()
@@ -99,6 +106,11 @@ exports.seed = function(knex, Promise) {
     });
 };
 
+/**
+ * @param  {[type]}
+ * @param  {[type]}
+ * @return {[type]}
+ */
 const createSFArtist = (knex, artist) => {
   return knex("artist").insert({
     username: artist.name,
@@ -108,6 +120,11 @@ const createSFArtist = (knex, artist) => {
   });
 };
 
+/**
+ * @param  {[type]}
+ * @param  {[type]}
+ * @return {[type]}
+ */
 const createLAArtist = (knex, artist) => {
   return knex("artist").insert({
     username: artist.name,
@@ -117,6 +134,11 @@ const createLAArtist = (knex, artist) => {
   });
 };
 
+/**
+ * @param  {[type]}
+ * @param  {[type]}
+ * @return {[type]}
+ */
 const createNYArtist = (knex, artist) => {
   return knex("artist").insert({
     username: artist.name,
@@ -126,12 +148,22 @@ const createNYArtist = (knex, artist) => {
   });
 };
 
+/**
+ * @param  {[type]}
+ * @param  {[type]}
+ * @return {[type]}
+ */
 const createDate = (knex, day) => {
   return knex("date").insert({
     day: day
   });
 };
 
+/**
+ * @param  {[type]}
+ * @param  {[type]}
+ * @return {[type]}
+ */
 const createSingle = (knex, artist, id) => {
   return knex("single").insert({
     single_id: id,
@@ -139,6 +171,11 @@ const createSingle = (knex, artist, id) => {
   });
 };
 
+/**
+ * @param  {[type]}
+ * @param  {[type]}
+ * @return {[type]}
+ */
 // Artist ROLE = true
 // Client ROLE = false
 const createUser = (knex, artist) => {

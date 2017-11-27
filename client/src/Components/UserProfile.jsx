@@ -25,6 +25,10 @@ class UserProfile extends React.Component {
     });
   }
 
+  /**
+   * messageClickHandler - not implemented yet 
+   * @return {[type]}
+   */
   messageClickHandler() {
     //creates a new pop up window with message history btwn user <-> artist
   }

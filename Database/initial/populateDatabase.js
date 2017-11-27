@@ -10,6 +10,13 @@
     knex migrate:latest
 */
 
+/**
+ * up [description]
+ * @param {[type]} [varname] [description]
+ * @param {[type]} [varname] [description]
+ * @return {[type]} [description]
+
+ */
 exports.up = function(knex, Promise) {
   return Promise.all([
     knex.schema.createTable("users", function(table) {
@@ -17,6 +24,7 @@ exports.up = function(knex, Promise) {
       table.string("facebookID");
       table.string("username");
       table.string("token");
+      table.string("artistName");
       table.boolean("role");
     }),
     knex.schema.createTable("artist", function(table) {
