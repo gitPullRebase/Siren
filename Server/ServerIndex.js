@@ -18,8 +18,8 @@ const getTracks = require("../Database/dbFunction.js").getTracks;
 app.use(bodyParser.json());
 app.use(express.static(__dirname + "/../client/dist"));
 
-app.get("/initArtists", (req, res) => {
-  let city = "San Francisco";
+app.post("/initArtists", (req, res) => {
+  let city = req.body.city;
   getArtists(city).then(artists => {
     res.json(artists);
   });
