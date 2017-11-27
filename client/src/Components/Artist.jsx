@@ -38,7 +38,6 @@ class Artist extends React.Component {
     }).then(() => {
       console.log("succeeded", data);
     });
-
   }
 
   render() {
@@ -46,10 +45,7 @@ class Artist extends React.Component {
       <Book onClick={this.onClickHandler} />
     ) : (
       <BookedModal />
-
-    );  
-
-
+    );
 
     // (this.state.showModal ?
     //   <Book showModal={this.state.showModal}
@@ -57,11 +53,6 @@ class Artist extends React.Component {
     //         handleCloseModal={this.handleCloseModal.bind(this)}
     //         onClick={this.onClickHandler.bind(this)}/> : <BookedModal />)
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> fixed conflic
     return (
       <div className="artist-container">
         <img
