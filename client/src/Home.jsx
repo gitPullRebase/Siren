@@ -132,12 +132,10 @@ class Home extends React.Component {
       url: "/userCheck",
       data: { facebookId: this.props.facebookId }
     }).then(userObj => {
-      console.log("userObj ", userObj);
       let artist = userObj.role;
       if (artist) {
         this.setState({ route: "/artist" });
       } else {
-        console.log("as a user");
         this.setState({ route: "/user" });
       }
     });

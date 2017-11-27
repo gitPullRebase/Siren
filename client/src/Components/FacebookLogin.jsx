@@ -12,7 +12,6 @@ class Login extends React.Component {
       accessToken: response.accessToken,
       username: response.name
     };
-    this.props.setCurrentUser(userObj.username);
     //need to ask server to check if user is client or artist
     axios({
       method: "post",

@@ -18,7 +18,6 @@ class ArtistProfile extends React.Component {
       url: "/chatrooms",
       data: { facebookId: this.props.facebookId }
     }).then(chatroomsObj => {
-      console.log("chatrooms Obj is ", chatroomsObj);
       let returnedChatrooms = chatroomsObj.data;
       this.setState({
         chatrooms: returnedChatrooms

@@ -9,7 +9,7 @@ class Artist extends React.Component {
     super(props);
     this.state = {
       visible: false,
-      showModal: true
+      showModal: false
     };
     this.onClickHandler = this.onClickHandler.bind(this);
   }
@@ -18,22 +18,18 @@ class Artist extends React.Component {
   }
 
   handleCloseModal() {
-    console.log("closed")
     this.setState({ showModal: false });
   }
 
   onClickHandler(input) {
     var artistName = this.props.artist.username;
     var facebookId = this.props.facebookId;
-    console.log("facebookId is ", facebookId);
     axios({
       url: "/currentUser",
       method: "post",
       data: { facebookId: facebookId }
     }).then(userObj => {
-      console.log("userObj is ", userObj);
       let currentUser = userObj.data[0].username;
-      console.log("current user is ", currentUser);
       axios({
         url: "/user",
         method: "post",
@@ -49,21 +45,27 @@ class Artist extends React.Component {
   }
 
   render() {
-// <<<<<<< HEAD
-//     const BookModal = this.state.showModal ? (
-//       <Book onClick={this.onClickHandler} />
-//     ) : (
-//       <BookedModal />
-//     );
+    // <<<<<<< HEAD
+    //     const BookModal = this.state.showModal ? (
+    //       <Book onClick={this.onClickHandler} />
+    //     ) : (
+    //       <BookedModal />
+    //     );
 
-//     // (this.state.showModal ?
-//     //   <Book showModal={this.state.showModal}
-//     //         handleOpenModal={this.handleOpenModal.bind(this)}
-//     //         handleCloseModal={this.handleCloseModal.bind(this)}
-//     //         onClick={this.onClickHandler.bind(this)}/> : <BookedModal />)
-// =======
-     const popup = (this.state.showModal ? <Book showModal = {this.state.showModal} 
-      handleOpenModal = {this.handleOpenModal.bind(this)} handleCloseModal = {this.handleCloseModal.bind(this)} onClick = {this.onClickHandler.bind(this)}/> : null)
+    //     // (this.state.showModal ?
+    //     //   <Book showModal={this.state.showModal}
+    //     //         handleOpenModal={this.handleOpenModal.bind(this)}
+    //     //         handleCloseModal={this.handleCloseModal.bind(this)}
+    //     //         onClick={this.onClickHandler.bind(this)}/> : <BookedModal />)
+    // =======
+    const popup = this.state.showModal ? (
+      <Book
+        showModal={this.state.showModal}
+        handleOpenModal={this.handleOpenModal.bind(this)}
+        handleCloseModal={this.handleCloseModal.bind(this)}
+        onClick={this.onClickHandler.bind(this)}
+      />
+    ) : null;
 
     return (
       <div className="artist-container">

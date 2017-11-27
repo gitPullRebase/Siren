@@ -8,6 +8,7 @@ const moment = require("moment");
 var now = moment();
 let artistId = "";
 let userId = "";
+var a = 0;
 const saveUser = require("../Database/dbFunction.js").saveUser;
 const checkArtistTable = require("../Database/dbFunction.js").checkArtistTable;
 const checkUsersTable = require("../Database/dbFunction.js").checkUsersTable;
@@ -34,28 +35,29 @@ app.post("/initTracks", (req, res) => {
 });
 
 app.post("/user", (req, res) => {
-  let input = {};
-  console.log("req body is ", req.body);
+  ++a;
+  var formatted = now.format("YYYY-MM-DD HH:mm:ss Z");
+
+  let input = { artist: "", message: "" };
   input.artist = req.body.artist;
   input.message = req.body.message;
   input.user = req.body.user;
-  // retrieve id for artist and user
+  // retrieve id for user and artist
+
   table.Artist.forge()
     .query()
     .select()
     .where("username", "=", input.artist)
-    .then(model => {
-      console.log("input user is ", input.user);
+    .then(function(model) {
       artistId = model[0].id;
       table.User.forge()
         .query()
         .select()
         .where("username", "=", input.user)
-        .then(model => {
-          console.log("model is ", model);
+        .then(function(model) {
           userId = model[0].id;
         })
-        .then(() => {
+        .then(function() {
           // posting data
           new table.Requested_Gigs({
             artist_id: artistId,
@@ -63,14 +65,26 @@ app.post("/user", (req, res) => {
             message: input.message
           })
             .save()
-            .then(() => {
-              context.destroy();
-            })
+            .then(function() {})
             .catch(err => {
               console.log("ERROR: ", err);
             });
         });
     });
+
+  //TESTING
+  // new table.Requested_Gigs({
+  //  	name: 'aygerim test',
+  //  	artist_id: 10,
+  //  	user_id: 3,
+  //  	message: "hello world",
+  //  	date_id: 10
+  //  		})
+  // .save()
+  // .then(function() {
+  // context.destroy();
+  // })
+
   // new table.User({
   // username: 'Aygerim Test',
   // role: 'f'
@@ -78,8 +92,11 @@ app.post("/user", (req, res) => {
   // .then(function() {
   //     context.destroy();
   //   })
+
+  console.log("all --> ", input);
   res.status(201).send("hello");
 });
+
 
 app.post("/initialLogin", (req, res) => {
   let token = req.body.accessToken;
