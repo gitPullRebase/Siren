@@ -46,18 +46,11 @@ let checkUsersTable = facebookID => {
     .select();
 };
 
-let getChatrooms = facebookId => {
-  return table.User.forge()
-    .where("facebookdID", "=", facebookID)
+let getChatrooms = userId => {
+  return table.Requested_Gigs.forge()
+    .where("user_id", "=", userId)
     .query()
-    .select()
-    .then(userObj => {
-      let userId = userObj.id;
-      table.Requested_Gigs.forge()
-        .where("artist_id", "=", userId)
-        .query()
-        .select();
-    });
+    .select();
 };
 
 let getCurrentUser = facebookId => {

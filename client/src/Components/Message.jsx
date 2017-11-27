@@ -5,13 +5,15 @@ const Message = props => {
   if (isArtist) {
     return (
       <div>
-        <div onClick={props.messageClickHandler}>{props.chatroom}</div>
+        <div onClick={props.messageClickHandler}>{props.chatroom.message}</div>
         <button onClick={props.acceptClickHandler} className="accept" />
         <button onClick={props.declineClickHandler} className="decline" />
       </div>
     );
   } else {
-    return <div onClick={props.messageClickHandler}>{props.chatroom}</div>;
+    return (
+      <div onClick={props.messageClickHandler}>{props.chatroom.message}</div>
+    );
   }
 };
 

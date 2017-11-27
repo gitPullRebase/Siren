@@ -16,6 +16,7 @@ const getArtists = require("../Database/dbFunction.js").getArtists;
 const getTracks = require("../Database/dbFunction.js").getTracks;
 const getChatrooms = require("../Database/dbFunction.js").getChatrooms;
 const getCurrentUser = require("../Database/dbFunction.js").getCurrentUser;
+const getChatrooms2 = require("../Database/dbFunction.js").getChatrooms2;
 
 app.use(bodyParser.json());
 app.use(express.static(__dirname + "/../client/dist"));
@@ -97,7 +98,6 @@ app.post("/user", (req, res) => {
   res.status(201).send("hello");
 });
 
-
 app.post("/initialLogin", (req, res) => {
   let token = req.body.accessToken;
   let name = req.body.username;
@@ -106,7 +106,6 @@ app.post("/initialLogin", (req, res) => {
   //check if user is an artist in our "artist" table
   checkArtistTable(name)
     .then(userObj => {
-      console.log("userObj is ", userObj);
       let bool = true;
       if (userObj !== null && userObj.length > 0) {
         bool = true;
@@ -129,9 +128,9 @@ app.post("/userCheck", (req, res) => {
 });
 
 app.post("/chatrooms", (req, res) => {
-  let facebookId = req.body.facebookId;
-  getChatrooms(facebookId).then(userObj => {
-    res.json(userObj);
+  let userId = req.body.userId;
+  getChatrooms(userId).then(chatroomsObj => {
+    res.json(chatroomsObj);
   });
 });
 
