@@ -23,6 +23,7 @@ class Artist extends React.Component {
 
   onClickHandler(input) {
     var artistName = this.props.artist.username;
+
     var facebookId = this.props.facebookId;
     axios({
       url: "/currentUser",
@@ -45,27 +46,9 @@ class Artist extends React.Component {
   }
 
   render() {
-    // <<<<<<< HEAD
-    //     const BookModal = this.state.showModal ? (
-    //       <Book onClick={this.onClickHandler} />
-    //     ) : (
-    //       <BookedModal />
-    //     );
 
-    //     // (this.state.showModal ?
-    //     //   <Book showModal={this.state.showModal}
-    //     //         handleOpenModal={this.handleOpenModal.bind(this)}
-    //     //         handleCloseModal={this.handleCloseModal.bind(this)}
-    //     //         onClick={this.onClickHandler.bind(this)}/> : <BookedModal />)
-    // =======
-    const popup = this.state.showModal ? (
-      <Book
-        showModal={this.state.showModal}
-        handleOpenModal={this.handleOpenModal.bind(this)}
-        handleCloseModal={this.handleCloseModal.bind(this)}
-        onClick={this.onClickHandler.bind(this)}
-      />
-    ) : null;
+    const popup = (this.state.showModal ? <Book showModal = {this.state.showModal} 
+    handleOpenModal = {this.handleOpenModal.bind(this)} handleCloseModal = {this.handleCloseModal.bind(this)} onClick = {this.onClickHandler.bind(this)}/> : null)
 
     return (
       <div className="artist-container">
