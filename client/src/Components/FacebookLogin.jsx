@@ -23,6 +23,9 @@ class Login extends React.Component {
     }).then(() => {
       this.props.setFacebookId(userObj.facebookID);
       //redirect to initial page without login button and with profile button + log out button
+
+
+      
     });
   }
 

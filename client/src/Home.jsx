@@ -1,11 +1,4 @@
 import React from "react";
-import SF_artist_data from "../../Database/artistData/SF_artist_data.js";
-import SF_ArtistTracks from "../../Database/artistData/SF_artist_top_tracks.json";
-import LA_artist_data from "../../Database/artistData/LA_artist_data.js";
-import LA_ArtistTracks from "../../Database/artistData/LA_artist_top_tracks.json";
-import NY_artist_data from "../../Database/artistData/NY_artist_data.js";
-import NY_ArtistTracks from "../../Database/artistData/NY_artist_top_tracks.json";
-
 import Navbar from "./Components/Navbar.jsx";
 import Search from "./Components/Search.jsx";
 import ArtistList from "./Components/ArtistList.jsx";
@@ -139,7 +132,9 @@ class Home extends React.Component {
       let artist = userObj.role;
       //if user is regular user then render user Profile
       if (artist) {
+
       } else {
+        
       }
     });
   }
