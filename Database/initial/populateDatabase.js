@@ -24,6 +24,7 @@ exports.up = function(knex, Promise) {
       table.string("facebookID");
       table.string("username");
       table.string("token");
+      table.string("artistName");
       table.boolean("role");
     }),
     knex.schema.createTable("artist", function(table) {
