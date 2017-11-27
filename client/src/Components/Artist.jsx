@@ -22,9 +22,10 @@ class Artist extends React.Component {
   }
   onClickHandler(input) {
     var artistName = this.props.artist.username;
+
+    // -----!!! The user name is hardcoded, please update it with current clicking user name ---
     var hardCodedUser = "Aygerim Test";
     console.log("Message has been sent: ", input);
-    // console.log("Who artist: ", this.props.artist.name)
     $.ajax({
       url: "/user",
       method: "POST",
@@ -41,7 +42,6 @@ class Artist extends React.Component {
         console.log("err", xhr, status, error);
       }
     });
-    // will be continued with post ajax calls to artist inbox db.
   }
 
   render() {
@@ -49,14 +49,16 @@ class Artist extends React.Component {
       <Book onClick={this.onClickHandler} />
     ) : (
       <BookedModal />
-    );
+
+    );  
+
+
 
     // (this.state.showModal ?
     //   <Book showModal={this.state.showModal}
     //         handleOpenModal={this.handleOpenModal.bind(this)}
     //         handleCloseModal={this.handleCloseModal.bind(this)}
     //         onClick={this.onClickHandler.bind(this)}/> : <BookedModal />)
-
 
 
 
@@ -89,5 +91,4 @@ class Artist extends React.Component {
     );
   }
 }
-
 export default Artist;

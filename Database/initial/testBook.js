@@ -12,7 +12,6 @@ let context = table.knex
 //     context.destroy();
 //   })
  
-
  table.User
   .forge()
   .query()
