@@ -21,8 +21,8 @@ class Home extends React.Component {
   }
 
   /**
-   * setCurrentUser [description]
-   * @param {[type]} [varname] [description]
+   * setCurrentUser sets state of current user that is logged in
+   * @param {string} currentUser the current user that is returned
    */
   setCurrentUser(currentUser) {
     this.setState({
@@ -31,8 +31,8 @@ class Home extends React.Component {
   }
 
   /**
-   * searchClickHandler [description]
-   * @param {[type]} [varname] [description]
+   * searchClickHandler handles different inputs of cities
+   * @param {string} input name of city that is typed in by the user
    */
   searchClickHandler(input) {
     if (
@@ -111,8 +111,8 @@ class Home extends React.Component {
   }
 
   /**
-   * onChange [description]
-   * @param {[type]} [varname] [description]
+   * onChange handles change of text inside search bar
+   * @param {string} input input from user into searchbar
    */
   onChange(input) {
     this.setState = {
@@ -121,8 +121,8 @@ class Home extends React.Component {
   }
 
   /**
-   * setArtist [description]
-   * @param {[type]} [varname] [description]
+   * setArtist sets artist and tracks states of artist that was selected on the page using a POST request
+   * @param {string} artist artist that is selected by user
    */
   setArtist(artist) {
     axios({
@@ -138,8 +138,8 @@ class Home extends React.Component {
   }
 
   /**
-   * setTracks [description]
-   * @param {[type]} [varname] [description]
+   * setTracks sets state of tracks
+   * @param {array} tracks array of tracks returned from database
    */
   setTracks(tracks) {
     this.setState({
