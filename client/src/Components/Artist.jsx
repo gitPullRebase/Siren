@@ -49,7 +49,18 @@ class Artist extends React.Component {
       <Book onClick={this.onClickHandler} />
     ) : (
       <BookedModal />
+
     );  
+
+
+
+    // (this.state.showModal ?
+    //   <Book showModal={this.state.showModal}
+    //         handleOpenModal={this.handleOpenModal.bind(this)}
+    //         handleCloseModal={this.handleCloseModal.bind(this)}
+    //         onClick={this.onClickHandler.bind(this)}/> : <BookedModal />)
+
+
 
     return (
       <div className="artist-container">

@@ -84,8 +84,9 @@ app.post("/initialLogin", (req, res) => {
   //check if user is an artist in our "artist" table
   checkArtistTable(name)
     .then(userObj => {
+			console.log("userObj is ", userObj);
       let bool = true;
-      if (userObj !== null) {
+      if (userObj !== null && userObj.length > 0) {
         bool = true;
       } else {
         bool = false;
