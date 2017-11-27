@@ -1,21 +1,10 @@
 // File needed if want to create tables in database through knex migrate.
 
-/* TO SET UP KNEX MIGRATE, TYPE IN TERMINAL: 
-
-    knex migrate:make [name]
-
-    Then copy and paste the contents below into the file that is created in Database/migrations
-    AFTER ABOVE STEP DONE, TYPE AND RUN IN TERMINAL:
-
-    knex migrate:latest
-*/
-
 /**
- * up [description]
- * @param {[type]} [varname] [description]
- * @param {[type]} [varname] [description]
- * @return {[type]} [description]
-
+ * up This will generate all the tables in the database
+ * @param {Promise} knex Helps execute SQL queries to create the tables
+ * @param {Promise} Promise Ensures that all tables will be created
+ * @return {Promise} 
  */
 exports.up = function(knex, Promise) {
   return Promise.all([
@@ -66,6 +55,11 @@ exports.up = function(knex, Promise) {
   ]);
 };
 
+/**
+ * @param {Promise} knex Helps execute SQL queries 
+ * @param {Promise} Promise Was not needed
+ * @return {Promise} Will drop all the tables if you need to rollback a migration
+ */
 exports.down = function(knex, Promise) {
   return (
     knex.schema

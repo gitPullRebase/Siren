@@ -20,10 +20,10 @@ const NYArtistTopTracks = require("../artistData/NY_artist_top_tracks.json");
 
 
 /**
- * seed [description]
- * @param {[type]} [varname] [description]
- * @param {[type]} [varname] [description]
- * @return {[type]} [description]
+ * seed This function is created with creating a seed with knex and is used to add starterdata into tables
+ * @param {Promise} knex SQL builder
+ * @param {Promise} Promise This is a promise that will ensure that the tables will be populated
+ * @return {Promise} This will populate the tables with initial data from artists
  */
 exports.seed = function(knex, Promise) {
   return knex("artist")
@@ -107,9 +107,9 @@ exports.seed = function(knex, Promise) {
 };
 
 /**
- * @param  {[type]}
- * @param  {[type]}
- * @return {[type]}
+ * @param {Promise} knex SQL builder
+ * @param {Object} artist This object contains the artist's name, city, image, and uri
+ * @return {Promise} Inserts an entry into the artist table for SF artists
  */
 const createSFArtist = (knex, artist) => {
   return knex("artist").insert({
@@ -121,9 +121,9 @@ const createSFArtist = (knex, artist) => {
 };
 
 /**
- * @param  {[type]}
- * @param  {[type]}
- * @return {[type]}
+ * @param {Promise} knex SQL builder
+ * @param {Object} artist This object contains the artist's name, city, image, and uri
+ * @return {Promise} Inserts an entry into the artist table for LA artists
  */
 const createLAArtist = (knex, artist) => {
   return knex("artist").insert({
@@ -135,9 +135,9 @@ const createLAArtist = (knex, artist) => {
 };
 
 /**
- * @param  {[type]}
- * @param  {[type]}
- * @return {[type]}
+ * @param {Promise} knex SQL builder
+ * @param {Object} artist This object contains the artist's name, city, image, and uri
+ * @return {Promise} Inserts an entry into the artist table for NY artists
  */
 const createNYArtist = (knex, artist) => {
   return knex("artist").insert({
@@ -149,9 +149,9 @@ const createNYArtist = (knex, artist) => {
 };
 
 /**
- * @param  {[type]}
- * @param  {[type]}
- * @return {[type]}
+ * @param {Promise} knex SQL builder
+ * @param {String} day This will be in the format of 'D/M' for all 365 days of the year
+ * @return {Promise} Inserts a date entry into the date table
  */
 const createDate = (knex, day) => {
   return knex("date").insert({
@@ -160,9 +160,10 @@ const createDate = (knex, day) => {
 };
 
 /**
- * @param  {[type]}
- * @param  {[type]}
- * @return {[type]}
+ * @param {Promise} knex SQL builder
+ * @param {String} artist
+ * @param {Number} id 
+ * @return {Promise} Inserts an entry containing an artist's single and name into the single table
  */
 const createSingle = (knex, artist, id) => {
   return knex("single").insert({
@@ -172,12 +173,10 @@ const createSingle = (knex, artist, id) => {
 };
 
 /**
- * @param  {[type]}
- * @param  {[type]}
- * @return {[type]}
+ * @param {Promise} knex SQL builder
+ * @param {Object} artist 
+ * @return {Promise} Inserts a user into the users table
  */
-// Artist ROLE = true
-// Client ROLE = false
 const createUser = (knex, artist) => {
   return knex("users").insert({
     facebookID: null,
