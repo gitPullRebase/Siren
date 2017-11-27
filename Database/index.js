@@ -1,11 +1,7 @@
 const pg = require("pg");
 const dbPassword = require("../config/config.js").dbPassword;
 const port = 5432;
-var connection =
-  // `${process.env.DATABASE_URL}/artists` ||
-  `postgres://postgres:${dbPassword}@localhost:5432/artists`;
 
-// console.log('TEST ID', SFArtistTopTracks['Bassnectar'][0].id);
 var connection =
   `postgres://postgres:${dbPassword}@localhost:5432/artists` ||
   `${process.env.DATABASE_URL}/artists`;

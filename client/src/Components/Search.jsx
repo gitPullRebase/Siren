@@ -6,8 +6,7 @@ class Search extends React.Component {
     this.onEnter = this.onEnter.bind(this);
   }
   onEnter(e) {
-    console.log(e.charCode)
-    if (e.key === 'Enter') {
+    if (e.key === "Enter") {
       this.props.onClick(this._cityName.value);
     }
   }

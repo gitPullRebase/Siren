@@ -19,7 +19,7 @@ const Navbar = props => {
         </Link>
         <FacebookLogin
           setFacebookId={props.setFacebookId}
-          profileClickHandler={props.profileClickHandler}
+          setCurrentUser={props.setCurrentUser}
         />
       </ul>
     </nav>

@@ -48,7 +48,6 @@ exports.up = function(knex, Promise) {
         .unsigned()
         .references("id")
         .inTable("users");
-      table.string("message");
     }),
     knex.schema.createTable("single", function(table) {
       table.increments("id").primary();

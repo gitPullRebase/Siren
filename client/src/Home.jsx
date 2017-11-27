@@ -15,11 +15,15 @@ class Home extends React.Component {
       search: "",
       artist: "",
       city: "San Francisco",
-      facebookId: "",
       route: ""
     };
     this.setArtist = this.setArtist.bind(this);
-    this.profileClickHandler = this.profileClickHandler.bind(this)
+  }
+
+  setCurrentUser(currentUser) {
+    this.setState({
+      currentUser: currentUser
+    });
   }
 
   searchClickHandler(input) {
@@ -122,31 +126,6 @@ class Home extends React.Component {
     });
   }
 
-  profileClickHandler() {
-    console.log('PROFILE CLICK HANDLER');
-    axios({
-      method: "post",
-      url: "/userCheck",
-      data: { facebookId: this.state.facebookId }
-    }).then(userObj => {
-      console.log("userObj ", userObj);
-      let artist = userObj.data[0].role;
-      console.log("artist is ", artist);
-      //if user is regular user then render user Profile
-      if (artist) {
-        this.setState({ route: "/artist" });
-      } else {
-        this.setState({ route: "/user" });
-      }
-    });
-  }
-
-  setFacebookId(facebookId) {
-    this.setState({
-      facebookId: facebookId
-    });
-    this.profileClickHandler();
-  }
 
   componentDidMount() {
     axios({
@@ -178,9 +157,8 @@ class Home extends React.Component {
     return (
       <div>
         <Navbar
-          profileClickHandler={this.profileClickHandler}
-          setFacebookId={this.setFacebookId.bind(this)}
-          route={this.state.route}
+          route={this.props.route}
+          setFacebookId={this.props.setFacebookId}
         />
         <div className="landing-wrapper">
           <div className="landing" />
@@ -194,6 +172,7 @@ class Home extends React.Component {
           <br />
           <div className="row">
             <ArtistList
+              facebookId={this.props.facebookId}
               artists={this.state.artists}
               setArtist={this.setArtist}
               setTracks={this.setTracks}
