@@ -7,8 +7,11 @@ class Login extends React.Component {
     super(props, context);
   }
 
+  setId = () => {
+    this.props.setFacebookId(this.state.facebookId);
+  };
+
   responseFacebook(response) {
-    console.log(response);
     let userObj = {
       facebookID: response.id,
       accessToken: response.accessToken,
@@ -23,9 +26,6 @@ class Login extends React.Component {
     }).then(() => {
       this.props.setFacebookId(userObj.facebookID);
       //redirect to initial page without login button and with profile button + log out button
-
-
-      
     });
   }
 
@@ -34,10 +34,11 @@ class Login extends React.Component {
     return (
       <div className="nav-item">
         <FacebookLogin
+          onClick={this.setId}
           socialId={clientId}
           language="en_US"
           scope="public_profile,email"
-          responseHandler={this.responseFacebook}
+          responseHandler={this.responseFacebook.bind(this)}
           xfbml={true}
           fields="id,email,name"
           version="v2.5"

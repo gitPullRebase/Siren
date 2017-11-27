@@ -6,8 +6,8 @@ import SongsList from "./Components/SongsList.jsx";
 import axios from "axios";
 
 class Home extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       currentUser: "",
       artists: [],
@@ -15,7 +15,8 @@ class Home extends React.Component {
       search: "",
       artist: "",
       city: "San Francisco",
-      facebookId: ""
+      facebookId: "",
+      route: ""
     };
     this.setArtist = this.setArtist.bind(this);
   }
@@ -38,7 +39,6 @@ class Home extends React.Component {
           url: "/initTracks",
           data: dataObj
         }).then(returnedTracks => {
-          console.log("returned Tracks is ", returnedTracks.data);
           this.setState({
             artist: artist,
             artists: artists,
@@ -64,7 +64,6 @@ class Home extends React.Component {
           url: "/initTracks",
           data: dataObj
         }).then(returnedTracks => {
-          console.log("returned Tracks is ", returnedTracks.data);
           this.setState({
             artist: artist,
             artists: artists,
@@ -87,7 +86,6 @@ class Home extends React.Component {
           url: "/initTracks",
           data: dataObj
         }).then(returnedTracks => {
-          console.log("returned Tracks is ", returnedTracks.data);
           this.setState({
             artist: artist,
             artists: artists,
@@ -127,14 +125,15 @@ class Home extends React.Component {
     axios({
       method: "post",
       url: "/userCheck",
-      data: this.state.facebookId
+      data: { facebookId: this.state.facebookId }
     }).then(userObj => {
       let artist = userObj.role;
+      console.log("artist is ", artist);
       //if user is regular user then render user Profile
       if (artist) {
-
+        this.setState({ route: "/artist" });
       } else {
-        
+        this.setState({ route: "/user" });
       }
     });
   }
@@ -162,7 +161,6 @@ class Home extends React.Component {
         url: "/initTracks",
         data: dataObj
       }).then(returnedTracks => {
-        console.log("returned Tracks is ", returnedTracks.data);
         this.setState({
           artist: artist,
           artists: artists,
