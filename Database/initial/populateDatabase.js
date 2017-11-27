@@ -56,8 +56,8 @@ exports.up = function(knex, Promise) {
 };
 
 /**
- * @param  {Promise} knex Helps execute SQL queries 
- * @param  {Promise} Promise Was not needed
+ * @param {Promise} knex Helps execute SQL queries 
+ * @param {Promise} Promise Was not needed
  * @return {Promise} Will drop all the tables if you need to rollback a migration
  */
 exports.down = function(knex, Promise) {
