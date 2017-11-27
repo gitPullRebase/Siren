@@ -12,9 +12,25 @@ let userId = "";
 const saveUser = require("../Database/dbFunction.js").saveUser;
 const checkArtistTable = require("../Database/dbFunction.js").checkArtistTable;
 const checkUsersTable = require("../Database/dbFunction.js").checkUsersTable;
+const getArtists = require("../Database/dbFunction.js").getArtists;
+const getTracks = require("../Database/dbFunction.js").getTracks;
 
 app.use(bodyParser.json());
 app.use(express.static(__dirname + "/../client/dist"));
+
+app.post("/initArtists", (req, res) => {
+  let city = req.body.city;
+  getArtists(city).then(artists => {
+    res.json(artists);
+  });
+});
+
+app.post("/initTracks", (req, res) => {
+  let artist = req.body.artist;
+  getTracks(artist).then(tracks => {
+    res.json(tracks);
+  });
+});
 
 app.post("/user", (req, res) => {
   ++a;
@@ -98,8 +114,9 @@ app.post("/initialLogin", (req, res) => {
   //check if user is an artist in our "artist" table
   checkArtistTable(name)
     .then(userObj => {
+			console.log("userObj is ", userObj);
       let bool = true;
-      if (userObj !== null) {
+      if (userObj !== null && userObj.length > 0) {
         bool = true;
       } else {
         bool = false;

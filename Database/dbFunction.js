@@ -1,16 +1,38 @@
 const table = require("./index.js");
 let context = table.knex;
+
 let saveUser = (name, token, facebookId, boolean) => {
-  new table.User({
-    facebookID: facebookId,
-    username: name,
-    token: token,
-    role: boolean
+
+  this.checkUsersTable(facebookId).then ( (userObj) => {
+    if (userObj === null || userObj.length < 1) {
+      new table.User({
+        facebookID: facebookId,
+        username: name,
+        token: token,
+        role: boolean
+      })
+        .save()
+        .then(() => {
+          context.destroy();
+        });
+    }
   })
-    .save()
-    .then(() => {
-      context.destroy();
-    });
+
+
+};
+
+let getArtists = city => {
+  return table.Artist.forge()
+    .where("city", "=", city)
+    .query()
+    .select();
+};
+
+let getTracks = artist => {
+  return table.Single.forge()
+    .where("artist", "=", artist)
+    .query()
+    .select();
 };
 
 let checkArtistTable = name => {
@@ -30,3 +52,5 @@ let checkUsersTable = facebookID => {
 module.exports.saveUser = saveUser;
 module.exports.checkArtistTable = checkArtistTable;
 module.exports.checkUsersTable = checkUsersTable;
+module.exports.getArtists = getArtists;
+module.exports.getTracks = getTracks;
