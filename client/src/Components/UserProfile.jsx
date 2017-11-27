@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar.jsx";
 import MessageList from "./MessageList.jsx";
+import axios from "axios";
 
 class UserProfile extends React.Component {
   constructor(props) {
