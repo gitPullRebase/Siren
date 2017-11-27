@@ -6,8 +6,8 @@ import Message from "./Message.jsx";
 const MessageList = props => {
   let chatrooms = props.chatrooms;
   let isArtist = props.isArtist;
-
   if (isArtist) {
+
     return (
       <div>
         {chatrooms.map((chatroom, index) => {

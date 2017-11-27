@@ -48,13 +48,13 @@ let checkUsersTable = facebookID => {
 
 let getChatrooms = facebookId => {
   return table.User.forge()
-    .where("facebookdID", "=", facebookID)
+    .where("facebookID", "=", facebookId)
     .query()
     .select()
     .then(userObj => {
-      let userId = userObj.id;
+      let userId = userObj[0].id;
       table.Requested_Gigs.forge()
-        .where("artist_id", "=", userId)
+        .where("artist_id", "=", userId.toString())
         .query()
         .select();
     });

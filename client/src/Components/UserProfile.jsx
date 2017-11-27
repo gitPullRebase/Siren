@@ -19,6 +19,7 @@ class UserProfile extends React.Component {
       data: { facebookId: this.props.facebookId }
     }).then(chatroomsObj => {
       let returnedChatrooms = chatroomsObj.data;
+      console.log(returnedChatrooms);
       this.setState({
         chatrooms: returnedChatrooms
       });
