@@ -7,20 +7,23 @@ class Book extends React.Component {
   }
 
   render() {
-    return(
+    return (
       <div>
         <ReactModal
-           isOpen={this.props.showModal}
-           onRequestClose = {this.props.handleCloseModal}
-           closeOnEscape={true}
-           contentLabel="Book Now Modal"
+          isOpen={this.props.showModal}
+          onRequestClose={this.props.handleCloseModal}
+          closeOnEscape={true}
+          contentLabel="Book Now Modal"
         >
-        <input ref={input => this._message = input} />
-        <button onClick={ () => this.props.onClick(this._message.value) }> Send </button>
+          <input ref={input => (this._message = input)} />
+          <button onClick={() => this.props.onClick(this._message.value)}>
+            {" "}
+            Send{" "}
+          </button>
           <button onClick={this.props.handleCloseModal}>Cancel</button>
         </ReactModal>
-      </div> 
-      )   
+      </div>
+    );
   }
 }
 
@@ -40,10 +43,7 @@ export default Book;
 </div> */
 }
 
-
-
-// return (
-//       <div
+//  <div
 //         className="modal fade"
 //         id="bookedModal"
 //         tabIndex="-1"
@@ -71,6 +71,7 @@ export default Book;
 //                 ref={input => (this._message = input)}
 //                 className="form-control"
 //                 rows="4"
+//                 placeholder="Enter message..."
 //               />
 //             </div>
 //             <div className="modal-footer">
@@ -78,13 +79,10 @@ export default Book;
 //                 type="button"
 //                 className="btn btn-primary"
 //                 onClick={() => this.props.onClick(this._message.value)}
-//                 // onClick={() => this.props.onClickHandler(this._message.value)}
 //               >
-//                 {" "}
 //                 Send Message{" "}
 //               </button>
 //             </div>
 //           </div>
 //         </div>
 //       </div>
-//     );

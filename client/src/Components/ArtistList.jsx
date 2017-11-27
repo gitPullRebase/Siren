@@ -12,6 +12,7 @@ const ArtistList = props => {
           return (
             <li key={index}>
               <Artist
+                facebookId={props.facebookId}
                 artist={artist}
                 setTracks={props.setTracks}
                 setArtist={props.setArtist}
