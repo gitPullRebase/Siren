@@ -4,15 +4,40 @@ const Message = props => {
   let isArtist = props.isArtist;
   if (isArtist) {
     return (
-      <div>
-        <div onClick={props.messageClickHandler}>{props.chatroom}</div>
-        <button onClick={props.acceptClickHandler} className="accept" />
-        <button onClick={props.declineClickHandler} className="decline" />
+      <div className="card">
+          <div className="card-header">
+            With BassNectar
+          </div>
+          <div class="card-body">
+            <p className="card-text">
+              {props.chatroom.message}
+            </p>
+            <button onClick={props.acceptClickHandler} className="btn btn-primary accept" >
+              Accept
+            </button>
+            <button onClick={props.declineClickHandler} className="btn btn-primary decline" >
+              Decline
+            </button>
+          </div>
+          <div onClick={props.messageClickHandler}>{props.chatroom.message}</div>
       </div>
     );
   } else {
-    return <div onClick={props.messageClickHandler}>{props.chatroom}</div>;
+    return (
+      <div className="card" id="message">
+          <div className="card-header">
+            With BassNectar
+          </div>
+          <div className="card-body">
+            <p className="card-text">
+              {props.chatroom.message}
+            </p>
+          </div>
+      </div>
+    );
   }
 };
 
 export default Message;
+
+{/* <div onClick={props.messageClickHandler}>{props.chatroom.message}</div> */}

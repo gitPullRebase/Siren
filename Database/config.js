@@ -1,3 +1,3 @@
-var dbPassword = 'x';
+var dbPassword = "postgres";
 
-exports.dbPassword = dbPassword
+exports.dbPassword = dbPassword;

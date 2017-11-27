@@ -10,10 +10,10 @@ const MessageList = props => {
 
     return (
       <div>
+        <h2>Artist Messages</h2>
         {chatrooms.map((chatroom, index) => {
           return (
             <div key={index}>
-              <li>
                 <Message
                   isArtist={props.isArtist}
                   chatroom={chatroom}
@@ -21,7 +21,6 @@ const MessageList = props => {
                   declineClickHandler={props.declineClickHandler}
                   acceptClickHandler={props.acceptClickHandler}
                 />
-              </li>
             </div>
           );
         })}
@@ -29,17 +28,16 @@ const MessageList = props => {
     );
   } else {
     return (
-      <div>
+      <div className="container">
+        <h2 className="text-center">User Message</h2>
         {chatrooms.map((chatroom, index) => {
           return (
             <div key={index}>
-              <li>
                 <Message
                   isArtist={props.isArtist}
                   chatroom={chatroom}
                   messageClickHandler={props.messageClickHandler}
                 />
-              </li>
             </div>
           );
         })}

@@ -15,17 +15,29 @@ class UserProfile extends React.Component {
   componentDidMount() {
     axios({
       method: "post",
-      url: "/chatrooms",
+      url: "/currentUser",
       data: { facebookId: this.props.facebookId }
-    }).then(chatroomsObj => {
-      let returnedChatrooms = chatroomsObj.data;
-      console.log(returnedChatrooms);
-      this.setState({
-        chatrooms: returnedChatrooms
+    }).then(userObj => {
+      console.log("userObj is ", userObj);
+      let userId = userObj.data[0].id;
+      axios({
+        method: "post",
+        url: "/chatrooms",
+        data: { userId: userId }
+      }).then(chatroomsObj => {
+        let returnedChatrooms = chatroomsObj.data;
+        console.log("returned Chatrooms is ", returnedChatrooms);
+        this.setState({
+          chatrooms: returnedChatrooms
+        });
       });
     });
   }
 
+  /**
+   * messageClickHandler - not implemented yet
+   * @return {[type]}
+   */
   messageClickHandler() {
     //creates a new pop up window with message history btwn user <-> artist
   }

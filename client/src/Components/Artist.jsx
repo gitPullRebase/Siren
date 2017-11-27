@@ -13,17 +13,36 @@ class Artist extends React.Component {
     };
     this.onClickHandler = this.onClickHandler.bind(this);
   }
+
+  /**
+   * handleOpenModal changes the showModal state to true to render the popup
+   * @return {[type]}
+   */
   handleOpenModal() {
     this.setState({ showModal: true });
   }
 
+  /**
+   * handleCloseModal changes the showModal state to false to hide the popup
+   * @return {[type]}
+   */
   handleCloseModal() {
     this.setState({ showModal: false });
   }
 
+  /** 
+   * onClickHandler make post request to sent he message to the artist.  
+   * @param  {string} input message to be sent to artist from current user.
+   * @return {[type]}
+   */
   onClickHandler(input) {
     var artistName = this.props.artist.username;
     var facebookId = this.props.facebookId;
+
+    /**
+     * 1. post request to '/currentUser' to save the current user id 
+     * 2. post request to 'user' to save the current artist name being booked, message to be sent to, and the user name  
+     */
     axios({
       url: "/currentUser",
       method: "post",
@@ -45,27 +64,14 @@ class Artist extends React.Component {
   }
 
   render() {
-    // <<<<<<< HEAD
-    //     const BookModal = this.state.showModal ? (
-    //       <Book onClick={this.onClickHandler} />
-    //     ) : (
-    //       <BookedModal />
-    //     );
 
-    //     // (this.state.showModal ?
-    //     //   <Book showModal={this.state.showModal}
-    //     //         handleOpenModal={this.handleOpenModal.bind(this)}
-    //     //         handleCloseModal={this.handleCloseModal.bind(this)}
-    //     //         onClick={this.onClickHandler.bind(this)}/> : <BookedModal />)
-    // =======
-    const popup = this.state.showModal ? (
-      <Book
-        showModal={this.state.showModal}
-        handleOpenModal={this.handleOpenModal.bind(this)}
-        handleCloseModal={this.handleCloseModal.bind(this)}
-        onClick={this.onClickHandler.bind(this)}
-      />
-    ) : null;
+    /** 
+     * popup conditional statement to check for showModal state: 
+     *  if true: render <Book> component 
+     *  else: render nothing
+     */
+    const popup = (this.state.showModal ? <Book showModal = {this.state.showModal} 
+    handleOpenModal = {this.handleOpenModal.bind(this)} handleCloseModal = {this.handleCloseModal.bind(this)} onClick = {this.onClickHandler.bind(this)}/> : null)
 
     return (
       <div className="artist-container">

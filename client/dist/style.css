@@ -128,6 +128,9 @@ h5 {
 }
 
 /*Search Styles*/
+.input-group {
+  z-index: 0;
+}
 
 /*.input-group .form-control {
   background-color: darkgray;
@@ -163,13 +166,13 @@ h5 {
   margin: 2px 0px 2px 5px;
   background-color: #282828;
   height: 135px;
-  border: 1px solid rgba(0,0,0,.125);
+  border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 5px;
 }
 
 .artist-container:hover {
   position: relative;
-  background-color: rgba(0,0,0,.3);
+  background-color: rgba(0, 0, 0, 0.3);
   width: auto;
   height: 135px;
   border-radius: 5px;
@@ -219,9 +222,38 @@ hr {
   background-color: #282828;
 }
 
-
 /*Modal Styles*/
 
 .modal-header {
   color: black;
+}
+
+/*Message Styles*/
+#message {
+  color: black;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-bottom: 20px;
+}
+
+.message-btn {
+  float: right;
+  border: 1px solid rgba(0, 0, 0, 0.425);
+  margin: 8px 3px;
+}
+
+.decline-btn {
+  float: right;
+  border: 1px solid rgba(0, 0, 0, 0.425);
+  margin: 8px 3px;
+  background-color: #dd4b39;
+}
+
+.decline-btn:hover {
+  background-color: #bb3f30;
+  cursor: pointer;
+}
+
+.text-center {
+  margin-top: 15px;
 }
