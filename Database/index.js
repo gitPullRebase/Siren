@@ -1,5 +1,5 @@
 const pg = require("pg");
-const dbPassword = require("../config/config.js").dbPassword;
+//const dbPassword = require("../config/config.js").dbPassword;
 const port = 5432;
 var connection =
   `postgres://postgres:${dbPassword}@localhost:5432/artists` ||
