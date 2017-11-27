@@ -55,7 +55,7 @@ class Artist extends React.Component {
         data: {
           artist: artistName,
           message: input,
-          user: currentUser
+          user: currentUser, 
         }
       }).then(() => {
         console.log("succeeded");

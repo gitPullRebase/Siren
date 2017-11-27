@@ -43,8 +43,9 @@ app.post("/user", (req, res) => {
   input.artist = req.body.artist;
   input.message = req.body.message;
   input.user = req.body.user;
-  // retrieve id for user and artist
 
+  console.log("req body: ", req.body.artist)
+  // retrieve id for user and artist
   table.Artist.forge()
     .query()
     .select()
@@ -63,7 +64,8 @@ app.post("/user", (req, res) => {
           new table.Requested_Gigs({
             artist_id: artistId,
             user_id: userId,
-            message: input.message
+            message: input.message, 
+            artistName: input.artist
           })
             .save()
             .then(function() {})

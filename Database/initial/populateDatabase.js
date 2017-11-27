@@ -24,7 +24,6 @@ exports.up = function(knex, Promise) {
       table.string("facebookID");
       table.string("username");
       table.string("token");
-      table.string("artistName");
       table.boolean("role");
     }),
     knex.schema.createTable("artist", function(table) {
@@ -56,6 +55,8 @@ exports.up = function(knex, Promise) {
         .unsigned()
         .references("id")
         .inTable("users");
+      table.string("artistName");
+
     }),
     knex.schema.createTable("single", function(table) {
       table.increments("id").primary();
