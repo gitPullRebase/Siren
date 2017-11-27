@@ -15,10 +15,15 @@ class Home extends React.Component {
       search: "",
       artist: "",
       city: "San Francisco",
-      facebookId: "",
       route: ""
     };
     this.setArtist = this.setArtist.bind(this);
+  }
+
+  setCurrentUser(currentUser) {
+    this.setState({
+      currentUser: currentUser
+    });
   }
 
   searchClickHandler(input) {
@@ -125,23 +130,16 @@ class Home extends React.Component {
     axios({
       method: "post",
       url: "/userCheck",
-      data: { facebookId: this.state.facebookId }
+      data: { facebookId: this.props.facebookId }
     }).then(userObj => {
       console.log("userObj ", userObj);
       let artist = userObj.role;
-      console.log("artist is ", artist);
-      //if user is regular user then render user Profile
       if (artist) {
         this.setState({ route: "/artist" });
       } else {
+        console.log("as a user");
         this.setState({ route: "/user" });
       }
-    });
-  }
-
-  setFacebookId(facebookId) {
-    this.setState({
-      facebookId: facebookId
     });
   }
 
@@ -175,9 +173,9 @@ class Home extends React.Component {
     return (
       <div>
         <Navbar
-          profileClickHandler={this.profileClickHandler.bind(this)}
-          setFacebookId={this.setFacebookId.bind(this)}
           route={this.state.route}
+          profileClickHandler={this.profileClickHandler.bind(this)}
+          setFacebookId={this.props.setFacebookId.bind(this)}
         />
         <div className="landing-wrapper">
           <div className="landing" />
@@ -191,6 +189,7 @@ class Home extends React.Component {
           <br />
           <div className="row">
             <ArtistList
+              facebookId={this.props.facebookId}
               artists={this.state.artists}
               setArtist={this.setArtist}
               setTracks={this.setTracks}

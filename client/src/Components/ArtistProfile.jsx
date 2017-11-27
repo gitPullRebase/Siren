@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar.jsx";
 import MessageList from "./MessageList.jsx";
+import axios from "axios";
 
 class ArtistProfile extends React.Component {
   constructor(props) {
@@ -9,6 +10,20 @@ class ArtistProfile extends React.Component {
       chatrooms: [],
       isArtist: true
     };
+  }
+
+  componentDidMount() {
+    axios({
+      method: "post",
+      url: "/chatrooms",
+      data: { facebookId: this.props.facebookId }
+    }).then(chatroomsObj => {
+      console.log("chatrooms Obj is ", chatroomsObj);
+      let returnedChatrooms = chatroomsObj.data;
+      this.setState({
+        chatrooms: returnedChatrooms
+      });
+    });
   }
 
   messageClickHandler() {

@@ -12,7 +12,7 @@ class Login extends React.Component {
       accessToken: response.accessToken,
       username: response.name
     };
-
+    this.props.setCurrentUser(userObj.username);
     //need to ask server to check if user is client or artist
     axios({
       method: "post",
@@ -20,7 +20,6 @@ class Login extends React.Component {
       data: userObj
     }).then(() => {
       this.props.setFacebookId(userObj.facebookID);
-      //redirect to initial page without login button and with profile button + log out button
     });
   }
 

@@ -9,16 +9,15 @@ const Navbar = props => {
         Siren.
       </a>
       <ul className="navbar-nav mr-auto">
-        <Link to="/artist">
-          <a
-            href="#"
-            className="profileBtn"
-            onClick={props.profileClickHandler}
-          >
+        <Link to={props.route}>
+          <a className="profileBtn" onClick={props.profileClickHandler}>
             Profile
           </a>
         </Link>
-        <FacebookLogin setFacebookId={props.setFacebookId} />
+        <FacebookLogin
+          setFacebookId={props.setFacebookId}
+          setCurrentUser={props.setCurrentUser}
+        />
       </ul>
     </nav>
   );

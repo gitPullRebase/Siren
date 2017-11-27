@@ -13,6 +13,8 @@ const checkArtistTable = require("../Database/dbFunction.js").checkArtistTable;
 const checkUsersTable = require("../Database/dbFunction.js").checkUsersTable;
 const getArtists = require("../Database/dbFunction.js").getArtists;
 const getTracks = require("../Database/dbFunction.js").getTracks;
+const getChatrooms = require("../Database/dbFunction.js").getChatrooms;
+const getCurrentUser = require("../Database/dbFunction.js").getCurrentUser;
 
 app.use(bodyParser.json());
 app.use(express.static(__dirname + "/../client/dist"));
@@ -32,40 +34,43 @@ app.post("/initTracks", (req, res) => {
 });
 
 app.post("/user", (req, res) => {
-
-  let input = {}
+  let input = {};
+  console.log("req body is ", req.body);
   input.artist = req.body.artist;
   input.message = req.body.message;
   input.user = req.body.user;
   // retrieve id for artist and user
   table.Artist.forge()
     .query()
-    .select("id")
+    .select()
     .where("username", "=", input.artist)
-    .then(function(model) {
+    .then(model => {
+      console.log("input user is ", input.user);
       artistId = model[0].id;
       table.User.forge()
-	    .query()
-	    .select("id")
-	    .where("username", "=", input.user)
-	    .then(function(model) {
-	      userId = model[0].id;
-	      console.log('inside of test');
-	    })
-	    .then(function(){ 
-	    	// posting data 
-	    	new table.Requested_Gigs({ 
-				artist_id: artistId,
-				user_id: userId,
-				message: input.message,
-			})
-			.save()
-			.then(function() {
-				context.destroy();
-			})
-			.catch((err)=>{ console.log("ERROR: ", err)})
-	    })
-	})
+        .query()
+        .select()
+        .where("username", "=", input.user)
+        .then(model => {
+          console.log("model is ", model);
+          userId = model[0].id;
+        })
+        .then(() => {
+          // posting data
+          new table.Requested_Gigs({
+            artist_id: artistId,
+            user_id: userId,
+            message: input.message
+          })
+            .save()
+            .then(() => {
+              context.destroy();
+            })
+            .catch(err => {
+              console.log("ERROR: ", err);
+            });
+        });
+    });
   // new table.User({
   // username: 'Aygerim Test',
   // role: 'f'
@@ -102,6 +107,20 @@ app.post("/initialLogin", (req, res) => {
 app.post("/userCheck", (req, res) => {
   let facebookID = req.body.facebookId;
   checkUsersTable(facebookID).then(userObj => {
+    res.json(userObj);
+  });
+});
+
+app.post("/chatrooms", (req, res) => {
+  let facebookId = req.body.facebookId;
+  getChatrooms(facebookId).then(userObj => {
+    res.json(userObj);
+  });
+});
+
+app.post("/currentUser", (req, res) => {
+  let facebookId = req.body.facebookId;
+  getCurrentUser(facebookId).then(userObj => {
     res.json(userObj);
   });
 });

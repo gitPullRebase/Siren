@@ -11,6 +11,20 @@ class UserProfile extends React.Component {
     };
   }
 
+  componentDidMount() {
+    axios({
+      method: "post",
+      url: "/chatrooms",
+      data: { facebookId: this.props.facebookId }
+    }).then(chatroomsObj => {
+      console.log("chatrooms Obj is ", chatroomsObj);
+      let returnedChatrooms = chatroomsObj.data;
+      this.setState({
+        chatrooms: returnedChatrooms
+      });
+    });
+  }
+
   messageClickHandler() {
     //creates a new pop up window with message history btwn user <-> artist
   }

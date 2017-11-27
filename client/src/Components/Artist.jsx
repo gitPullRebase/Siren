@@ -9,7 +9,7 @@ class Artist extends React.Component {
     super(props);
     this.state = {
       visible: false,
-      showModal: false
+      showModal: true
     };
     this.onClickHandler = this.onClickHandler.bind(this);
   }
@@ -21,23 +21,30 @@ class Artist extends React.Component {
     console.log("closed")
     this.setState({ showModal: false });
   }
+
   onClickHandler(input) {
     var artistName = this.props.artist.username;
-    console.log("Artist name confirmation: ", this.props.artist.username)
-    // -----!!! The user name is hardcoded, please update it with current clicking user name ---
-    var hardCodedUser = "Aygerim Test";
-    console.log("Message has been sent: ", input);
-    // console.log("Who artist: ", this.props.artist.name)
+    var facebookId = this.props.facebookId;
+    console.log("facebookId is ", facebookId);
     axios({
-      url: "/user",
+      url: "/currentUser",
       method: "post",
-      data: {
-        artist: artistName,
-        message: input,
-        user: hardCodedUser
-      }
-    }).then(() => {
-      console.log("succeeded", data);
+      data: { facebookId: facebookId }
+    }).then(userObj => {
+      console.log("userObj is ", userObj);
+      let currentUser = userObj.data[0].username;
+      console.log("current user is ", currentUser);
+      axios({
+        url: "/user",
+        method: "post",
+        data: {
+          artist: artistName,
+          message: input,
+          user: currentUser
+        }
+      }).then(() => {
+        console.log("succeeded");
+      });
     });
   }
 

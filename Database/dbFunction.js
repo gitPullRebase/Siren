@@ -46,8 +46,31 @@ let checkUsersTable = facebookID => {
     .select();
 };
 
+let getChatrooms = facebookId => {
+  return table.User.forge()
+    .where("facebookdID", "=", facebookID)
+    .query()
+    .select()
+    .then(userObj => {
+      let userId = userObj.id;
+      table.Requested_Gigs.forge()
+        .where("artist_id", "=", userId)
+        .query()
+        .select();
+    });
+};
+
+let getCurrentUser = facebookId => {
+  return table.User.forge()
+    .where("facebookID", "=", facebookId)
+    .query()
+    .select();
+};
+
 module.exports.saveUser = saveUser;
 module.exports.checkArtistTable = checkArtistTable;
 module.exports.checkUsersTable = checkUsersTable;
 module.exports.getArtists = getArtists;
 module.exports.getTracks = getTracks;
+module.exports.getChatrooms = getChatrooms;
+module.exports.getCurrentUser = getCurrentUser;
