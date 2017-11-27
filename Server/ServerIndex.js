@@ -5,7 +5,10 @@ const table = require("../Database/index.js");
 const context = table.knex;
 const moment = require("moment");
 var port = process.env.PORT || 8080;
-const now = moment();
+var now = moment();
+let artistId = "";
+let userId = "";
+var a = 0;
 const saveUser = require("../Database/dbFunction.js").saveUser;
 const checkArtistTable = require("../Database/dbFunction.js").checkArtistTable;
 const checkUsersTable = require("../Database/dbFunction.js").checkUsersTable;
@@ -32,15 +35,17 @@ app.post("/initTracks", (req, res) => {
   });
 });
 
-let artistId = "";
-let userId = "";
 app.post("/user", (req, res) => {
+  ++a;
   var formatted = now.format("YYYY-MM-DD HH:mm:ss Z");
+
   let input = { artist: "", message: "" };
   input.artist = req.body.artist;
   input.message = req.body.message;
   input.user = req.body.user;
 
+  console.log("req body: ", req.body.artist)
+  // retrieve id for user and artist
   table.Artist.forge()
     .query()
     .select()
@@ -55,10 +60,11 @@ app.post("/user", (req, res) => {
           userId = model[0].id;
         })
         .then(function() {
+          // posting data
           new table.Requested_Gigs({
             artist_id: artistId,
             user_id: userId,
-            message: input.message,
+            message: input.message, 
             artistName: input.artist
           })
             .save()
@@ -68,7 +74,8 @@ app.post("/user", (req, res) => {
             });
         });
     });
-  res.status(201).send("success!");
+
+  res.status(201).send("succeeded");
 });
 
 app.post("/initialLogin", (req, res) => {
@@ -76,6 +83,7 @@ app.post("/initialLogin", (req, res) => {
   let name = req.body.username;
   let facebookID = req.body.facebookID;
 
+  //check if user is an artist in our "artist" table
   checkArtistTable(name)
     .then(userObj => {
       let bool = true;
@@ -84,6 +92,7 @@ app.post("/initialLogin", (req, res) => {
       } else {
         bool = false;
       }
+      //save user into users database
       saveUser(name, token, facebookID, bool);
     })
     .then(() => {
