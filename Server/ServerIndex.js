@@ -1,10 +1,10 @@
 const express = require("express");
-const port = process.env.PORT || 8080;
 const app = express();
 const bodyParser = require("body-parser");
 const table = require("../Database/index.js");
 const context = table.knex;
 const moment = require("moment");
+var port = process.env.PORT || 8080;
 var now = moment();
 let artistId = "";
 let userId = "";
