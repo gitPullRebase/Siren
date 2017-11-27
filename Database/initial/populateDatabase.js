@@ -32,7 +32,7 @@ exports.up = function(knex, Promise) {
     }),
     knex.schema.createTable("requested_gigs", function(table) {
       table.increments("id").primary();
-      table.string("name");
+      table.string("message");
       table
         .integer("artist_id")
         .unsigned()
@@ -48,6 +48,7 @@ exports.up = function(knex, Promise) {
         .unsigned()
         .references("id")
         .inTable("users");
+      table.string("message");
     }),
     knex.schema.createTable("single", function(table) {
       table.increments("id").primary();

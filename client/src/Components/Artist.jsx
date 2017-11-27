@@ -22,26 +22,22 @@ class Artist extends React.Component {
   }
   onClickHandler(input) {
     var artistName = this.props.artist.username;
+
+    // -----!!! The user name is hardcoded, please update it with current clicking user name ---
     var hardCodedUser = "Aygerim Test";
     console.log("Message has been sent: ", input);
     // console.log("Who artist: ", this.props.artist.name)
-    $.ajax({
+    axios({
       url: "/user",
-      method: "POST",
-      data: JSON.stringify({
+      method: "post",
+      data: {
         artist: artistName,
         message: input,
         user: hardCodedUser
-      }),
-      contentType: "application/json",
-      success: data => {
-        console.log("succeeded", data);
-      },
-      error: (xhr, status, error) => {
-        console.log("err", xhr, status, error);
       }
+    }).then(() => {
+      console.log("succeeded", data);
     });
-    // will be continued with post ajax calls to artist inbox db.
   }
 
   render() {
@@ -56,9 +52,6 @@ class Artist extends React.Component {
     //         handleOpenModal={this.handleOpenModal.bind(this)}
     //         handleCloseModal={this.handleCloseModal.bind(this)}
     //         onClick={this.onClickHandler.bind(this)}/> : <BookedModal />)
-
-
-
 
     return (
       <div className="artist-container">
@@ -89,5 +82,4 @@ class Artist extends React.Component {
     );
   }
 }
-
 export default Artist;

@@ -32,7 +32,7 @@ class Login extends React.Component {
           socialId={clientId}
           language="en_US"
           scope="public_profile,email"
-          responseHandler={this.responseFacebook}
+          responseHandler={this.responseFacebook.bind(this)}
           xfbml={true}
           fields="id,email,name"
           version="v2.5"

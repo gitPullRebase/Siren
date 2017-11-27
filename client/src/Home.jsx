@@ -1,11 +1,4 @@
 import React from "react";
-import SF_artist_data from "../../Database/artistData/SF_artist_data.js";
-import SF_ArtistTracks from "../../Database/artistData/SF_artist_top_tracks.json";
-import LA_artist_data from "../../Database/artistData/LA_artist_data.js";
-import LA_ArtistTracks from "../../Database/artistData/LA_artist_top_tracks.json";
-import NY_artist_data from "../../Database/artistData/NY_artist_data.js";
-import NY_ArtistTracks from "../../Database/artistData/NY_artist_top_tracks.json";
-
 import Navbar from "./Components/Navbar.jsx";
 import Search from "./Components/Search.jsx";
 import ArtistList from "./Components/ArtistList.jsx";
@@ -13,8 +6,8 @@ import SongsList from "./Components/SongsList.jsx";
 import axios from "axios";
 
 class Home extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       currentUser: "",
       artists: [],
@@ -132,21 +125,16 @@ class Home extends React.Component {
     axios({
       method: "post",
       url: "/userCheck",
-      data: this.state.facebookId
+      data: { facebookId: this.state.facebookId }
     }).then(userObj => {
       console.log("userObj ", userObj);
       let artist = userObj.role;
       console.log("artist is ", artist);
       //if user is regular user then render user Profile
       if (artist) {
-        this.setState({
-          route: "/artist"
-        });
+        this.setState({ route: "/artist" });
       } else {
-        this.setState({
-          route: "user"
-        });
-
+        this.setState({ route: "/user" });
       }
     });
   }

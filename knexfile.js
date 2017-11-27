@@ -14,7 +14,7 @@ var config = {
   },
   production: {
     client: "pg",
-    connection: process.env.DATABASE_URL,
+    connection: `${process.env.DATABASE_URL}/artists`,
     migrations: {
       directory: __dirname + "/Database/migrations"
     },
