@@ -1,5 +1,5 @@
 var environment = process.env.NODE_ENV || "development";
-const dbPassword = require("../config/config.js").dbPassword;
+const dbPassword = require("./config/config.js").dbPassword;
 
 var config = {
   development: {

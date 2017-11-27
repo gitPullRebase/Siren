@@ -30,6 +30,7 @@ client/dist/bundle.js
 node_modules/
 bower_components/
 .DS_Store
+config
 
 #config folder
 config/

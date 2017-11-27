@@ -58,7 +58,7 @@ class Artist extends React.Component {
     //         onClick={this.onClickHandler.bind(this)}/> : <BookedModal />)
 
 
-    
+
 
     return (
       <div className="artist-container">
