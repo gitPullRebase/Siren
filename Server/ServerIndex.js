@@ -43,7 +43,6 @@ app.post("/user", (req, res) => {
   input.artist = req.body.artist;
   input.message = req.body.message;
   input.user = req.body.user;
-  // retrieve id for user and artist
 
   table.Artist.forge()
     .query()
@@ -59,11 +58,11 @@ app.post("/user", (req, res) => {
           userId = model[0].id;
         })
         .then(function() {
-          // posting data
           new table.Requested_Gigs({
             artist_id: artistId,
             user_id: userId,
-            message: input.message
+            message: input.message,
+            artistName: input.artist
           })
             .save()
             .then(function() {})
@@ -72,13 +71,6 @@ app.post("/user", (req, res) => {
             });
         });
     });
-  // new table.User({
-  // username: 'Aygerim Test',
-  // role: 'f'
-  // }).save()
-  // .then(function() {
-  //     context.destroy();
-  //   })
   res.status(201).send("hello");
 });
 
