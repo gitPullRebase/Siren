@@ -72,20 +72,6 @@ app.post("/user", (req, res) => {
             });
         });
     });
-
-  //TESTING
-  // new table.Requested_Gigs({
-  //  	name: 'aygerim test',
-  //  	artist_id: 10,
-  //  	user_id: 3,
-  //  	message: "hello world",
-  //  	date_id: 10
-  //  		})
-  // .save()
-  // .then(function() {
-  // context.destroy();
-  // })
-
   // new table.User({
   // username: 'Aygerim Test',
   // role: 'f'
@@ -93,8 +79,6 @@ app.post("/user", (req, res) => {
   // .then(function() {
   //     context.destroy();
   //   })
-
-  console.log("all --> ", input);
   res.status(201).send("hello");
 });
 

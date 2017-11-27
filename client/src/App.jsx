@@ -32,6 +32,10 @@ class App extends React.Component {
     });
   }
 
+  /**
+   * setFacebookId  
+   * @param {[type]} [varname] [description]
+   */
   setFacebookId(facebookId) {
     this.setState({
       facebookId: facebookId
