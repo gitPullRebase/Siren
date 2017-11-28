@@ -15,7 +15,6 @@ class App extends React.Component {
     this.setFacebookId = this.setFacebookId.bind(this);
   }
 
-  
   profileClickHandler() {
     axios({
       method: "post",
