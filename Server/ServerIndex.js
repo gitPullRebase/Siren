@@ -102,6 +102,7 @@ app.post("/initialLogin", (req, res) => {
 
 app.post("/userCheck", (req, res) => {
   let facebookID = req.body.facebookId;
+  console.log("facebookID is ", facebookID);
   checkUsersTable(facebookID).then(userObj => {
     res.json(userObj);
   });
