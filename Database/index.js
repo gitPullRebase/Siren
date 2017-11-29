@@ -1,9 +1,8 @@
 const pg = require("pg");
 //const dbPassword = require("../config/config.js").dbPassword;
-//const port = 5432;
 
 var connection =
-  //`postgres://postgres:${dbPassword}@localhost:5432/artists` ||
+  `postgres://postgres:postgres@localhost:5432/artists` ||
   `${process.env.DATABASE_URL}`;
 
 var knex = require("knex")({

@@ -44,7 +44,6 @@ app.post("/user", (req, res) => {
   input.message = req.body.message;
   input.user = req.body.user;
 
-  console.log("req body: ", req.body.artist)
   // retrieve id for user and artist
   table.Artist.forge()
     .query()
@@ -102,7 +101,6 @@ app.post("/initialLogin", (req, res) => {
 
 app.post("/userCheck", (req, res) => {
   let facebookID = req.body.facebookId;
-  console.log("facebookID is ", facebookID);
   checkUsersTable(facebookID).then(userObj => {
     res.json(userObj);
   });
