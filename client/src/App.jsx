@@ -1,31 +1,31 @@
-import React from "react";
-import { Switch, Route } from "react-router-dom";
-import axios from "axios";
-import Home from "./Home.jsx";
-import UserProfile from "./Components/UserProfile.jsx";
-import ArtistProfile from "./Components/ArtistProfile.jsx";
+import React from 'react';
+import { Switch, Route } from 'react-router-dom';
+import axios from 'axios';
+import Home from './Home.jsx';
+import UserProfile from './Components/UserProfile.jsx';
+import ArtistProfile from './Components/ArtistProfile.jsx';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      facebookId: "",
-      route: ""
+      facebookId: '',
+      route: '',
     };
     this.setFacebookId = this.setFacebookId.bind(this);
   }
 
   profileClickHandler() {
     axios({
-      method: "post",
-      url: "/userCheck",
-      data: { facebookId: this.state.facebookId }
+      method: 'post',
+      url: '/userCheck',
+      data: { facebookId: this.state.facebookId },
     }).then(userObj => {
       let artist = userObj.data[0].role;
       if (artist) {
-        this.setState({ route: "/artist" });
+        this.setState({ route: '/user' });
       } else {
-        this.setState({ route: "/user" });
+        this.setState({ route: '/user' });
       }
     });
   }
@@ -36,7 +36,7 @@ class App extends React.Component {
    */
   setFacebookId(facebookId) {
     this.setState({
-      facebookId: facebookId
+      facebookId: facebookId,
     });
     this.profileClickHandler();
   }
@@ -58,15 +58,11 @@ class App extends React.Component {
           />
           <Route
             path="/user"
-            component={props => (
-              <UserProfile facebookId={this.state.facebookId} />
-            )}
+            component={props => <UserProfile facebookId={this.state.facebookId} />}
           />
           <Route
             path="/artist"
-            component={props => {
-              <ArtistProfile facebookId={this.state.facebookId} />;
-            }}
+            component={props => <ArtistProfile facebookId={this.state.facebookId} />}
           />
         </Switch>
       </div>
