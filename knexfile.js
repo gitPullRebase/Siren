@@ -1,4 +1,4 @@
-var environment = process.env.NODE_ENV || "development";
+const environment = process.env.NODE_ENV || 'development';
 
 /** For accessing your local database and to test:
  * 1. create a config folder on the root of your directory
@@ -8,30 +8,30 @@ var environment = process.env.NODE_ENV || "development";
  * 5. uncomment lines 2 and 6 in Database/index.js
  * 6. uncomment "development" inside config object below
  */
+// uncomment this to work locally
+// const dbPassword = require('./config/config.js').dbPassword;
 
-//const dbPassword = require("./config/config.js").dbPassword;
-
-var config = {
+const config = {
   development: {
-    client: "pg",
-    connection: `postgres://postgres:postgres@localhost:5432/artists`,
+    client: 'pg',
+    connection: 'postgres://postgres:postgres@localhost:5432/artists',
     migrations: {
-      directory: __dirname + "/Database/migrations"
+      directory: `${__dirname}/Database/migrations`,
     },
     seeds: {
-      directory: __dirname + "/Database/seeds"
-    }
+      directory: `${__dirname}/Database/seeds`,
+    },
   },
   production: {
-    client: "pg",
+    client: 'pg',
     connection: `${process.env.DATABASE_URL}`,
     migrations: {
-      directory: __dirname + "/Database/migrations"
+      directory: `${__dirname}/Database/migrations`,
     },
     seeds: {
-      directory: __dirname + "/Database/seeds"
-    }
-  }
+      directory: `${__dirname}/Database/seeds`,
+    },
+  },
 };
 
 module.exports = config;

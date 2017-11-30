@@ -1,39 +1,40 @@
-const pg = require("pg");
-//const dbPassword = require("../config/config.js").dbPassword;
+const pg = require('pg');
+// const dbPassword = require("../config/config.js").dbPassword;
 
-var connection =
-`${process.env.DATABASE_URL}` ||
-`postgres://postgres:postgres@localhost:5432/artists`;
+console.log(process.env.DATABASE_URL);
 
-var knex = require("knex")({
-  client: "pg",
-  connection: connection
+const connection =
+  process.env.DATABASE_URL || 'postgres://postgres:postgres@localhost:5432/artists';
+
+const knex = require('knex')({
+  client: 'pg',
+  connection,
 });
 
-let bookshelf = require("bookshelf")(knex);
+const bookshelf = require('bookshelf')(knex);
 
-let User = bookshelf.Model.extend({
-  tableName: "users"
+const User = bookshelf.Model.extend({
+  tableName: 'users',
 });
 
-let Artist = bookshelf.Model.extend({
-  tableName: "artist"
+const Artist = bookshelf.Model.extend({
+  tableName: 'artist',
 });
 
-let Date = bookshelf.Model.extend({
-  tableName: "date"
+const Date = bookshelf.Model.extend({
+  tableName: 'date',
 });
 
-let Artist_Availability = bookshelf.Model.extend({
-  tableName: "artist_availability"
+const Artist_Availability = bookshelf.Model.extend({
+  tableName: 'artist_availability',
 });
 
-let Requested_Gigs = bookshelf.Model.extend({
-  tableName: "requested_gigs"
+const Requested_Gigs = bookshelf.Model.extend({
+  tableName: 'requested_gigs',
 });
 
-let Single = bookshelf.Model.extend({
-  tableName: "single"
+const Single = bookshelf.Model.extend({
+  tableName: 'single',
 });
 
 module.exports.knex = knex;
