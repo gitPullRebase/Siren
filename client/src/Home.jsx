@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./Components/Navbar.jsx";
 import Search from "./Components/Search.jsx";
 import ArtistList from "./Components/ArtistList.jsx";
+import RelatedList from "./Components/RelatedList.jsx";
 import SongsList from "./Components/SongsList.jsx";
 import axios from "axios";
 
@@ -174,35 +175,22 @@ class Home extends React.Component {
   }
 
   render() {
-    return (
-      <div>
-        <Navbar
-          route={this.props.route}
-          setFacebookId={this.props.setFacebookId}
-        />
+    return <div>
+        <Navbar route={this.props.route} setFacebookId={this.props.setFacebookId} />
         <div className="landing-wrapper">
           <div className="landing" />
         </div>
         <div className="container">
           <br />
-          <Search
-            onClick={this.searchClickHandler.bind(this)}
-            onChange={this.onChange.bind(this)}
-          />
+          <Search onClick={this.searchClickHandler.bind(this)} onChange={this.onChange.bind(this)} />
           <br />
           <div className="row">
-            <ArtistList
-              facebookId={this.props.facebookId}
-              artists={this.state.artists}
-              setArtist={this.setArtist}
-              setTracks={this.setTracks}
-              city={this.state.city}
-            />
+            <ArtistList facebookId={this.props.facebookId} artists={this.state.artists} setArtist={this.setArtist} setTracks={this.setTracks} city={this.state.city} />
             <SongsList tracks={this.state.tracks} artist={this.state.artist} />
+            <RelatedList />
           </div>
         </div>
-      </div>
-    );
+      </div>;
   }
 }
 

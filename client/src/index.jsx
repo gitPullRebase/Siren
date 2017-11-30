@@ -16,10 +16,10 @@ const store = createStore(reducer, compose (
 const RenderApp = () => {
   render(
     <Router>
-    <Provider store={store}>
-        <App />
-    </Provider>
-      </Router>, document.getElementById('app'));
+      <Provider store={store}>
+          <App />
+      </Provider>
+    </Router>, document.getElementById('app'));
 }
 
 RenderApp();
