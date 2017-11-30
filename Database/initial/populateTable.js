@@ -102,45 +102,49 @@ exports.seed = function (knex, Promise) {
  * @param {Object} artist This object contains the artist's name, city, image, and uri
  * @return {Promise} Inserts an entry into the artist table for SF artists
  */
-const createSFArtist = (knex, artist) => knex('artist').insert({
-  username: artist.name,
-  city: 'San Francisco',
-  image: artist.images[0].url,
-  uri: artist.uri,
-});
+const createSFArtist = (knex, artist) =>
+  knex('artist').insert({
+    username: artist.name,
+    city: 'San Francisco',
+    image: artist.images[0].url,
+    uri: artist.uri,
+  });
 
 /**
  * @param {Promise} knex SQL builder
  * @param {Object} artist This object contains the artist's name, city, image, and uri
  * @return {Promise} Inserts an entry into the artist table for LA artists
  */
-const createLAArtist = (knex, artist) => knex('artist').insert({
-  username: artist.name,
-  city: 'Los Angeles',
-  image: artist.images[0].url,
-  uri: artist.uri,
-});
+const createLAArtist = (knex, artist) =>
+  knex('artist').insert({
+    username: artist.name,
+    city: 'Los Angeles',
+    image: artist.images[0].url,
+    uri: artist.uri,
+  });
 
 /**
  * @param {Promise} knex SQL builder
  * @param {Object} artist This object contains the artist's name, city, image, and uri
  * @return {Promise} Inserts an entry into the artist table for NY artists
  */
-const createNYArtist = (knex, artist) => knex('artist').insert({
-  username: artist.name,
-  city: 'New York',
-  image: artist.images[0].url,
-  uri: artist.uri,
-});
+const createNYArtist = (knex, artist) =>
+  knex('artist').insert({
+    username: artist.name,
+    city: 'New York',
+    image: artist.images[0].url,
+    uri: artist.uri,
+  });
 
 /**
  * @param {Promise} knex SQL builder
  * @param {String} day This will be in the format of 'D/M' for all 365 days of the year
  * @return {Promise} Inserts a date entry into the date table
  */
-const createDate = (knex, day) => knex('date').insert({
-  day,
-});
+const createDate = (knex, day) =>
+  knex('date').insert({
+    day,
+  });
 
 /**
  * @param {Promise} knex SQL builder
@@ -148,19 +152,21 @@ const createDate = (knex, day) => knex('date').insert({
  * @param {Number} id
  * @return {Promise} Inserts an entry containing an artist's single and name into the single table
  */
-const createSingle = (knex, artist, id) => knex('single').insert({
-  single_id: id,
-  artist,
-});
+const createSingle = (knex, artist, id) =>
+  knex('single').insert({
+    single_id: id,
+    artist,
+  });
 
 /**
  * @param {Promise} knex SQL builder
  * @param {Object} artist
  * @return {Promise} Inserts a user into the users table
  */
-const createUser = (knex, artist) => knex('users').insert({
-  facebookID: null,
-  username: artist.name,
-  token: null,
-  role: true,
-});
+const createUser = (knex, artist) =>
+  knex('users').insert({
+    facebook_id: null,
+    username: artist.name,
+    token: null,
+    role: true,
+  });
