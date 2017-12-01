@@ -239,14 +239,6 @@ hr {
   color: red;
 }
 
-.book-modal {
-  width: 500px;
-  height: 500px;
-  float: right;
-  border-style: solid;
-  border-color: black;
-}
-
 /*Message Styles*/
 #message {
   color: black;
