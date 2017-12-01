@@ -23,7 +23,7 @@ class App extends React.Component {
     }).then(userObj => {
       let artist = userObj.data[0].role;
       if (artist) {
-        this.setState({ route: '/user' });
+        this.setState({ route: '/artist' });
       } else {
         this.setState({ route: '/user' });
       }
