@@ -5,6 +5,7 @@ import Home from "./Home.jsx";
 import UserProfile from "./Components/UserProfile.jsx";
 import ArtistProfile from "./Components/ArtistProfile.jsx";
 
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -40,6 +41,8 @@ class App extends React.Component {
     });
     this.profileClickHandler();
   }
+
+  
 
   render() {
     return (

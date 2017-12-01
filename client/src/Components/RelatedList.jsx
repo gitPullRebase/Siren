@@ -1,23 +1,25 @@
 import React from 'react';
+import { connect } from 'react-redux';  
 import Navbar from './Navbar.jsx'
 import axios from 'axios';
 
-class RelatedList extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      top: [],
-    }
-  }
-
-  render() {
+const RelatedList = ( { artists } ) => {
     return (
       <div>
-        Related Artists List
+        <h3>Related Artists List</h3>
+          <ul>
+            {artists.map( artist => {
+              <div>
+                {artist}
+              </div>
+            })}
+          </ul>
       </div>
     );
-  }
-
 }
 
-export default RelatedList;
+const mapStateToProps = ( { artists } ) => ({
+  artists
+})
+
+export default connect(mapStateToProps)(RelatedList);
