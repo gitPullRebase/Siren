@@ -8,11 +8,8 @@ const RelatedList = ( { artists } ) => {
       <div>
         <h3>Related Artists List</h3>
           <ul>
-            {artists.map( artist => {
-              <div>
-                {artist}
-              </div>
-            })}
+            <li>{artists[0]}</li>
+            <li>{artists[1]}</li>
           </ul>
       </div>
     );
