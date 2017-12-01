@@ -14,6 +14,7 @@ class Login extends React.Component {
    * @return {[type]}
    */
   responseFacebook(response) {
+    console.log("response is ", response);
     let userObj = {
       facebookID: response.id,
       accessToken: response.accessToken,
@@ -30,7 +31,7 @@ class Login extends React.Component {
   }
 
   render() {
-    let clientId = "515823602108032";
+    let clientId = '518100051898985';
     return (
       <div className="nav-item">
         <FacebookLogin
@@ -40,7 +41,7 @@ class Login extends React.Component {
           responseHandler={this.responseFacebook.bind(this)}
           xfbml={true}
           fields="id,email,name"
-          version="v2.5"
+          version="v2.11"
           className="facebook-login loginBtn--facebook"
           buttonText="Login With Facebook"
         />

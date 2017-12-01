@@ -1,6 +1,6 @@
-import React from "react";
-import FacebookLogin from "./FacebookLogin.jsx";
-import { Link } from "react-router-dom";
+import React from 'react';
+import FacebookLogin from './FacebookLogin.jsx';
+import { Link } from 'react-router-dom';
 
 const Navbar = props => {
   /**
@@ -11,14 +11,11 @@ const Navbar = props => {
    * profile icon will then appear when logged in
    */
   let login = (
-    <FacebookLogin
-      setFacebookId={props.setFacebookId}
-      setCurrentUser={props.setCurrentUser}
-    />
+    <FacebookLogin setFacebookId={props.setFacebookId} setCurrentUser={props.setCurrentUser} />
   );
-  let profile = "";
-  if (props.route !== "") {
-    login = "";
+  let profile = '';
+  if (props.route !== '') {
+    login = '';
     /**
      * [profile description]
      * @type {[route link]}
