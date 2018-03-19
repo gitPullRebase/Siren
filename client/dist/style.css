@@ -1,0 +1,263 @@
+/*Global Styles*/
+body,
+html {
+  background-color: #282828;
+  color: #ffffff;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  font-family: "Avenir Next" !important;
+}
+
+h5 {
+  text-align: center;
+}
+
+/*Landing Dock Styles*/
+.landing-wrapper {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.landing {
+  width: 100%;
+  height: 500px;
+  background-image: url("bgPhoto.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+
+/*Navbar Styles*/
+.navbar-light .navbar-brand {
+  color: #ffffff !important;
+  font-size: 250%;
+  font-family: "Avenir Next" !important;
+}
+
+.bg-light {
+  width: 100%;
+  height: 70px;
+  background-color: #000000 !important;
+}
+
+.profileBtn-toolbar {
+  margin-bottom: 20px;
+}
+
+.profileBtn {
+  color: white !important;
+  position: absolute;
+  padding-right: 18px;
+  float: right;
+  right: 0;
+  font-family: "Avenir Next" !important;
+}
+
+.profileBtn:hover {
+  color: gray;
+}
+
+.login-container {
+  position: relative;
+  float: right;
+}
+
+.google-login,
+.facebook-login {
+  box-sizing: border-box;
+  position: relative;
+  margin: 0.2em;
+  padding: 0 15px 0 46px;
+  border: none;
+  text-align: left;
+  line-height: 32px;
+  white-space: nowrap;
+  border-radius: 0.2em;
+  font-size: 14px;
+  color: #fff;
+  float: right;
+}
+
+.google-login:before,
+.facebook-login:before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 34px;
+  height: 100%;
+}
+.google-login:focus,
+.facebook-login:focus {
+  outline: none;
+}
+.google-login:active,
+.facebook-login:active {
+  box-shadow: inset 0 0 0 32px rgba(0, 0, 0, 0.1);
+}
+
+.loginBtn--google {
+  font-family: "Roboto", Roboto, arial, sans-serif;
+  background: #dd4b39;
+}
+.loginBtn--google:before {
+  border-right: #bb3f30 1px solid;
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/icon_google.png")
+    6px 6px no-repeat;
+}
+.loginBtn--google:hover,
+.loginBtn--google:focus {
+  background: #e74b37;
+}
+
+.loginBtn--facebook {
+  background-color: #4c69ba;
+  background-image: linear-gradient(#4c69ba, #3b55a0);
+  /*font-family: "Helvetica neue", Helvetica Neue, Helvetica, Arial, sans-serif;*/
+  text-shadow: 0 -1px 0 #354c8c;
+}
+.loginBtn--facebook:before {
+  border-right: #364e92 1px solid;
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/14082/icon_facebook.png")
+    6px 6px no-repeat;
+}
+.loginBtn--facebook:hover,
+.loginBtn--facebook:focus {
+  background-color: #5b7bd5;
+  background-image: linear-gradient(#5b7bd5, #4864b1);
+}
+
+/*Search Styles*/
+.input-group {
+  z-index: 0;
+}
+
+/*.input-group .form-control {
+  background-color: darkgray;
+}*/
+
+.btn {
+  background-color: #00d770;
+}
+
+.btn:hover {
+  background-color: #03964f;
+}
+
+/*Artist Styles*/
+.bookBtn {
+  background-color: #00d770;
+  border-color: black;
+  color: black;
+  font-weight: bold;
+}
+
+.bookBtn:hover {
+  background-color: #03964f;
+  cursor: pointer;
+}
+
+.artistList {
+  display: block;
+}
+
+.artist-container {
+  position: relative;
+  margin: 2px 0px 2px 5px;
+  background-color: #282828;
+  height: 135px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 5px;
+}
+
+.artist-container:hover {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: auto;
+  height: 135px;
+  border-radius: 5px;
+}
+
+.artist-image {
+  width: 20%;
+  border-radius: 57px;
+  box-shadow: 1px 1px 6px #00d770;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  position: inherit;
+  left: 5%;
+  top: 5%;
+  padding: 0;
+  line-height: 50px;
+}
+
+.artist-image:hover {
+  box-shadow: 3px 3px 40px #00d770;
+  cursor: pointer;
+}
+
+hr {
+  background: white;
+  margin-top: 20px;
+  margin-left: -20px;
+  margin-bottom: -10px;
+  width: 450px;
+}
+
+.artist-text {
+  left: 32%;
+  top: 10%;
+  position: absolute;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/*Song Styles*/
+.modal-body {
+  color: black;
+}
+
+.song {
+  background-color: #282828;
+}
+
+/*Modal Styles*/
+
+.modal-header {
+  color: black;
+}
+
+/*Message Styles*/
+#message {
+  color: black;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-bottom: 20px;
+}
+
+.message-btn {
+  float: right;
+  border: 1px solid rgba(0, 0, 0, 0.425);
+  margin: 8px 3px;
+}
+
+.decline-btn {
+  float: right;
+  border: 1px solid rgba(0, 0, 0, 0.425);
+  margin: 8px 3px;
+  background-color: #dd4b39;
+}
+
+.decline-btn:hover {
+  background-color: #bb3f30;
+  cursor: pointer;
+}
+
+.text-center {
+  margin-top: 15px;
+}
